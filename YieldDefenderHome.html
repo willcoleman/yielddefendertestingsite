@@ -981,68 +981,11 @@ $(document).ready(function(){
         -ms-transition: background-color 0.25s ease-out;
     }
     
+
     
-        .about:hover{
-        color: white;
-        background-color: red;
-        border-style: solid;
-        border-width: thick;
-        border-color: red;
-        height: 250px;
-        transition: background-color 0.5s ease-in-out;
-    -moz-transition: background-color 0.5s ease-in-out;
-    -webkit-transition: background-color 0.5s ease-in-out;
-    -ms-transition: background-color 0.5s ease-in-out;
-        cursor: pointer;
+
     
-        
-    }
-    
-     .shop:hover{
-        color: white;
-        background-color: green;
-        border-style: solid;
-        border-width: thick;
-        border-color: green;
-        height: 200px;
-        transition: background-color 0.5s ease-in-out;
-    -moz-transition: background-color 0.5s ease-in-out;
-    -webkit-transition: background-color 0.5s ease-in-out;
-    -ms-transition: background-color 0.5s ease-in-out;
-         cursor: pointer;
-        
-    }
-    
-     .company:hover{
-        color: white;
-        background-color: blue;
-        border-style: solid;
-        border-width: thick;
-        border-color: blue;
-        height: 200px;
-        transition: background-color 0.5s ease-in-out;
-    -moz-transition: background-color 0.5s ease-in-out;
-    -webkit-transition: background-color 0.5s ease-in-out;
-    -ms-transition: background-color 0.5s ease-in-out;
-         cursor: pointer;
-        
-    }
-    
-     .contact:hover{
-        color: white;
-        background-color: darkslategray;
-        border-style: solid;
-        border-width: thick;
-        border-color: darkslategray;
-        height: 200px;
-        transition: background-color 0.5s ease-in-out;
-    -moz-transition: background-color 0.5s ease-in-out;
-    -webkit-transition: background-color 0.5s ease-in-out;
-    -ms-transition: background-color 0.5s ease-in-out;
-         cursor: pointer;
-        
-    }
-    
+
     .prevhead1{
         display: none;
         font-size: 20;
@@ -1130,6 +1073,11 @@ $(document).ready(function(){
             height: 50%;
         }
         
+        .ydfootlogo{
+            position: relative;
+            right: 120px;
+        }
+        
     }
     
     /*!!!!!!!!!!BEGIN MED TABLET CSS!!!!!!!!!!*/
@@ -1142,6 +1090,11 @@ $(document).ready(function(){
                         width: 95%;
                     }
                     
+                    .footerhead, .footercn, .social{
+                        position: relative;
+                        left: 1px;
+                    }
+                    
             .navwrapper {
                 display: none;
             }
@@ -1149,7 +1102,16 @@ $(document).ready(function(){
                      .navwrapper {
                 display: none;
             }
+                
+                    .ydfootlogo2, .atfootlogo2{
+                        display: none;
+                    }
                     
+                    .footerhead, .footercn, .social{
+                       position: relative;
+                        right: 45px;
+                        
+                    }
      
             
     .nav2 {
@@ -1635,9 +1597,11 @@ $(document).ready(function(){
     
             @media only screen and (max-width: 414px) {
                     body{
-                        width: 101%;
+                        width: 100%;
                         overflow-x: hidden;
                     }
+                
+                 
             
             html{
                 overflow-x: hidden;
@@ -1668,11 +1632,21 @@ $(document).ready(function(){
                         margin-right: 10%;
                     }
                 
+                   .footerhead, .footercn{
+                        position: relative;
+                        right: 15px;
+                    }
+                
+                .social{
+                    position: relative;
+                    right: 25px;
+                }
+                
     }
     
                 @media only screen and (max-width: 375px) {
                     body{
-                        width: 108%;
+                        width: 109%;
                         overflow-x: hidden;
                     }
             
@@ -1694,6 +1668,8 @@ $(document).ready(function(){
          margin: 0 0 0 0;
         
     } 
+                    
+                 
                 
     }
     
@@ -1701,14 +1677,21 @@ $(document).ready(function(){
         
         body{
             overflow-x: hidden;
-            width: 118%;
+            width: 110%;
         }  
         
  
     }
     
-
-    
+ @media only screen and (max-width: 360px) {
+     
+     body{
+         
+         overflow-x: hidden;
+         width: 114%;
+     }
+     
+    }
     
 
     
@@ -2083,12 +2066,15 @@ Find your support documents that may aid you in your usage of our products along
     <span class = "footercn">870-270-4255</span>
         <br><br>
 
+                    
+                    <div class = "social">
 <a href="https://www.facebook.com/Hangar78UAV/" class="fa fa-facebook"></a>
 <a href="https://twitter.com/yielddefender" class="fa fa-twitter"></a>
 <a href="https://www.youtube.com/channel/UCISKEh-bwGRFuDNT2zEY76A" class="fa fa-youtube"></a>
 <a href="https://www.instagram.com/yielddefender/" class="fa fa-instagram"></a>
     
     </div>
+                    </div>
                 
                 <div class = "footlogo2wrap">
                 
