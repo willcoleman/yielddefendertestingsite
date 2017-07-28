@@ -91,6 +91,10 @@ $(document).ready(function(){
         display:none;
     }
     
+    .mobilewrapper{
+        display: none;
+    }
+    
     .whwrapper2 {
         display: none;
     }
@@ -128,10 +132,23 @@ $(document).ready(function(){
     height: 100%;
 }
     
-    .icon{
+         .icon{
         padding-top: 0.5%;
         padding-right: 2%;
         float: right;
+    }
+    
+    .iconwrap{
+        padding-left: 2%;
+        padding-top: 0.5%;
+    }
+    
+    .emailandphone{
+        float: right;
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        padding-right: 2%;
+        padding-top: 1%;
     }
     
     .navwrapper{
@@ -480,7 +497,7 @@ $(document).ready(function(){
         
         /*!!!!!!!!!!END DESKTOP CSS!!!!!!!!!!*/
         
-     /*!!!!!!!!!!BEGIN LARGE TABLET CSS!!!!!!!!!!*/
+    /*!!!!!!!!!!BEGIN LARGE TABLET CSS!!!!!!!!!!*/
         
         @media only screen and (max-width: 900px) {
             
@@ -504,9 +521,11 @@ $(document).ready(function(){
         overflow-x: hidden;
     }
             
-            .navwrapper {
+            .desktopwrap{
                 display: none;
             }
+            
+   
             
    .nav2 {
     list-style-type: none;
@@ -555,7 +574,7 @@ $(document).ready(function(){
         color: white;
     }
             .footer2 {
-         background-color: black;
+         background-color: #4d4d4d;
          background-size: contain;
          background-position: center;
          position: absolute;
@@ -587,59 +606,7 @@ $(document).ready(function(){
     .fa:hover {
     opacity: 0.5;
     }
-    .fa-facebook {
-  background-color: black;
-  color: white;
-    }
-    .fa-twitter {
-  background-color: black;
-  color: white;
-    }
-    
-    .fa-instagram {
-  background-color: black;
-  color: white;
-        
-    }
-    
-    .fa-youtube {
-    background-color: black;
-    color: white;
-        
-    }
-            
-              .atfootlogo2{
-                        float: left;
-                        height: 100px;
-                        width: 100px;
-                        margin-top: 50px;
-                        margin-left: 8%;
-                    }
-            
-            .ydfootlogo2{
-                        float: right;
-                        height: 100px;
-                        width: 100px;
-                        margin-top: 50px;
-                        margin-right: 8%;
-                        
-                    }
-            
-            
-.footerhead{
-            font-family: 'Ubuntu', sans-serif;
-        font-weight: bolder;
-    }
-    
-    .footercn{
-        font-family: 'Ubuntu', sans-serif;
-        font-weight: 400;
-        color: gainsboro;
-        color: white;
-        text-decoration: none;
-    }
-            
-            .fa-facebook {
+        .fa-facebook {
   background-color: #4d4d4d;
   color: white;
         text-decoration: none;
@@ -663,304 +630,377 @@ $(document).ready(function(){
     text-decoration: none;
         
     }
-        }
-            /*!!!!!!!!!!END LARGE TABLET CSS!!!!!!!!!!*/
             
-            /*!!!!!!!!!!BEGIN MED TABLET CSS!!!!!!!!!!*/
-        
-                @media only screen and (max-width: 767px) {
-               
-                    
-            .navwrapper {
-                display: none;
-            }
-            
-            .ydwrapper {
-                display: none;
-            }
-            
-            .whwrapper {
-                display: none;
-            }
-            
-            .footer {
-                display: none;
-            }
-    body {
-        margin: 0;
-        overflow-x: hidden;
-    }
-            
-            .navwrapper {
-                display: none;
-            }
-            
-    .nav2 {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #233e6c;
-    width: 100%;
-}
-.navbar2 a {
-    font-family: 'Oswald', sans-serif;
-    display: block;
-    color: white;
-    padding: 8px 16px;
-    text-decoration: none;
-    text-align: center;
-}
-.navbar2 a:hover {
-        background-color: #4d4d4d;
-}
-    
-    .ydd {
-        color: white;
-        float: right;
-        padding-top: 4%;
-        padding-right: 2%;
-    }
-    
-    .icon2 {
-        padding-top: 1%;
-        padding-bottom: 1%;
-        padding-left: 1%;
-    }
-    
-            #active2 {
-            font-family: 'Oswald', sans-serif;
-            background-color: #333333;
-            display: block;
-            padding: 8px 16px;
-            text-decoration: none;
-            text-align: center;
-            
-        }
-    
-    #active2 a {
-        text-decoration: none;
-        color: white;
-    }
-                    
-    .footer2 {
-         background-color: black;
-         background-size: contain;
-         background-position: center;
-         position: absolute;
-         width: 100%;
-         height: 240px;
-         text-align: center;
-         color: white;
-         font-family: 'Droid Sans', sans-serif;
-         margin: 0 0 0 0;
-        
-    } 
-                    
-                   .atfootlogo2{
+              .atfootlogo2{
                         float: left;
                         height: 100px;
                         width: 100px;
                         margin-top: 50px;
-                        margin-left: 4%;
+                        margin-left: 8%;
                     }
-                    
-                     .ydfootlogo2{
-                        float: right
+            
+            .ydfootlogo2{
+                        float: right;
                         height: 100px;
                         width: 100px;
                         margin-top: 50px;
-                        margin-right: 4%;
+                        margin-right: 8%;
+                        
                     }
-        
-    .footercontent2 {  
-        position: absolute;
-        left:50%;
-        padding-top: 4%;
-        height: 200px;
-        width: 400px;
-        margin-left: -200px;
-    }
-    
-    .fa {
-    padding: 1%;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-  }
-    .fa:hover {
-    opacity: 0.5;
-    }
-    .fa-facebook {
-  background-color: black;
-  color: white;
-    }
-    .fa-twitter {
-  background-color: black;
-  color: white;
-    }
-    
-    .fa-instagram {
-  background-color: black;
-  color: white;
-        
-    }
-    
-    .fa-youtube {
-    background-color: black;
-    color: white;
-        
-    }
             
-            
-        }
-        
-        /*!!!!!!!!!!END MED TABLET CSS!!!!!!!!!*/
-        
-        /*!!!!!!!!!!BEGIN MOBILE PHONES!!!!!!!!!*/
-        
-        @media only screen and (max-width: 479px) {
-               
-                    
-            .navwrapper {
-                display: none;
-            }
-            
-            .ydwrapper {
-                display: none;
-            }
-            
-            .whwrapper {
-                display: none;
-            }
-            
-            .footer {
-                display: none;
-            }
-            
-            
-            .footlogo2wrap{
-                display: none;
-            }
-    body {
-        margin: 0;
-        overflow-x: hidden;
-    }
-            
-            .navwrapper {
-                display: none;
-            }
-            
-    .nav2 {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #233e6c;
-    width: 100%;
-}
-.navbar2 a {
-    font-family: 'Oswald', sans-serif;
-    display: block;
-    color: white;
-    padding: 8px 16px;
-    text-decoration: none;
-    text-align: center;
-}
-.navbar2 a:hover {
-        background-color: #4d4d4d;
-}
-    
-    .ydd {
-        color: white;
-        float: right;
-        padding-top: 4%;
-        padding-right: 2%;
-    }
-    
-    .icon2 {
-        padding-top: 1%;
-        padding-bottom: 1%;
-        padding-left: 1%;
-    }
-    
-            #active2 {
-            font-family: 'Oswald', sans-serif;
-            background-color: #333333;
-            display: block;
-            padding: 8px 16px;
-            text-decoration: none;
-            text-align: center;
-            
-        }
-    
-    #active2 a {
+            .emailandphone{
+        color: #949494;
+        font-family: 'Oswald', sans-serif;
         text-decoration: none;
-        color: white;
+        font-size: 10;
     }
             
-            .footer2 {
-         background-color: black;
-         background-size: contain;
-         background-position: center;
-         position: absolute;
-         width: 100%;
-         height: 240px;
-         text-align: center;
-         color: white;
-         font-family: 'Droid Sans', sans-serif;
-         margin: 0 0 0 0;
+        .qhead, .nirhead, .cvhead{
+        font-size: 40;
+        padding-top: 5%;
+        font-weight: bolder;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        text-align: center;
+    }
+            
+            .cvdesc{
+                padding-top: 1%;
+            }
+            
+            .qdesc{
+                color:#494949;
+            }
+            
+            .qhead{
+                padding-bottom: 3%;
+            }
+            .subnirhead{
+        font-size: 18;
+        padding-bottom: 3%;
+        font-weight: bolder;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        text-align: center; 
+            }
+            
+            .nirdesc{
+                padding-top: 3%;
+            }
+            
         
-    } 
-        
-    .footercontent2 {  
-        position: absolute;
-        left:50%;
-        padding-top: 4%;
-        height: 200px;
-        width: 400px;
-        margin-left: -200px;
-    }
-    
-    .fa {
-    padding: 1%;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-  }
-    .fa:hover {
-    opacity: 0.5;
-    }
-    .fa-facebook {
-  background-color: black;
-  color: white;
-    }
-    .fa-twitter {
-  background-color: black;
-  color: white;
-    }
-    
-    .fa-instagram {
-  background-color: black;
-  color: white;
+            
+               .productpic{
+                width: 40%;
+                padding-left: 4%; 
+                padding-right: 1%;   
+                float: left;
+                    }
+            
+
+            
+            .sensinghead, .inclusionhead{
+                padding-top: 10%;
+            }
+            
+            #topsesnorwrap{
+                padding-bottom; 3%;
+            }
+            
+            .cvpic{
+            padding-top: 2%;
+            }
+            
+  
+        .productdesc{
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        color: #494949;
+        font-size: 17;
+        padding-left: 1%;
+        padding-right: 4%;    
+        text-align: center;
         
     }
-    
-    .fa-youtube {
-    background-color: black;
+            
+    .dealer{
+    background-color: #233e6c;
+    border: none;
     color: white;
-        
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 18;
+    height: 50px;
+    width: 200px;
+    float: right;
+    text-align: center; 
+
     }
+            
+    .sixmonth, .oneyear{
+    background-color: #233e6c;
+    border: none;
+    color: white;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 15;
+    height: 40px;
+    width: 180px;
+    margin-right: 1%;
+     float: left;
+            }
+            
+   
+            .sixmspace{
+                padding-right: 2%;
+            }
+            
+
+            
+            .cvbtnwrap{
+               padding-left: 47%; 
+            padding-top: 1%;
+            padding-bottom: 5%;  
+            
+            }
+            
+            
+            
+            .dealerwrap{
+                float: right;
+               padding-right: 16%;
+            }
+            
+            .toplistmobile{
+                padding-top: 12%;
+            }
+
+            
+            .motorhead, .controllerhead, .airframehead, .avionicshead, .sensinghead, .inclusionhead{
+            text-align: center;
+            font-size: 30;
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+            font-weight: bold;
+            }
+    
+    .avionicslist, .controllerlist, .airframelist, .motorlist, .sensinglist, .inclusionlist{
+        font-size: 13;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        text-align: center;
+        width: 100%;
+    }
+            
+            
+            #avionicswrap{
+                width: 40%;
+                text-align: center;
+                margin-left: 8%;
+            }
+            
+            #inclusionwrap{
+                width: 40%;
+                text-align: center;
+                margin-left: 11%;
+                
+            }
+            
+            #sensingwrap{
+                width: 40%;
+                text-align: center;
+                margin-right: 11%;
+                float: right;
+                
+            }
+            
+            #sensorwrap{
+                padding-top: 3%;
+                padding-bottom: 9%;
+            }
+            
+            #airframewrap{
+                width: 40%;
+                text-align: center;
+                float: right;
+                margin-right: 9%;
+            }
+            
+                #motorwrap{
+                width: 40%;
+                text-align: center;
+                float: right;
+                margin-right: 8%;    
+            }
+            
+            #controllerwrap{
+                width: 40%;
+                text-align:center;
+                margin-left: 9%;
+            }
+            
+            .bottomlistmobile{
+                padding-bottom: 6%;
+            }
+            
+            #footerpushfromlist{
+                padding-bottom: 12%;
+            }
+            
             
             
         }
+            /*!!!!!!!!!!END LARGE TABLET CSS!!!!!!!!!!*/
         
-        /*!!!!!!!!!!END MOBILE PHONE CSS!!!!!!!!!!*/       
+        @media only screen and (max-width: 414px) {
+            
+            body,html{
+                
+            } 
+            
+            .productdesc{
+                font-size: 11;
+            }
+            
+            .qdesc{
+                padding-top: 2%;
+            }
+            
+            .nirpic{
+                padding-top: 2%;
+            }
+            
+            .dealerwrap{
+                padding-right: 25%;
+                padding-top: 2%;
+                padding-bottom: 3%;
+            }
+            
+            .qhead, .nirhead, .cvhead{
+                font-size: 20;
+            }
+            
+            .atfootlogo2, .ydfootlogo2{
+                display:none;
+            }
+            
+            .oneyear, .sixmonth{
+                width: 150px;
+                font-size: 12;
+                height: 35px;
+            }
+            
+            .cvbtnwrap{
+               float: right;
+               padding-top: 5%;
+                margin-right: 30%;
+                padding-bottom: 30px;
+            }
+            
+            .sixmspace{
+                padding-bottom: 40px;
+            }
+            
+            #inclusionwrap{
+                width: 35%;
+                text-align: center;
+                margin-left: 8%;
+                
+            }
+            
+            #sensingwrap{
+                width: 35%;
+                text-align: center;
+                margin-right: 8%;
+                float: right;
+                
+            }
+            
+            .motorhead, .controllerhead, .airframehead, .avionicshead, .sensinghead, .inclusionhead{
+            text-align: center;
+            font-size: 21;
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+            font-weight: bold;
+            }
+            
+ 
+            .customwrap{
+                margin-top: 100px;
+            }
+           
+            .spacer1{
+                padding-bottom: 80%;
+            }
+
+        }
+        
+        @media only screen and (max-width: 375px) {
+            
+            html, body{
+                width: 102%;
+            }
+            
+            .footer2{
+                width: 103%;
+            }
+            
+        }
+        
+        @media only screen and (max-width: 360px) {
+            
+            html, body{
+                width: 103%;
+            }
+            
+            .footer2{
+                width: 104%;
+            }
+            
+            .qhead, .nirhead, .cvhead{
+                font-size: 25;
+            }
+            
+            .productdesc{
+                font-size: 10;
+            }
+            
+            spacer1{
+                padding-bottom: 110%;
+            }
+            
+        }
+        
+        @media only screen and (max-width: 320px) {
+            
+            html, body{
+                width: 106%;
+            }
+            
+            .footer2{
+                width: 112%;
+            }
+            
+            .productdesc{
+                font-size: 9;
+            }
+            
+            .motorhead, .controllerhead, .airframehead, .avionicshead, .sensinghead, .inclusionhead{
+            text-align: center;
+            font-size: 18.5;
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+            font-weight: bold;
+            }
+            
+            .spacer1{
+                padding-bottom: 100%;
+            }
+
+ 
+            
+        }
+        
+        
+        
     </style>
     
-    <body>
-        
-        <div class = "desktopwrap">
+    
+    
+     <body>
+    
+            <div class = "desktopwrap">
     
     <div class = "navwrapper">
         
@@ -969,7 +1009,13 @@ $(document).ready(function(){
   <a class = "navbar" href="https://htmlpreview.github.io/?https://github.com/willcoleman/yielddefendertestingsite/blob/master/YieldDefenderProducts.html">PRODUCTS</a>
   <a class = "navbar" href="https://htmlpreview.github.io/?https://github.com/willcoleman/yielddefendertestingsite/blob/master/YieldDefenderCompany.html">COMPANY</a>
   <a class = "navbar" href="https://htmlpreview.github.io/?https://github.com/willcoleman/yielddefendertestingsite/blob/master/YieldDefenderSupport.html">SUPPORT</a>
-    <img class = "icon" src = "https://res.cloudinary.com/yielddefender/image/upload/q_100/v1495727268/YD_logo_bxbcsu.png" height = "80px" width = "130px">
+    <div class = "iconwrap"><img class = "icon" src = "https://res.cloudinary.com/yielddefender/image/upload/q_100/v1495727268/YD_logo_bxbcsu.png" height = "80px" width = "130px"></div>
+    <div class = "emailandphone">
+    info@yielddefender.com
+    <br>
+    870-270-4255
+    </div>
+
     
     </div><!--navigation-->
         
@@ -1098,34 +1144,34 @@ $(document).ready(function(){
             <div class = "row" id = "NIRfeatures">
             
             <div class = "col-6 listleft">
-                <div class = "featurehead">List1 Head</div>
+                <div class = "featurehead">Inclusions</div>
                 <hr>
                 
                 <div class = "list">
-                 &bull;  Pixhawk / PX4 Trigger Cable Included
+                 &bull;  Pixhawk / PX4 Trigger Cable
                 <br>
-                &bull;  Battery and Charger Included
+                &bull;  Battery and Charger
                 <br>
                 &bull;  Built-in GPS
                 <br>
-                &bull;  Time Interval & GPS Trigger CHDK programs 
+                &bull;  Time Interval & GPS Trigger CHDK
                 </div>
                 
                 
             </div>
                 
             <div class = "col-6 listright">
-                <div class = "featurehead">List2 Head</div>
+                <div class = "featurehead">Sensing</div>
                 <hr>
                 
                 <div class = "list">
-                &bull;  ?
+                &bull;  Real Time Crop Health Feedback
                 <br>
-                &bull;  ?
+                &bull;  Increased Yield Results
                 <br>
-                &bull;  ?
+                &bull;  Daytime NIR Usage
                 <br>
-                &bull;  ?
+                &bull;  Developed Through CropVue Imaging
                 </div>
                 
                 
@@ -1163,38 +1209,30 @@ $(document).ready(function(){
             <div class = "row" id = "NIRfeatures">
             
             <div class = "col-6 listleft">
-                <div class = "featurehead">List1 Head</div>
+                <div class = "featurehead">Customization</div>
                 <hr>
                 
                 <div class = "list">
-                &bull;  Secure in field results without internet
+                &bull;  Manual Manipulation for Higher Accuracy
                 <br>
-                &bull;  Low resolution data with very quick processing 
+                &bull;  Shape File Creation 
                 <br>
-                &bull;  Project Creation for Field Management and collaboration 
-                <br>
-                &bull;  Manual manipulation for higher accuracy
-                <br>
-                &bull;  Shape File creation for Importing of prescription software 
-                <br>
-                &bull;  Various NDVI options
+                &bull;  Prescription Importing 
                 </div>
                 
                 
             </div>
                 
             <div class = "col-6 listright">
-                <div class = "featurehead">List2 Head</div>
+                <div class = "featurehead">Processing</div>
                 <hr>
                 
                 <div class = "list">
-                &bull;  ?
+                &bull;  No Internet Connection Required
                 <br>
-                &bull;  ?
+                &bull;  Low Resolution Data Files  
                 <br>
-                &bull;  ?
-                <br>
-                &bull;  ?
+                &bull;  Quick Data Handling
                 </div>
                 
                 
@@ -1241,15 +1279,17 @@ $(document).ready(function(){
             </div><!--desktopfooter-->
             
             </div><!--desktopwrap-->
-        
-            <div class = "mobilewrapper">
+         
+         
+         
+         <div class = "mobilewrapper">
 
         
         
 <div class = "navwrapper2">
 <ul class = "nav2">
     <center>
-        <li class = "nbhead2"><a href="#company"><img class = "icon2" src = "https://res.cloudinary.com/yielddefender/image/upload/q_100/v1495727268/YD_logo_bxbcsu.png" height = "60px" width = "80px"></a>
+        <li class = "nbhead2"><a href="#company"><img class = "icon2" src = "https://res.cloudinary.com/yielddefender/image/upload/q_100/v1495727268/YD_logo_bxbcsu.png" height = "60px" width = "80px"></a><div class = "emailandphone">info@yielddefender.com<br>870-270-4255</div>
   <li class = "navbar2"><a href="https://htmlpreview.github.io/?https://github.com/willcoleman/yielddefendertestingsite/blob/master/YieldDefenderHome.html">HOME</a></li>
   <li class = "navbar2"><a href="https://htmlpreview.github.io/?https://github.com/willcoleman/yielddefendertestingsite/blob/master/YieldDefenderProducts.html">PRODUCTS</a></li>
   <li class = "navbar2"><a href="https://htmlpreview.github.io/?https://github.com/willcoleman/yielddefendertestingsite/blob/master/YieldDefenderCompany.html">COMPANY</a></li>
@@ -1259,6 +1299,231 @@ $(document).ready(function(){
     
 </div>
                 
+                <center><div class = "qhead">HE Quad</div></center>
+                
+                <img class = "productpic" src = "https://res.cloudinary.com/yielddefender/image/upload/v1501007638/rsz_1yield-defender-1-1080x675_k5nuwf.jpg">
+                
+                <div class = "qdesc"><div class = "productdesc">The HE Quad is our Unmanned Air Vehicle which allows you to complete a variety of missions without any pilot experience. It's large motors powering the 16-inch carbon fiber propellers contribute to an industry leading flight time on a single battery charge. </div>
+                    <br>
+                    <div class = "dealerwrap"><button class = "dealer">Contact a Dealer</button></div>
+                    
+                    </div>
+                
+                    
+                    
+ 
+                <div class = "toplistmobile">
+                
+                <div id = "motorwrap">
+                <div class = "motorhead">Motor</div>
+               
+              
+              <div class = "motorlist"> 
+              
+                &bull;  RPM/v: 380 Kv
+                <br>
+                &bull;  16x5.5 Carbon FIber Propellers
+                <br>
+                &bull;  25 Amp Brushless Motor Speed Controller
+                <br>
+                &bull;  Throttle Range Setting
+                <br>
+                &bull;  Brake Battery type 
+                <br>
+                &bull;  Cutoff mode, Start mode, and Timing
+                </div>
+                    
+         
+                </div><!--motorwrap-->
+                
+                               <div id = "avionicswrap">
+                           <div class = "avionicshead">Avionics</div>
+                
+                    
+                   
+                
+                <div class = "avionicslist">
+                &bull;  Battery: LiPo 4S 8000mAh
+                <br>
+                &bull;  GPS with Digital Compass
+                <br>
+                &bull;  Flight Computer: 168 MHz Cortex, M4F CPU
+                <br>
+                &bull;  SD Card and USB Adapter
+                <br>
+                &bull;  Gyroscope, GPS, Baromater & Accelerometer / Magnetometer Onboard Sensors 
+                <br>
+                &bull;  Telemetry - 915MHz
+                </div>
+                    
+                  
+                    
+                    </div><!--avionics wrap-->
+                    
+                    </div><!--toplistmobile-->
+                <br>
+                
+                <div class = "bottomlistmobile">
+                    
+                    <div id = "airframewrap">
+                    
+                    <div class = "airframehead">Airframe</div>
+                
+                
+                <div class = "airframelist">
+                &bull;  Robust, Multi-Tier Platform
+                <br>
+                &bull;  Carbon Fiber Arms / Landing Gear
+                <br>
+                &bull;  Fully Replaceable Parts
+                </div>
+                        
+                        </div><!--airframewrap-->
+                    
+                
+                <div id = "controllerwrap">
+                
+                <div class = "controllerhead">Controller</div>
+                
+                
+                    
+                <div class = "controllerlist">
+                &bull;  Full range, 2.4Ghz 7 Channels
+                <br>
+                &bull;  Proven DSMX technology
+                <br>
+                &bull;  LCD display
+                </div>
+                    
+                    
+                </div><!--controllerwrap-->
+                
+                
+                </div><!--bottomlistmobile-->
+                
+                <br>
+                
+                <div id = "sensorwrap">
+                    
+                    <div id = "topsensorwrap">
+                
+            <center><div class = "nirhead">NIR(NDVI) Sensor / Camera</div>
+            <div class = "subnirhead">(Included with HE Quad)</div></center>
+                
+                        <div class = "nirpic">
+                <img class = "productpic" src = "https://res.cloudinary.com/yielddefender/image/upload/v1501015483/NIR_lgoqnb.png">
+                        </div>
+                            
+                <div class = "nirdesc"><div class = "productdesc">CropVue is our low-resolution data imaging software that can be run in the field without any internet connection. This program includes multiple sharing, customization and NDVI options. Our licensing options come in six or twelve-month packages. </div></div>
+                
+                        </div>
+                    <br>
+                    
+                    <div id = "nirlistwrap">
+                
+                
+                <div id = "sensingwrap">
+                
+                <div class = "sensinghead">Sensing</div>
+                
+                <div class = "sensinglist">
+                &bull;  Real Time Crop Health Feedback
+                <br>
+                &bull;  Increased Yield Results
+                <br>
+                &bull;  Daytime NIR Usage
+                <br>
+                &bull;  Developed Through CropVue Imaging
+                </div>
+                    
+                    </div><!--nirlistwrap-->
+                <div id = "inclusionwrap">
+                
+                <div class = "inclusionhead">Inclusions</div>
+    
+                <div class = "inclusionlist">
+                &bull;  Pixhawk / PX4 Trigger Cable
+                <br>
+                &bull;  Battery and Charger
+                <br>
+                &bull;  Built-in GPS
+                <br>
+                &bull;  Time Interval & GPS Trigger CHDK
+                </div>
+                
+                </div><!--inclusionwrap-->        
+                
+                
+                </div><!--sensingwrap-->
+                    
+                </div><!--sensingwrap-->
+                
+                <div id = "cropvuewrap">
+                
+                <div class = "cvhead">CropVue</div>
+                    
+                <div class = "cvpic">   
+                 <img class = "productpic" src = "https://res.cloudinary.com/yielddefender/image/upload/v1501016349/CropVue_vk5mo1.png">
+                   </div>  
+                
+                <div class = "cvdesc"><div class = "productdesc">CropVue is our low-resolution data imaging software that can be run in the field without any internet connection. This program includes multiple sharing, customization and NDVI options. Our licensing options come in six or twelve-month packages. </div></div>
+                
+                <div class = "cvbtnwrap">
+                <div class = "sixmspace"><button class = "sixmonth">(6 Month License)<br>$437.00</button></div>
+                    <div class = "oneyearwrap"><button class = "oneyear">(1 Year License)<br>$824.00 (SAVE $50)</button></div>
+               
+                
+                </div>
+                   
+                <br>    
+                    
+                    <div id = "footerpushfromlist">
+                    
+                    <div id = "nirlistwrap">
+                
+            
+                        
+                <div id = "sensingwrap">
+                
+               
+                <div class = "sensinghead">Processing</div>
+                
+                <div class = "sensinglist">
+                &bull;  No Internet Connection Required
+                <br>
+                &bull;  Low Resolution Data Files  
+                <br>
+                &bull;  Quick Data Handling
+                </div>
+                    
+                    </div><!--nirlistwrap-->
+                    
+             
+                    
+                <div id = "inclusionwrap">
+                
+                <div id = "customwrap">
+                    <div class = "spacer1"></div>
+                    <div class = "inclusionhead">Customization</div>
+    
+                    
+                <div class = "inclusionlist">
+                &bull;  Manual Manipulation for Higher Accuracy
+                <br>
+                &bull;  Shape File Creation 
+                <br>
+                &bull;  Prescription Importing 
+                </div>
+                
+                </div>        
+                <div class = "spacer2"> </div>
+                        </div><!--inclusionwrap-->
+                
+                </div><!--sensingwrap-->
+                
+                    </div>
+                
+                </div><!--cropvuewrap-->
                 </div><!--mobilewrapper-->
         
         
@@ -1294,7 +1559,7 @@ $(document).ready(function(){
                 
                 <div class = "footlogo2wrap">
                 
-                <div class = "atfootlogo2"><img src = "https://res.cloudinary.com/yielddefender/image/upload/v1495727268/YD_logo_bxbcsu.png" height = "100%" width = "100%"></div> 
+                <div class = "atfootlogo2"><img src = "https://res.cloudinary.com/yielddefender/image/upload/v1495727268/YD_logo_bxbcsu.png" height = "100%" width = "130%"></div> 
                 
                 <div class = "ydfootlogo2"><img src = "https://airtractor.com/wp-content/themes/AirTractorChild/images/AT-Logo.svg" height = "100%" width = "100%"></div> 
     
@@ -1304,7 +1569,11 @@ $(document).ready(function(){
     
     </div><!--endmobilefooter-->
     
-        
-        </body>
+    
+    
+    
+    </body>
+    
+    
     
 </html>
