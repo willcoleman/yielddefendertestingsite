@@ -77,6 +77,7 @@ $(document).ready(function(){
     
     body {
         margin: 0;
+        overflow-x: hidden;
     }
     
     .navwrapper2 {
@@ -337,6 +338,9 @@ $(document).ready(function(){
         padding-right: 24.99%;
         font-family: "Trebuchet MS", Helvetica, sans-serif;
         color: #494949;
+        font-size: 23;
+        text-align: center;
+        padding-bottom: 15px;
     }
     
     
@@ -497,7 +501,41 @@ $(document).ready(function(){
         
         /*!!!!!!!!!!END DESKTOP CSS!!!!!!!!!!*/
         
+        @media only screen and (max-width: 1024px) {
+            body{
+                overflow-x: hidden;
+                width: 85%;
+            }   
+            
+            .productdesc{
+                font-size: 15;
+            }
+            
+     
+        }
+        
     /*!!!!!!!!!!BEGIN LARGE TABLET CSS!!!!!!!!!!*/
+        
+        @media only screen and (max-width: 768px) {
+            
+            #customwrap{
+                margin-top: 30px;
+            }
+            
+            .atfootlogo2{
+                display: none;
+            }
+            
+            .ydfootlogo2{
+                display: none;
+            }
+            
+            .footercn, .social, .footerhead{
+                position: relative;
+                right: 45px;
+            }
+            
+        }
         
         @media only screen and (max-width: 900px) {
             
@@ -852,7 +890,7 @@ $(document).ready(function(){
             } 
             
             .productdesc{
-                font-size: 11;
+                font-size: 9;
             }
             
             .qdesc{
@@ -918,11 +956,15 @@ $(document).ready(function(){
             
  
             .customwrap{
-                margin-top: 100px;
+                margin-top: 50px;
             }
            
             .spacer1{
-                padding-bottom: 80%;
+                padding-bottom: 100%;
+            }
+            
+            .dbwrap{
+                padding-right: 20px;
             }
 
         }
@@ -1033,7 +1075,7 @@ $(document).ready(function(){
             </div><!--col6 quad-->
             
             <div class ="col-6 right">
-            <div class = "productdesc">Description Placeholder----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</div>
+            <div class = "productdesc">The HE Quad is our Unmanned Air Vehicle which allows you to complete a variety of missions without any pilot experience. It's large motors powering the 16-inch carbon fiber propellers contribute to an industry leading flight time on a single battery charge. Our quad is capable of handling tasks for farmers, hunters, miners and much more. </div>
                 
             <div class = "dbwrap"><button class = "dealer">Contact a Dealer</button></div>
 
@@ -1131,7 +1173,7 @@ $(document).ready(function(){
             </div><!--col6 quad-->
             
             <div class ="col-6 right">
-            <div class = "productdesc">Description Placeholder----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</div>
+            <div class = "productdesc">Our sensor captures near infrared (NIR) and blue light videos/photos in the same image, but different color channels. The Camera which contains the sensing software has normalized difference vegetation index (NDVI) filter applied, and the photos from the mission can then be post processed in order to better determine the level of photosynthesis. </div>
                 
             
 
@@ -1192,7 +1234,7 @@ $(document).ready(function(){
             </div><!--col6 quad-->
             
             <div class ="col-6 right">
-            <div class = "productdesc">Description Placeholder----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</div>
+            <div class = "productdesc">CropVue ‘places’ images, rather than stitches, which results in rapid image processing. This program includes allows for field management so the user may collaborate and share the information with whomever they desire. CropVue licensing packages come in subscriptions of six and twelve months. </div>
                 
                 <div class = "cvbtnwrap">
                 <button class = "sixmonth">(6 Month License)<br>$437.00</button>
@@ -1303,7 +1345,7 @@ $(document).ready(function(){
                 
                 <img class = "productpic" src = "https://res.cloudinary.com/yielddefender/image/upload/v1501007638/rsz_1yield-defender-1-1080x675_k5nuwf.jpg">
                 
-                <div class = "qdesc"><div class = "productdesc">The HE Quad is our Unmanned Air Vehicle which allows you to complete a variety of missions without any pilot experience. It's large motors powering the 16-inch carbon fiber propellers contribute to an industry leading flight time on a single battery charge. </div>
+                <div class = "qdesc"><div class = "productdesc">The HE Quad is our Unmanned Air Vehicle which allows you to complete a variety of missions without any pilot experience. It's large motors powering the 16-inch carbon fiber propellers contribute to an industry leading flight time on a single battery charge. Our quad is capable of handling tasks for farmers, hunters, miners and much more.  </div>
                     <br>
                     <div class = "dealerwrap"><button class = "dealer">Contact a Dealer</button></div>
                     
@@ -1414,7 +1456,7 @@ $(document).ready(function(){
                 <img class = "productpic" src = "https://res.cloudinary.com/yielddefender/image/upload/v1501015483/NIR_lgoqnb.png">
                         </div>
                             
-                <div class = "nirdesc"><div class = "productdesc">CropVue is our low-resolution data imaging software that can be run in the field without any internet connection. This program includes multiple sharing, customization and NDVI options. Our licensing options come in six or twelve-month packages. </div></div>
+                <div class = "nirdesc"><div class = "productdesc">Our sensor captures near infrared (NIR) and blue light videos/photos in the same image, but different color channels. The Camera which contains the sensing software has normalized difference vegetation index (NDVI) filter applied, and the photos from the mission can then be post processed in order to better determine the level of photosynthesis.  </div></div>
                 
                         </div>
                     <br>
@@ -1466,7 +1508,7 @@ $(document).ready(function(){
                  <img class = "productpic" src = "https://res.cloudinary.com/yielddefender/image/upload/v1501016349/CropVue_vk5mo1.png">
                    </div>  
                 
-                <div class = "cvdesc"><div class = "productdesc">CropVue is our low-resolution data imaging software that can be run in the field without any internet connection. This program includes multiple sharing, customization and NDVI options. Our licensing options come in six or twelve-month packages. </div></div>
+                <div class = "cvdesc"><div class = "productdesc">CropVue ‘places’ images, rather than stitches, which results in rapid image processing. This program includes allows for field management so the user may collaborate and share the information with whomever they desire. CropVue licensing packages come in subscriptions of six and twelve months.  </div></div>
                 
                 <div class = "cvbtnwrap">
                 <div class = "sixmspace"><button class = "sixmonth">(6 Month License)<br>$437.00</button></div>
@@ -1549,12 +1591,14 @@ $(document).ready(function(){
         <br><br>
     <span class = "footercn">870-270-4255</span>
         <br><br>
+                    
+                    <div class = "social">
 
 <a href="https://www.facebook.com/Hangar78UAV/" class="fa fa-facebook"></a>
 <a href="https://twitter.com/yielddefender" class="fa fa-twitter"></a>
 <a href="https://www.youtube.com/channel/UCISKEh-bwGRFuDNT2zEY76A" class="fa fa-youtube"></a>
 <a href="https://www.instagram.com/yielddefender/" class="fa fa-instagram"></a>
-    
+            </div>
     </div>
                 
                 <div class = "footlogo2wrap">
