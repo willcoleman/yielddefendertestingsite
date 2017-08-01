@@ -161,49 +161,7 @@ $(document).ready(function(){
             height: 100%;
         }
     
-     .footer {
-         background-color: #4d4d4d;
-         background-size: cover;
-         background-position: center;
-         position: absolute;
-         width: 100%;
-         text-align: center;
-         color: white;
-         font-family: 'Droid Sans', sans-serif;
-         margin: 0 0 0 0;
-        
-    }
-        
-    .atfootlogo {
-        padding-top: 1.5%;
-        float: left;
-        padding-left: 2%;
-        padding-bottom: 1%;
-    }
     
-    .ydfootlogo {
-        padding-top: 1.5%;
-        padding-right: 2%;
-        padding-bottom: 1%;
-        float: right;
-    }
-    
-.footercontent { 
-        position: absolute;
-        left:50%;
-        padding-top: 2%;
-        height: 200px;
-        width: 400px;
-        margin-left: -200px;
-    }
-    
-    .fa {
-    padding: 1%;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-  }
     .fa:hover {
     opacity: 0.7;
     }
@@ -228,15 +186,19 @@ $(document).ready(function(){
         
     }
     
-                .footer {
+                 .footer {
          background-color: #4d4d4d;
          background-size: cover;
          background-position: center;
          position: absolute;
-         width: 100%;
+        height: 160px;
+        width: 100%;
+        overflow:hidden;;
          text-align: center;
          color: white;
+         font-family: 'Droid Sans', sans-serif;
          margin: 0 0 0 0;
+        
         
     } 
         
@@ -245,6 +207,7 @@ $(document).ready(function(){
         float: left;
         padding-left: 4%;
         padding-bottom: 1%;
+        
     }
     
     .ydfootlogo {
@@ -252,24 +215,26 @@ $(document).ready(function(){
         padding-right: 2%;
         padding-bottom: 1%;
         float: right;
+        
     }
     
     .footercontent { 
         position: absolute;
         left:50%;
-        padding-top: 2%;
-        height: 200px;
+        padding-top: 1%;
+        height: 220px;
         width: 400px;
         margin-left: -200px;
+        font-size: 12;
     }
     
-    .fa {
+    .smlinks {
     padding: 1%;
-    font-size: 30px;
-    width: 30px;
+    font-size: 22px;
     text-align: center;
     text-decoration: none;
   }
+
     .fa:hover {
     opacity: 0.7;
     }
@@ -350,13 +315,43 @@ $(document).ready(function(){
         float: left;
     }
     
-    .productdesc{
+    .quaddesc{
+        padding-left: 4.33%;
+        padding-right: 24.99%;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        color: #494949;
+        font-size: 19;
+        padding-top: 20px;
+        padding-bottom: 15px;
+    }
+    
+    .sensordesc{
+        padding-left: 4.33%;
+        padding-right: 24.99%;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        color: #494949;
+        font-size: 19;
+        padding-top: 35px;
+        padding-bottom: 15px;
+    }
+    
+    .mpdesc{
+        padding-left: 4.33%;
+        padding-right: 24.99%;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        color: #494949;
+        font-size: 18;
+        padding-top: 0px;
+        padding-bottom: 2px;
+    }
+    
+    .cropvuedesc{
         padding-left: 4.33%;
         padding-right: 24.99%;
         font-family: "Trebuchet MS", Helvetica, sans-serif;
         color: #494949;
         font-size: 20;
-        text-align: center;
+        padding-top: 35px;
         padding-bottom: 15px;
     }
     
@@ -371,6 +366,22 @@ $(document).ready(function(){
     width: 200px;
     }
     
+    .mpdl{
+    background-color: #233e6c;
+    border: none;
+    color: white;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 18;
+    height: 50px;
+    width: 250px;    
+    }
+    
+    .mpdl:hover{
+        text-decoration: none;
+        opacity: 0.5;
+        cursor: pointer;
+    }
+    
     .dealer:hover{
         text-decoration: none;
         opacity: 0.5;
@@ -378,14 +389,18 @@ $(document).ready(function(){
     }
     
     
-    .dbwrap{
+    .dbwrap, .mpwrap{
         padding-left: 4.33%;
         padding-right: 24.99%;
         text-align: center;
     }
     
-    #quadfeatures, #NIRfeatures, #missionplanner{
+    #quadfeatures, #NIRfeatures{
         padding-bottom: 16%;
+    }
+    
+    #missionplanner{
+        padding-bottom: 5%;
     }
     
     .mphead{
@@ -410,7 +425,7 @@ $(document).ready(function(){
     .list{
         font-size: 16;
         font-family: "Trebuchet MS", Helvetica, sans-serif;
-        text-align: center;
+        padding-left: 30px;
         width: 100%;
     }
     
@@ -1117,7 +1132,7 @@ $(document).ready(function(){
                 <br>
                 &bull;  Near Infrared (NIR) sensor
                 <br>
-                &bull;  1 year license to CropVue Imaging processing software
+                &bull;  1 year or 6 month license to CropVue Imaging processing software
                 <br>
                 &bull;  3 rechargeable lithium polymer batteries 
                 <br>
@@ -1139,7 +1154,7 @@ $(document).ready(function(){
             </div><!--col6 quad-->
             
             <div class ="col-6 right">
-            <div class = "productdesc">The HE Quad allows you to complete a variety of missions without any pilot experience. Its large motors powering the 16-inch carbon fiber propellers contribute to an industry-leading flight time on a single battery charge. It can cover up to 300 acres in a mission.  It is fully-autonomous and has precision flight capabilities to assure consistent, contiguous data capture. Our quad is capable of handling tasks for farmers, hunters, miners and much more. </div>
+            <div class = "quaddesc">The HE Quad allows you to complete a variety of missions without any pilot experience. Its large motors powering the 16-inch carbon fiber propellers contribute to an industry-leading flight time on a single battery charge. It can cover up to 300 acres in a mission.  It is fully-autonomous and has precision flight capabilities to assure consistent, contiguous data capture. Our quad is capable of handling tasks for farmers, hunters, miners and much more. </div>
                 
             <div class = "dbwrap"><a href = "https://www.dropbox.com/s/7vf4xq2e5tjw0b8/YD%20-%20Dealer%20Application.pdf?dl=0"><button class = "dealer">Contact a Dealer</button></a></div>
 
@@ -1237,7 +1252,7 @@ $(document).ready(function(){
             </div><!--col6 quad-->
             
             <div class ="col-6 right">
-            <div class = "productdesc">Our sensor captures near infrared (NIR) and blue light videos/photos in the same image, but different color channels. The Camera which contains the sensing software has normalized difference vegetation index (NDVI) filter applied, and the photos from the mission can then be post processed in order to better determine the level of photosynthesis. </div>
+            <div class = "sensordesc">Our sensor captures near infrared (NIR) and blue light videos/photos in the same image, but different color channels. The Camera which contains the sensing software has normalized difference vegetation index (NDVI) filter applied, and the photos from the mission can then be post processed in order to better determine the level of photosynthesis. </div>
                 
             
 
@@ -1300,13 +1315,55 @@ $(document).ready(function(){
             </div>
                 
             <div class ="col-6 right">
-            <div class = "productdesc">The Yield Defender flight plan can be programmed from a laptop or PC with an easy-to-use Mission Planner that generates autonomous flight plans using satellite images.  Operator can program aircraft safety behavior, tune configuration parameters, define autonomous missions, and perform post-mission analysis.  The mission is uploaded via hardwire, USB connection, or wirelessly via telemetry into the aircraft’s onboard flight computer.</div>
-                
+            <div class = "mpdesc">The Yield Defender flight plan can be programmed from a laptop or PC with an easy-to-use Mission Planner that generates autonomous flight plans using satellite images.  Operator can program aircraft safety behavior, tune configuration parameters, define autonomous missions, and perform post-mission analysis.  The mission is uploaded via hardwire, USB connection, or wirelessly via telemetry into the aircraft's onboard flight computer.</div>
+            <br>
+            <div class = "mpwrap"><a href = "https://www.dropbox.com/s/7vf4xq2e5tjw0b8/YD%20-%20Dealer%20Application.pdf?dl=0"><button class = "mpdl">Mission Planner Download</button></a></div>
                 </div>
                 
                 
                 
             </div><!--row id mission planner-->
+                
+                        <div class = "row" id = "NIRfeatures">
+            
+            <div class = "col-6 listleft">
+                <div class = "featurehead">Interface</div>
+                <hr>
+                
+                <div class = "list">
+                 &bull;  Real Time GPS Coordinates & Attitude Values
+                <br>
+                &bull;  Help Guides and Step by Step Training
+                <br>
+                &bull;  Simple Point-and-click Flight Planning
+                <br>
+                &bull;  Full UAV Simulation
+                </div>
+                
+                
+            </div>
+                
+            <div class = "col-6 listright">
+                <div class = "featurehead">Configuration</div>
+                <hr>
+                
+                <div class = "list">
+                &bull;  Firmware for Various Vehicles 
+                <br>
+                &bull;  Full Parameter List and Customizations
+                <br>
+                &bull;  Download & Analyze Mission Logs
+                <br>
+                &bull;  Custom Telemetry Options
+                </div>
+                
+                
+            </div>
+                
+
+            
+            
+            </div><!--row nirfeatures-->
             
             <div class = "cvhead">CropVue Image Processing Software</div>
             
@@ -1320,7 +1377,7 @@ $(document).ready(function(){
             </div><!--col6 quad-->
             
             <div class ="col-6 right">
-            <div class = "productdesc">CropVue 'places' images, rather than stitches, which results in rapid image processing. This program allows for field management so the user may collaborate and share the information as desired. CropVue licensing packages come in subscriptions of six and twelve months. </div>
+            <div class = "cropvuedesc">CropVue 'places' images, rather than stitches, which results in rapid image processing. This program allows for field management so the user may collaborate and share the information as desired. CropVue licensing packages come in subscriptions of six and twelve months. </div>
                 
                 <div class = "cvbtnwrap">
                 <a href = "https://checkout.shopify.com/15417257/checkouts/d106913433296216ab8541870dd09c44?_fd=0&access_token=7ab5c5e59e815dfab6fe9e827fbdcd16"><button class = "sixmonth">(6 Month License)<br>$437.00</button></a>
@@ -1376,9 +1433,9 @@ $(document).ready(function(){
     
 <div class = "footer">
                 
-        <img class = "ydfootlogo" src = "https://airtractor.com/wp-content/themes/AirTractorChild/images/AT-Logo.svg" height = "230px" width = "250px">        
+    <a href = "https://airtractor.com/"><img class = "ydfootlogo" src = "https://airtractor.com/wp-content/themes/AirTractorChild/images/AT-Logo.svg" height = "150px" width = "172px"></a>      
     
-        <img class = "atfootlogo" src = "https://res.cloudinary.com/yielddefender/image/upload/v1495727268/YD_logo_bxbcsu.png" height = "230px" width = "320px">
+        <img class = "atfootlogo" src = "https://res.cloudinary.com/yielddefender/image/upload/v1495727268/YD_logo_bxbcsu.png" height = "150px" width = "208px">
 
             
                         
