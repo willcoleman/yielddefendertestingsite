@@ -319,6 +319,23 @@ $(document).ready(function(){
        
     }
     
+    .producthead{
+        font-size: 35;
+        font-weight: bolder;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+    }
+    
+    .components{
+        font-size: 30;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        width: 70%;
+        margin-left: 20%;
+        padding-top: 3%;
+        padding-bottom: 8%;
+    }
+    
+    
+    
     .productpic{
         width: 95%;
         padding-left: 24.99%;
@@ -338,7 +355,7 @@ $(document).ready(function(){
         padding-right: 24.99%;
         font-family: "Trebuchet MS", Helvetica, sans-serif;
         color: #494949;
-        font-size: 23;
+        font-size: 20;
         text-align: center;
         padding-bottom: 15px;
     }
@@ -367,8 +384,12 @@ $(document).ready(function(){
         text-align: center;
     }
     
-    #quadfeatures, #NIRfeatures{
+    #quadfeatures, #NIRfeatures, #missionplanner{
         padding-bottom: 16%;
+    }
+    
+    .mphead{
+        padding-bottom: 3%;
     }
     
     .avionics{
@@ -412,11 +433,15 @@ $(document).ready(function(){
     }
     
 
-    .nirhead, .cvhead{
+    .nirhead, .cvhead, .mphead{
         font-size: 45;
         font-weight: bolder;
         font-family: "Trebuchet MS", Helvetica, sans-serif;
         text-align: center;
+    }
+    
+    .mphead{
+       
     }
     
     .subnirhead{
@@ -429,6 +454,7 @@ $(document).ready(function(){
     
     #NIR{
         padding-bottom: 5%;
+        
     }
     
     .listleft{
@@ -693,7 +719,7 @@ $(document).ready(function(){
         font-size: 10;
     }
             
-        .qhead, .nirhead, .cvhead{
+        .qhead, .nirhead, .cvhead, .mphead{
         font-size: 40;
         padding-top: 5%;
         font-weight: bolder;
@@ -1050,6 +1076,8 @@ $(document).ready(function(){
             
         }
         
+        }
+        
         
         
     </style>
@@ -1078,6 +1106,26 @@ $(document).ready(function(){
     </div><!--navigation-->
         
     </div><!--navwrapper1-->
+                
+                
+                
+            <center><div class = "producthead">Yield Defender Unmanned Aerial System Components</div></center>
+                <div class = "components">
+                &bull;  High Endurance (HE) Unmanned Aerial Vehicle (UAV)
+                <br>
+                &bull;  Software for planning mission
+                <br>
+                &bull;  Near Infrared (NIR) sensor
+                <br>
+                &bull;  1 year license to CropVue Imaging processing software
+                <br>
+                &bull;  3 rechargeable lithium polymer batteries 
+                <br>
+                &bull;  Battery charger with DC 12v adapter for trucks, farm vehicles
+                <br>
+                &bull;  Transmitter, telemetry downlink and necessary cables
+    
+                </div>
             
             <center><div class = "qhead">HE Quad</div></center>
     
@@ -1091,7 +1139,7 @@ $(document).ready(function(){
             </div><!--col6 quad-->
             
             <div class ="col-6 right">
-            <div class = "productdesc">The HE Quad is our Unmanned Air Vehicle which allows you to complete a variety of missions without any pilot experience. It's large motors powering the 16-inch carbon fiber propellers contribute to an industry leading flight time on a single battery charge. Our quad is capable of handling tasks for farmers, hunters, miners and much more. </div>
+            <div class = "productdesc">The HE Quad allows you to complete a variety of missions without any pilot experience. Its large motors powering the 16-inch carbon fiber propellers contribute to an industry-leading flight time on a single battery charge. It can cover up to 300 acres in a mission.  It is fully-autonomous and has precision flight capabilities to assure consistent, contiguous data capture. Our quad is capable of handling tasks for farmers, hunters, miners and much more. </div>
                 
             <div class = "dbwrap"><a href = "https://www.dropbox.com/s/7vf4xq2e5tjw0b8/YD%20-%20Dealer%20Application.pdf?dl=0"><button class = "dealer">Contact a Dealer</button></a></div>
 
@@ -1117,7 +1165,7 @@ $(document).ready(function(){
                 <br>
                 &bull;  SD Card and USB Adapter
                 <br>
-                &bull;  Gyroscope, GPS, Baromater & Accelerometer / Magnetometer Onboard Sensors 
+                &bull;  Gyroscope, GPS, Barometer & Accelerometer / Magnetometer Onboard Sensors 
                 <br>
                 &bull;  Telemetry - 915MHz
                 </div>
@@ -1132,7 +1180,7 @@ $(document).ready(function(){
                 <div class = "list">
                 &bull;  RPM/v: 380 Kv
                 <br>
-                &bull;  16x5.5 Carbon FIber Propellers
+                &bull;  16x5.5 Carbon Fiber Propellers
                 <br>
                 &bull;  25 Amp Brushless Motor Speed Controller
                 <br>
@@ -1234,9 +1282,31 @@ $(document).ready(function(){
                 
                 
             </div>
+                
+
             
             
             </div><!--row nirfeatures-->
+                
+                        <div class = "mphead">Mission Planner</div>
+                
+            <div class = "row" id = "missionplanner">
+                
+            <div class = "col-6 left">
+               
+            <img class = "productpic" src = "https://res.cloudinary.com/yielddefender/image/upload/c_scale,w_540/v1501604640/YD3_yy51a4.jpg">
+                
+                
+            </div>
+                
+            <div class ="col-6 right">
+            <div class = "productdesc">The Yield Defender flight plan can be programmed from a laptop or PC with an easy-to-use Mission Planner that generates autonomous flight plans using satellite images.  Operator can program aircraft safety behavior, tune configuration parameters, define autonomous missions, and perform post-mission analysis.  The mission is uploaded via hardwire, USB connection, or wirelessly via telemetry into the aircraft’s onboard flight computer.</div>
+                
+                </div>
+                
+                
+                
+            </div><!--row id mission planner-->
             
             <div class = "cvhead">CropVue</div>
             
