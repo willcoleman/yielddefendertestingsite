@@ -307,7 +307,7 @@ $(document).ready(function(){
     .h2{
         width: 100%;
         font-size: 25;
-        padding-bottom: 41%;
+        padding-bottom: 36%;
         padding-left: 41%;
         font-family: 'Russo One', sans-serif;
         text-shadow:5px 5px 10px black;
@@ -373,7 +373,7 @@ $(document).ready(function(){
         -webkit-animation-duration: 4s; 
         animation-name: scrollbtn;
         animation-duration: 4s;
-        animation-delay: 3s;
+        animation-delay: 1.5s;
         animation-fill-mode: forwards;
         padding-right: 100px;
         color: white;
@@ -383,6 +383,7 @@ $(document).ready(function(){
     .scrollbtn:hover{
         opacity: 1.0;
         cursor: pointer;
+       
     }
     
         @-webkit-keyframes scrollbtn {
@@ -404,7 +405,7 @@ $(document).ready(function(){
         margin: 0;
         padding: 0;
         z-index: -1;
-        background-image: url(https://res.cloudinary.com/yielddefender/image/upload/v1501534965/Home-page-logo_gqjtfs.jpg)
+        background-image: url(https://res.cloudinary.com/yielddefender/image/upload/v1501617962/homelogo_uv2gv3.jpg)
         
         
     }
@@ -423,13 +424,14 @@ $(document).ready(function(){
     }
     
     .h78wrap{
-        text-align: center;
+        
         margin-left: 4.165%;
         margin-right:4.165%;
         width: 91.67%;
     }
     
     .h78head{
+        text-align: center;
         width: 100%;
         font-size: 30;
         font-weight: 400;
@@ -450,17 +452,17 @@ $(document).ready(function(){
     
     .h78content{
         width: 100%;
-        font-size: 27;
+        font-size: 25;
         color: #525252;
         font-family: "Trebuchet MS", Helvetica, sans-serif;
     }
     
         .h78content2{
         width: 100%;
-        font-size: 27;
+        font-size: 25;
         color: #525252;
         font-family: "Trebuchet MS", Helvetica, sans-serif;
-        padding-bottom: 10%;
+        padding-bottom: 5%;
     }
     
     .yd6img{
@@ -469,10 +471,7 @@ $(document).ready(function(){
         right: 75px;
         box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset;
     }
-    
-    #yd6container{
-        
-    }
+
     
     
     .prodimg{
@@ -498,7 +497,6 @@ $(document).ready(function(){
         margin-left: 3.165%;
         margin-right: 3.165%;
         width: 27%;
-        text-align: center;
         border-style: solid;
         border-width: thick;
         border-color: #ed1c24;
@@ -516,7 +514,6 @@ $(document).ready(function(){
         margin-left: 3.165%;
         margin-right: 3.165%;
         width: 27%;
-        text-align: center;
         border-style: solid;
         border-width: thick;
         border-color: #233e6c;
@@ -534,7 +531,6 @@ $(document).ready(function(){
         margin-left: 3.165%;
         margin-right: 3.165%;
         width: 27%;
-        text-align: center;
         border-style: solid;
         border-width: thick;
         border-color: #7d83d9;
@@ -565,6 +561,10 @@ $(document).ready(function(){
         cursor: pointer;
     
         
+    }
+    
+    .prevpic1, .prevpic2{
+        text-align: center;
     }
     
      .company:hover{
@@ -599,6 +599,7 @@ $(document).ready(function(){
     
     
     .prevhead1{
+        text-align: center;
         font-size: 17;
         padding-top: 20px;
         font-weight: bold;
@@ -608,7 +609,11 @@ $(document).ready(function(){
     .supportpagedesc, .productpagedesc, .companypagedesc{
         font-family: "Trebuchet MS", Helvetica, sans-serif;
         font-size: 22;
+        margin: auto;
         padding-top: 30px;
+        width: 80%;
+        text-align: center;
+
     }
     
     .prevpic2{
@@ -900,7 +905,7 @@ $(document).ready(function(){
     }
     
     .scroldowndesk{
-        padding-top: 25%;
+        padding-top: 20%;
         opacity: 0.5;
         
     }
@@ -1104,16 +1109,25 @@ $(document).ready(function(){
     @media only screen and (max-width: 1024px) {
         
         body{
-            width: 95%;
+            width: 88%;
+            height: 100%;
         }   
         
         .ydfootlogo{
             position: relative;
             right: 50px;
+            width: 15%;
+        }
+        
+        .atfootlogo{
+            width: 20%;
+            height: 11%;
+            position: relative;
+            top: 43px;
         }
         
         #header{
-            height: 50%;
+            height: 40%;
         }
         
         .ydfootlogo{
@@ -1121,6 +1135,33 @@ $(document).ready(function(){
             right: 120px;
         }
         
+        
+        .h2{
+            padding-bottom: 49%;
+            font-size: 19;
+        }
+        
+        .h1{
+            font-size: 18;
+        }
+        
+        .scrolldowndesk{
+            padding-left: 23px;
+        }
+        
+        .navigation{
+            width: 100%;
+        }
+        
+        .navigation a {
+            width: 12%;
+        }
+        
+        .footerhead, .footercn, .smlinks{
+            position: relative;
+            right: 35px;
+            
+        }
     }
     
     /*!!!!!!!!!!BEGIN MED TABLET CSS!!!!!!!!!!*/
@@ -1130,12 +1171,12 @@ $(document).ready(function(){
                         overflow-x: hidden;
                         margin: 0;
                         padding: 0;
-                        width: 95%;
+                        width: 90%;
                     }
                     
                     .footerhead, .footercn, .social{
                         position: relative;
-                        left: 1px;
+                        
                     }
                     
             .navwrapper {
@@ -1146,15 +1187,24 @@ $(document).ready(function(){
                 display: none;
             }
                 
-                    .ydfootlogo2, .atfootlogo2{
-                        display: none;
+                    .ydfootlogo2{
+                        position: relative;
+                        margin-right: 25%;
                     }
                     
                     .footerhead, .footercn, .social{
                        position: relative;
-                        right: 45px;
+                        right: 1px;
                         
                     }
+                    
+        .headline2{
+        width: 100%;
+        font-size: 30;
+        font-weight: 400;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        padding-bottom: 1%;
+    }
      
             
     .nav2 {
@@ -1211,7 +1261,7 @@ $(document).ready(function(){
          background-size: contain;
          background-position: center;
          position: absolute;
-         width: 100%;
+         width: 90%;
          height: 240px;
          text-align: center;
          color: white;
@@ -1434,7 +1484,12 @@ $(document).ready(function(){
         -ms-transition: background-color 0.25s ease-out;
         
     }
-                    
+        
+                    .yd6img{
+                        width: 115%;
+                        position: relative;
+                        right: 45px;
+                    }
                 
          
           
@@ -1773,7 +1828,7 @@ $(document).ready(function(){
     
 <a class = "target" href = "#nav">    
 
-<div class ="scrolldowndesk"><img class = "scrollbtn"></div> 
+<div class ="scrolldowndesk"><img class = "scrollbtn" src = "https://res.cloudinary.com/yielddefender/image/upload/c_scale,w_40/v1495727114/scrollbtnwhite_bqylww.png"></div> 
     
 </a>
     
@@ -1808,7 +1863,7 @@ $(document).ready(function(){
     
 <div class = "col-12 h78wrap">
     
-<div class = "h78head">Get the <span class = "most">most</span> from every acre</div>
+<div class = "h78head">Get The <span class = "most">Most</span> From Every Acre</div>
 
 <br>
 <div class = "h78content">Every farm is different.  Each field is unique.  As an ag producer you expect the tools you use to increase yields and maximize your return on every acre.  Yield Defender is a complete Unmanned Aerial System (UAS) designed and produced in the USA by Air Tractor, the world's leading agricultural aircraft manufacturer.  Yield Defender allows you to make smart, data-driven decisions in order to optimize your inputs for the unique conditions in every field.   
@@ -1827,7 +1882,7 @@ It is a seamless solution which includes a High Endurance quad-rotor ag drone, m
   
 </div>
     <div id = "yd6container">
-<img class = "yd6img" src = "https://res.cloudinary.com/yielddefender/image/upload/v1501537895/yd6home_wthseh.png">
+<img class = "yd6img" src = "https://res.cloudinary.com/yielddefender/image/upload/v1501618606/yd6rv_u5n6c6.jpg">
     </div>
     
 </div><!--col-12 h78wrap-->   
@@ -2017,16 +2072,31 @@ Find training videos, support documents, contact information, and other helpful 
     
 <div class = "col-12 h78wrap">
     
-<div class = "h78head">Get the <span class = "most">most</span> from every acre</div>
-<hr>
+<div class = "h78head">Get The <span class = "most">Most</span> From Every Acre</div>
+
 <br>
-<div class = "h78content">Every farm is different.  Each field is unique.  As an ag producer you expect the tools you use to increase yields and maximize your return on every acre.  Yield Defender is a complete Unmanned Aerial System (UAS) designed and produced in the USA by Air Tractor, the world’s leading agricultural aircraft manufacturer.  Yield Defender allows you to make smart, data-driven decisions in order to optimize your inputs for the unique conditions in every field.    
+<div class = "h78content">Every farm is different.  Each field is unique.  As an ag producer you expect the tools you use to increase yields and maximize your return on every acre.  Yield Defender is a complete Unmanned Aerial System (UAS) designed and produced in the USA by Air Tractor, the world's leading agricultural aircraft manufacturer.  Yield Defender allows you to make smart, data-driven decisions in order to optimize your inputs for the unique conditions in every field.    
 </div>
 <br>
     
+<center>-----insert video here-----</center>
+  <br>  
 <div class = "headline2">
 Real <b>Time</b>, Real <b>Data</b>, Real <b>Results</b>
 </div><!--headline2-->
+<br>
+<div class = "h78content">
+Yield Defender performs field scouting, crop health analysis, drought assessment, crop yield estimates, monitors location, status, and movement of livestock, and more.  
+<br>
+It is a seamless solution which includes a High Endurance quad-rotor ag drone, mission planner app, professional grade onboard sensors, and CropVue image processing software.  The system is ready to go to work out of the box.
+  
+</div>
+    
+<br><br>
+    
+    <div id = "yd6container">
+<img class = "yd6img" src = "https://res.cloudinary.com/yielddefender/image/upload/v1501618606/yd6rv_u5n6c6.jpg">
+    </div>
     
     
 </div><!--col-12 h78wrap-->   
@@ -2051,7 +2121,7 @@ Real <b>Time</b>, Real <b>Data</b>, Real <b>Results</b>
 
     
 <div class = "productpagedesc">
-View our HE Quad, NIR Sensor Technology and Imaging Software Products and learn more about how YieldDefender may be able to help you 
+View our High Endurance Quad, NIR Sensor Technology, and CropVue Imaging Software products and learn more about how Yield Defender can work for you. 
     
 </div>
     
@@ -2065,7 +2135,7 @@ View our HE Quad, NIR Sensor Technology and Imaging Software Products and learn 
     
     <div class = "company">
     
-   <div class = "prevheadcompany">More About YieldDefender</div>
+   <div class = "prevheadcompany">More About Yield Defender</div>
     
 <div class = "prevpic1"><img class = "briefcase1" src = "https://res.cloudinary.com/yielddefender/image/upload/c_scale,w_250/v1501251222/company1_jsuyzs.png"></div>
     
@@ -2074,7 +2144,7 @@ View our HE Quad, NIR Sensor Technology and Imaging Software Products and learn 
 
     
 <div class = "companypagedesc">
-Learn more about YieldDefender Drones such as our headquarters, VP of unmanned Airial Systems and our parent company, Air Tractor Inc.  
+Learn more about the benefits and capabilities of Yield Defender and our parent company, Air Tractor, Inc.  
     
 </div> 
     
@@ -2089,7 +2159,7 @@ Learn more about YieldDefender Drones such as our headquarters, VP of unmanned A
     
     <div class = "support">
     
-    <div class = "prevheadsupport">Support Documents & Questions</div>
+    <div class = "prevheadsupport">Support Documents</div>
     
 <div class = "prevpic1"><img class = "download1" src = "https://res.cloudinary.com/yielddefender/image/upload/c_scale,w_250/v1501253483/support1.1_odeyka.png"></div>
     
@@ -2097,7 +2167,7 @@ Learn more about YieldDefender Drones such as our headquarters, VP of unmanned A
 
     
 <div class = "supportpagedesc">
-Find your support documents that may aid you in your usage of our products along with frequently asked questions and additional advice.  
+  Find training videos, support documents, contact information, and other helpful information here.
     
 </div>
     
@@ -2147,7 +2217,7 @@ Find your support documents that may aid you in your usage of our products along
                 
                 <div class = "atfootlogo2"><img src = "https://res.cloudinary.com/yielddefender/image/upload/v1495727268/YD_logo_bxbcsu.png" height = "100%" width = "130%"></div> 
                 
-                <div class = "ydfootlogo2"><img src = "https://airtractor.com/wp-content/themes/AirTractorChild/images/AT-Logo.svg" height = "100%" width = "100%"></div> 
+                <a href = "https://airtractor.com/"><div class = "ydfootlogo2"><img src = "https://airtractor.com/wp-content/themes/AirTractorChild/images/AT-Logo.svg" height = "100%" width = "100%"></div></a>
     
                     </div>
     
