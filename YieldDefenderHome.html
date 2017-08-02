@@ -107,7 +107,7 @@ $(document).ready(function(){
     padding: 15px;
 }
         
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 775px) {
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
     .col-3 {width: 25%;}
@@ -126,14 +126,12 @@ $(document).ready(function(){
         overflow-x: hidden;
         height: 100%;
         min-height: 100%;
+        width: 100%;
+        min-width: 100%;
     }
-    
-    .navwrapper2 {
-        display:none;
-    }
-    
-    .navwrapper2 {
-        display:none;
+
+    .navwrapper2{
+        display: none;
     }
     
     .mobilewrap{
@@ -286,7 +284,7 @@ $(document).ready(function(){
     
     .h1{
         width: 100%;
-        font-size: 25;
+        font-size: 1.8vw;
         padding-top: 1%;
         padding-left: 40%;
         padding-bottom: 2.5%;
@@ -313,7 +311,7 @@ $(document).ready(function(){
     
     .h2{
         width: 100%;
-        font-size: 25;
+        font-size: 1.8vw;
         padding-bottom: 38%;
         padding-left: 41%;
         font-family: 'Russo One', sans-serif;
@@ -466,11 +464,27 @@ $(document).ready(function(){
         font-size: 25;
         color: #525252;
         font-family: "Trebuchet MS", Helvetica, sans-serif;
+        padding-bottom: 5%;
     }
     
     .demovideo{
-        padding-top: 5%;
+	position:relative;
+    margin-left: 15%;
+    margin-right: 15%;
+	padding-bottom:30%;
+	padding-top:60px;
+	height:0;
+	overflow:hidden;
+
     }
+    
+    .demovideo iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
     
         .h78content2{
         width: 100%;
@@ -481,9 +495,9 @@ $(document).ready(function(){
     }
     
     .yd6img{
-        width: 120%;
+        width: 100%;
+        height: auto;
         position: relative;
-        right: 75px;
         box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset;
     }
 
@@ -516,7 +530,7 @@ $(document).ready(function(){
         border-width: thick;
         border-color: #ed1c24;
         color: #ed1c24;
-        height: 570px;
+        height: 50vw;
         transition: background-color 0.25s ease-out;
         -moz-transition: background-color 0.25s ease-out;
         -webkit-transition: background-color 0.25s ease-out;
@@ -533,7 +547,7 @@ $(document).ready(function(){
         border-width: thick;
         border-color: #233e6c;
         color: #233e6c;
-        height: 570px;
+        height: 50vw;
         transition: background-color 0.25s ease-out;
         -moz-transition: background-color 0.25s ease-out;
         -webkit-transition: background-color 0.25s ease-out;
@@ -550,7 +564,7 @@ $(document).ready(function(){
         border-width: thick;
         border-color: #7d83d9;
         color: #7d83d9;
-        height: 570px;
+        height: 50vw;
         transition: background-color 0.25s ease-out;
         -moz-transition: background-color 0.25s ease-out;
         -webkit-transition: background-color 0.25s ease-out;
@@ -558,9 +572,11 @@ $(document).ready(function(){
             
     }
     
-       
-        
+    .briefcase1, .drone1, .download1, .briefcase2, .drone2, .download2{
+        width: 45%;
     }
+     
+    
     
     .products:hover{
         color: white;
@@ -568,7 +584,7 @@ $(document).ready(function(){
         border-style: solid;
         border-width: thick;
         border-color: #233e6c;
-        height: 570px;
+        height: 50vw;
         transition: background-color 0.5s ease-in-out;
     -moz-transition: background-color 0.5s ease-in-out;
     -webkit-transition: background-color 0.5s ease-in-out;
@@ -588,7 +604,7 @@ $(document).ready(function(){
         border-style: solid;
         border-width: thick;
         border-color: #ed1c24;
-        height: 570px;
+        height: 50vw;
         transition: background-color 0.5s ease-in-out;
     -moz-transition: background-color 0.5s ease-in-out;
     -webkit-transition: background-color 0.5s ease-in-out;
@@ -603,7 +619,7 @@ $(document).ready(function(){
         border-style: solid;
         border-width: thick;
         border-color: #7d83d9;
-        height: 570px;
+        height: 50vw;
         transition: background-color 0.5s ease-in-out;
     -moz-transition: background-color 0.5s ease-in-out;
     -webkit-transition: background-color 0.5s ease-in-out;
@@ -615,7 +631,7 @@ $(document).ready(function(){
     
     .prevhead1{
         text-align: center;
-        font-size: 17;
+        font-size: 1.5vw;
         padding-top: 20px;
         font-weight: bold;
         font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -623,7 +639,7 @@ $(document).ready(function(){
     
     .supportpagedesc, .productpagedesc, .companypagedesc{
         font-family: "Trebuchet MS", Helvetica, sans-serif;
-        font-size: 22;
+        font-size: 1.5vw;
         margin: auto;
         padding-top: 30px;
         width: 80%;
@@ -706,65 +722,31 @@ $(document).ready(function(){
      display: none;   
     }
     
+
+    
     }/*END DESKTOP CSS*/
     
-    
-    /*!!!!!!!!!!BEGIN LARGE TABLET CSS!!!!!!!!!!*/
+    @media only screen and (max-width: 775px) {
         
-        * {
-    box-sizing: border-box;
-}
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-[class*="col-"] {
-    float: left;
-    padding: 15px;
-}
+        body{
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+        }
         
-@media only screen and (max-width: 900px) {
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-    
-    body {
-        margin: 0;
-        overflow-x: none;
-      
+        .headerwrap{
+            display: none;
+        }
         
-    }
-    
-    .headerdesk{
-        display: none;
-    }
-    
-    .navwrapper{
-        display: none;
-    }
-    
-            .desktopwrap {
-                display: none;
-            }
-    
-    .navwrapper {
-                display: none;
-            }
-            
-    .nav2 {
+        #nav{
+            display: none;
+        }
+        
+        .nav2 {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    background-color: #233e6c;
     background-color: #233e6c;
     width: 100%;
 }
@@ -807,289 +789,15 @@ $(document).ready(function(){
         text-decoration: none;
         color: white;
     }
-    
-      .footer2 {
-         background-color: #4d4d4d;
-         background-size: contain;
-         background-position: center;
-         position: absolute;
-         width: 100%;
-         height: 240px;
-         text-align: center;
-         color: white;
-         font-family: 'Droid Sans', sans-serif;
-         margin: 0 0 0 0;
         
-    } 
-        
-    .footercontent2 {  
-        position: absolute;
-        left:50%;
-        padding-top: 4%;
-        height: 200px;
-        width: 400px;
-        margin-left: -200px;
-    }
-    
-        .footerhead{
-        font-weight: bolder;
-    }
-    
-    .footercn{
-        font-weight: 400;
-        color: gainsboro;
-    }
-    
-    .fa {
-    padding: 1%;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-  }
-    .fa-facebook:hover {
-    opacity: 0.5;
-    }
-                    
-    .fa-twitter:hover {
-    opacity: 0.5;
-    }
-                    
-     .fa-instagram:hover {
-    opacity: 0.5;
-    }
-                    
-     .fa-youtube:hover {
-    opacity: 0.5;
-    }
-    .fa-facebook {
-  background-color: #4d4d4d;
-  color: white;
-    }
-    .fa-twitter {
-  background-color: #4d4d4d;
-  color: white;
-    }
-    
-    .fa-instagram {
-  background-color: #4d4d4d;
-  color: white;
-        
-    }
-    
-    .fa-youtube {
-    background-color: #4d4d4d;
-    color: white;
-        
-    }
-            
-              .atfootlogo2{
-                        float: left;
-                        height: 100px;
-                        width: 100px;
-                        margin-top: 50px;
-                        margin-left: 8%;
-                    }
-            
-            .ydfootlogo2{
-                        float: right;
-                        height: 100px;
-                        width: 100px;
-                        margin-top: 50px;
-                        margin-right: 8%;
-                        
-                    }
-    
-    .h1{
-        width: 100%;
-        font-size: 25;
-        padding-top: 15%;
-        padding-bottom: 2.5%;
-        font-family: 'Russo One', sans-serif;
-        text-shadow:5px 5px 10px black;
-        z-index: -1;
-    }
-    
-    .h2{
-        width: 100%;
-        font-size: 25;
-        padding-bottom: 2%;
-        font-family: 'Russo One', sans-serif;
-        text-shadow:5px 5px 10px black;
-        z-index: -1;
-    }
-    
-    .scroldowndesk{
-        padding-top: 20%;
-        opacity: 0.5;
-        
-    }
-    
-    .scrollbtn{
-        opacity: 0.4;
-   transition: opacity .3s ease-in-out;
-   -moz-transition: opacity .3s ease-in-out;
-   -webkit-transition: opacity .3s ease-in-out;
-    }
-    
-    .scrollbtn:hover{
-        opacity: 1.0;
-        cursor: pointer;
-    }
-        
-    
-    #header{
-        display: none;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        z-index: -1;
-        background-color: black;
-        
-        
-    }
-    
-    .head{
-        text-align: center;
-        margin-right: 8.33%;
-        margin-left: 8.33%;
-        width: 83.34%;
-        color: white;
-    }
-    
-     #h78{
-        padding-top: 5%;
-        padding-bottom: 8%;
-    }
-    
-    .h78wrap{
-        text-align: center;
-        margin-left: 4.165%;
-        margin-right:4.165%;
-        width: 91.67%;
-    }
-    
-    .h78head{
-        width: 100%;
-        font-size: 30;
-        font-weight: 400;
-        font-family: "Trebuchet MS", Helvetica, sans-serif;
-        padding-bottom: 1%;
-    }
-    
-    .most{
-        font-weight: bolder;
-    }
-    
-    .h78content{
-        width: 100%;
-        font-size: 18;
-        color: #525252;
-        font-family: "Trebuchet MS", Helvetica, sans-serif;
-    }
-    
-    
-    .company{
-        text-align: center;
-        margin-left:10%;
-        margin-right:10%;
-        width: 80%;
-        border-style: solid;
-        border-width: thick;
-        border-color: red;
-        background-color: red;
-        color: white;
-        height: 200px;
-        transition: background-color 0.25s ease-out;
-        -moz-transition: background-color 0.25s ease-out;
-        -webkit-transition: background-color 0.25s ease-out;
-        -ms-transition: background-color 0.25s ease-out;
-    }
-    
-      .products{
-        text-align: center;
-        margin-left:10%;
-        margin-right:10%;
-        width: 80%;
-        border-style: solid;
-        border-width: thick;
-        border-color: green;
-        background-color: green;
-        color: white;
-        height: 250px;
-        transition: background-color 0.25s ease-out;
-        -moz-transition: background-color 0.25s ease-out;
-        -webkit-transition: background-color 0.25s ease-out;
-        -ms-transition: background-color 0.25s ease-out;
-    }
-    
-      .support{
-        text-align: center;
-        margin-left:10%;
-        margin-right:10%;
-        width: 80%;
-        border-style: solid;
-        border-width: thick;
-        border-color: blue;
-        background-color: blue;
-        color: white;
-        height: 250px;
-        transition: background-color 0.25s ease-out;
-        -moz-transition: background-color 0.25s ease-out;
-        -webkit-transition: background-color 0.25s ease-out;
-        -ms-transition: background-color 0.25s ease-out;
-    }
-    
-
-    
-
-    
-
-    .prevhead1{
-        display: none;
-        font-size: 20;
-        font-weight: bold;
-        font-family: 'Montserrat', sans-serif;
-    }
-    
-    .prevpic2{
-        display: block;
-        padding-top: 3%;
-        width: 100%;
-    }
-    
-    .prevpic1{
-        display: none;
-        padding-top: 15%;
-        width: 100%;
-    }
-    
-    
-        .lnk{
-        color: black;
+                .emailandphone{
+        color: #949494;
+        font-family: 'Oswald', sans-serif;
         text-decoration: none;
+        font-size: 10;
     }
-    
-    
-    .footerhead{
-            font-family: 'Ubuntu', sans-serif;
-        font-weight: bolder;
-    }
-    
-    .footercn{
-        font-family: 'Ubuntu', sans-serif;
-        font-weight: 400;
-        color: gainsboro;
-        color: white;
-        text-decoration: none;
-    }
-    
-    
-    .scrolltop{ 
+        
+        .scrolltop{ 
             position: fixed;
             top: 90%;
             left: 0.5%;
@@ -1106,726 +814,483 @@ $(document).ready(function(){
     .fa-caret-up:hover{
         opacity: 0.5;
     }
-    
-    .headimg{
-        padding-bottom: 15%;
-    }
-    
-        .emailandphone{
-        color: #949494;
-        font-family: 'Oswald', sans-serif;
-        text-decoration: none;
-        font-size: 10;
-    }
-    
-    
-    } /*!!!!!!!!!!END LARGE TABLET CSS!!!!!!!!!!*/
-    
-    @media only screen and (max-width: 1024px) {
-        
-        body{
-            width: 88%;
-            height: 100%;
-        }   
-        
-        .ydfootlogo{
-            position: relative;
-            right: 50px;
-            width: 15%;
-        }
-        
-        .atfootlogo{
-            width: 20%;
-            height: 11%;
-            position: relative;
-            top: 43px;
-        }
-        
-        #header{
-            height: 60%;
-        }
-        
-        .ydfootlogo{
-            position: relative;
-            right: 120px;
-        }
-        
-        
-        .h2{
-            padding-bottom: 49%;
-            font-size: 19;
-        }
-        
-        .h1{
-            font-size: 18;
-        }
-        
-        .scrolldowndesk{
-            padding-left: 23px;
-        }
-        
-        .navigation{
-            width: 100%;
-        }
-        
-        .navigation a {
-            width: 12%;
-        }
-        
-        .footerhead, .footercn, .smlinks{
-            position: relative;
-            right: 35px;
-            
-        }
-    }
-    
-    /*!!!!!!!!!!BEGIN MED TABLET CSS!!!!!!!!!!*/
-        
-                @media only screen and (max-width: 768px) {
-                    body{
-                        overflow-x: hidden;
-                        margin: 0;
-                        padding: 0;
-                        width: 90%;
-                    }
-                    
-                    .footerhead, .footercn, .social{
-                        position: relative;
-                        
-                    }
-                    
-            .navwrapper {
-                display: none;
-            }
-                    
-                     .navwrapper {
-                display: none;
-            }
-                
-                    .ydfootlogo2{
-                        position: relative;
-                        margin-right: 25%;
-                    }
-                    
-                    .footerhead, .footercn, .social{
-                       position: relative;
-                        right: 1px;
-                        
-                    }
-                    
-        .headline2{
-        width: 100%;
-        font-size: 30;
-        font-weight: 400;
-        font-family: "Trebuchet MS", Helvetica, sans-serif;
-        padding-bottom: 1%;
-    }
-     
-            
-    .nav2 {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #233e6c;
-    background-color: #233e6c;
-    width: 100%;
-}
-.navbar2 a {
-    font-family: 'Oswald', sans-serif;
-    display: block;
-    color: white;
-    padding: 8px 16px;
-    text-decoration: none;
-    text-align: center;
-}
-.navbar2 a:hover {
-        background-color: #4d4d4d;
-}
-    
-    .ydd {
-        color: white;
-        float: right;
-        padding-top: 4%;
-        padding-right: 2%;
-    }
-    
-    .icon2 {
-        padding-top: 1%;
-        padding-bottom: 1%;
-        padding-left: 1%;
-    }
-    
-            #active2 {
-            font-family: 'Oswald', sans-serif;
-            background-color: #333333;
-            display: block;
-            padding: 8px 16px;
-            text-decoration: none;
-            text-align: center;
-            
-        }
-    
-    #active2 a {
-        text-decoration: none;
-        color: white;
-    }
-                    
-        .footer2 {
-         
-         background-color: #4d4d4d;
-         background-size: contain;
-         background-position: center;
-         position: absolute;
-         width: 90%;
-         height: 240px;
-         text-align: center;
-         color: white;
-         font-family: 'Droid Sans', sans-serif;
-         margin: 0 0 0 0;
-        
-    } 
-                    
-                   .atfootlogo2{
-                        float: left;
-                        height: 100px;
-                        width: 100px;
-                        margin-top: 50px;
-                        margin-left: 4%;
-                    }
-                    
-                     .ydfootlogo2{
-                        float: right
-                        height: 100px;
-                        width: 100px;
-                        margin-top: 50px;
-                        margin-right: 4%;
-                    }
-        
-    .footercontent2 {  
-        position: absolute;
-        left:50%;
-        padding-top: 4%;
-        height: 200px;
-        width: 400px;
-        margin-left: -200px;
-    }
-    
-    .fa {
-    padding: 1%;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-  }
-    .fa-facebook:hover {
-    opacity: 0.5;
-    }
-                    
-    .fa-twitter:hover {
-    opacity: 0.5;
-    }
-                    
-     .fa-instagram:hover {
-    opacity: 0.5;
-    }
-                    
-     .fa-youtube:hover {
-    opacity: 0.5;
-    }
-    .fa-facebook {
-  background-color: #4d4d4d;
-  color: white;
-    }
-    .fa-twitter {
-  background-color: #4d4d4d;
-  color: white;
-    }
-    
-    .fa-instagram {
-  background-color: #4d4d4d;
-  color: white;
-        
-    }
-    
-    .fa-youtube {
-    background-color: #4d4d4d;
-    color: white;
-        
-    }
-                    
-                    #h78{
-        padding-top: 5%;
-        padding-bottom: 8%;
-    }
-    
-    .h78wrap{
+       
+        .h78head{
         text-align: center;
-        margin-left: 4.165%;
-        margin-right:4.165%;
-        width: 91.67%;
-    }
-    .h78head{
         width: 100%;
         font-size: 30;
         font-weight: 400;
         font-family: "Trebuchet MS", Helvetica, sans-serif;
         padding-bottom: 1%;
+    }
+       
+            .h78head{
+        text-align: center;
+        width: 100%;
+        font-size: 30;
+        font-weight: 400;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        padding-bottom: 1%;
+    }
+    
+    .secondwrap{
+        padding-top: 5%;
     }
     
     .most{
         font-weight: bolder;
+    }
+    
+    .headline2{
+        width: 100%;
+        font-size: 30;
+        font-weight: 400;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
     }
     
     .h78content{
         width: 100%;
-        font-size: 18;
+        font-size: 25;
         color: #525252;
         font-family: "Trebuchet MS", Helvetica, sans-serif;
+        padding-bottom: 5%;
     }
     
+    .demovideo{
+	position:relative;
+    margin-left: 15%;
+    margin-right: 15%;
+	padding-bottom:30%;
+	padding-top:60px;
+	height:0;
+	overflow:hidden;
 
-                    .ydfootlogo2{
-                        position: relative;
-                        right: 25px;
-                    }
-
-
-                    
-    .h78head{
+    }
+    
+    .demovideo iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+    
+        .h78content2{
         width: 100%;
-        font-size: 30;
-        font-weight: 400;
+        font-size: 25;
+        color: #525252;
         font-family: "Trebuchet MS", Helvetica, sans-serif;
-        padding-bottom: 1%;
+        padding-bottom: 5%;
     }
     
-    .most{
-        font-weight: bolder;
+    .yd6img{
+        width: 100%;
+        height: auto;
+        position: relative;
+        box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset;
     }
-                    
-                    .h78content{
-                        font-size: 20;
-                    }
-                    
-        .prevhead1{
-        display: none;
-        font-size: 20;
+
+    
+    
+    .prodimg{
+    width: 100%;
+        
+  
+    }
+
+
+    
+
+    
+    #links{
+        padding-bottom: 10%;
+    }
+    
+    .lnk{
+        color: black;
+        text-decoration: none;
+    }
+    
+    .company{
+        margin-left: 3.165%;
+        margin-right: 3.165%;
+        width: 27%;
+        border-style: solid;
+        border-width: thick;
+        border-color: #ed1c24;
+        color: #ed1c24;
+        height: 50vw;
+        transition: background-color 0.25s ease-out;
+        -moz-transition: background-color 0.25s ease-out;
+        -webkit-transition: background-color 0.25s ease-out;
+        -ms-transition: background-color 0.25s ease-out;
+        
+    }
+    
+        .products{
+        background-color: white;
+        margin-left: 3.165%;
+        margin-right: 3.165%;
+        width: 27%;
+        border-style: solid;
+        border-width: thick;
+        border-color: #233e6c;
+        color: #233e6c;
+        height: 50vw;
+        transition: background-color 0.25s ease-out;
+        -moz-transition: background-color 0.25s ease-out;
+        -webkit-transition: background-color 0.25s ease-out;
+        -ms-transition: background-color 0.25s ease-out;
+        
+      
+    }
+    
+        .support{
+        margin-left: 3.165%;
+        margin-right: 3.165%;
+        width: 27%;
+        border-style: solid;
+        border-width: thick;
+        border-color: #7d83d9;
+        color: #7d83d9;
+        height: 50vw;
+        transition: background-color 0.25s ease-out;
+        -moz-transition: background-color 0.25s ease-out;
+        -webkit-transition: background-color 0.25s ease-out;
+        -ms-transition: background-color 0.25s ease-out;
+            
+    }
+    
+    .briefcase1, .drone1, .download1, .briefcase2, .drone2, .download2{
+        width: 45%;
+    }
+     
+    
+    
+    .products:hover{
+        color: white;
+        background-color: #233e6c;
+        border-style: solid;
+        border-width: thick;
+        border-color: #233e6c;
+        height: 50vw;
+        transition: background-color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out;
+    -webkit-transition: background-color 0.5s ease-in-out;
+    -ms-transition: background-color 0.5s ease-in-out;
+        cursor: pointer;
+    
+        
+    }
+    
+    .prevpic1, .prevpic2{
+        text-align: center;
+    }
+    
+     .company:hover{
+        color: white;
+        background-color: #ed1c24;
+        border-style: solid;
+        border-width: thick;
+        border-color: #ed1c24;
+        height: 50vw;
+        transition: background-color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out;
+    -webkit-transition: background-color 0.5s ease-in-out;
+    -ms-transition: background-color 0.5s ease-in-out;
+         cursor: pointer;
+        
+    }
+    
+     .support:hover{
+        color: white;
+        background-color: #7d83d9;
+        border-style: solid;
+        border-width: thick;
+        border-color: #7d83d9;
+        height: 50vw;
+        transition: background-color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out;
+    -webkit-transition: background-color 0.5s ease-in-out;
+    -ms-transition: background-color 0.5s ease-in-out;
+         cursor: pointer;
+        
+    }
+    
+    
+    .prevhead1{
+        text-align: center;
+        font-size: 1.5vw;
+        padding-top: 20px;
         font-weight: bold;
         font-family: "Trebuchet MS", Helvetica, sans-serif;
     }
     
+    .supportpagedesc, .productpagedesc, .companypagedesc{
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        font-size: 1.5vw;
+        margin: auto;
+        padding-top: 30px;
+        width: 80%;
+        text-align: center;
+
+    }
+    
     .prevpic2{
-        display: block;
-        padding-top: 3%;
-        width: 50%;
-        padding-left: 40%;
-       
+        display:none;
+        padding-top: 10%;
+        width: 100%;
+        color: white;
     }
     
     .prevpic1{
-        display: none;
-        padding-top: 15%;
-        width: 50%;
+        padding-top: 10%;
+        width: 100%;
     }
-                         
-                    .headimg{
-                        width: 50%;
-                    }
-            
-                    
-        .company{
-        text-align: center;
-        margin-left:10%;
-        margin-right:10%;
-        width: 80%;
-        border-style: solid;
-        border-width: thick;
-        border-color: #ed1c24;
-        background-color: #ed1c24;
+
+
+        .company:hover .prevhead1{
         color: white;
-        height: 250px;
-        transition: background-color 0.25s ease-out;
-        -moz-transition: background-color 0.25s ease-out;
-        -webkit-transition: background-color 0.25s ease-out;
-        -ms-transition: background-color 0.25s ease-out;
     }
-                    
-                    .productpagedesc, .companypagedesc, .supportpagedesc{
-                        font-size: 14;
-                        margin-left: 10%;
-                        margin-right: 10%;
-                    }
-                    
-                    .prevheadproducts, .prevheadsupport, .prevheadcompany{
-                        padding-top: 17px;
-                        font-size: 25;
-                    }
-                    
-                    .prevheadproducts{
-                        padding-right: 15px;
-                    }
     
-      .products{
-        text-align: center;
-        margin-left:10%;
-        margin-right:10%;
-        width: 80%;
-        border-style: solid;
-        border-width: thick;
-        border-color: #233e6c;
-        background-color: #233e6c;
+    
+        .products:hover .prevhead1{
         color: white;
-        height: 250px;
-        transition: background-color 0.25s ease-out;
-        -moz-transition: background-color 0.25s ease-out;
-        -webkit-transition: background-color 0.25s ease-out;
-        -ms-transition: background-color 0.25s ease-out;
     }
     
-      .support{
-        text-align: center;
-        margin-left:10%;
-        margin-right:10%;
-        width: 80%;
-        border-style: solid;
-        border-width: thick;
-        border-color: #7d83d9;
-        background-color: #7d83d9;
+    
+        .support:hover .prevhead1{
         color: white;
-        height: 250px;
-        transition: background-color 0.25s ease-out;
-        -moz-transition: background-color 0.25s ease-out;
-        -webkit-transition: background-color 0.25s ease-out;
-        -ms-transition: background-color 0.25s ease-out;
-        
     }
-        
-                    .yd6img{
-                        width: 115%;
-                        position: relative;
-                        right: 45px;
-                    }
-                
-         
-          
-                    
-    }/*END MED TABLET CSS*/
     
-    /*!!!!!!!!!!BEGIN MOBILE PHONES!!!!!!!!!*/
-        
-        @media only screen and (max-width: 479px) {
-                    body{
-                        width: 106%;
-                        overflow-x: hidden;
-                    }
-            
-            html{
-                overflow-x: hidden;
-                
-            }
-                    
-            .navwrapper {
-                display: none;
-                
-            }
-            
-            .desktopwrap{
-                display: none;
-            }
-             .navwrapper {
-                display: none;
-            }
-            
-            .headimg{
-                width: 80%;
-                padding-bottom: 50%;
-            }
-            
-    .nav2 {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #233e6c;
-    width: 100%;
-}
-.navbar2 a {
-    font-family: 'Oswald', sans-serif;
-    display: block;
-    color: white;
-    padding: 8px 16px;
-    text-decoration: none;
-    text-align: center;
-}
-.navbar2 a:hover {
-        background-color: #4d4d4d;
-}
+    .company:hover .prevpic2{
+        display:block;
+    }
     
-    .ydd {
+        .company:hover .prevpic1{
+        display:none;
+    }
+    
+        .products:hover .prevpic2{
+        display:block;
+    }
+    
+        .products:hover .prevpic1{
+        display:none;
+    }
+    
+        .support:hover .prevpic2{
+        display:block;
+    }
+    
+        .support:hover .prevpic1{
+        display:none;
+    }
+    
+
+    
+        .footerhead{
+            font-family: 'Ubuntu', sans-serif;
+        font-weight: bolder;
+    }
+    
+    .footercn{
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 400;
+        color: gainsboro;
         color: white;
-        float: right;
-        padding-top: 4%;
-        padding-right: 2%;
-    }
-    
-    .icon2 {
-        padding-top: 1%;
-        padding-bottom: 1%;
-        padding-left: 1%;
-    }
-    
-            #active2 {
-            font-family: 'Oswald', sans-serif;
-            background-color: #333333;
-            display: block;
-            padding: 8px 16px;
-            text-decoration: none;
-            text-align: center;
-            
-        }
-    
-    #active2 a {
         text-decoration: none;
-        color: white;
     }
-            
-        .footer2 {
+    
+    #hequadwrapper{
+        padding-top: 10px;
+    }
+        
+        .footer {
          background-color: #4d4d4d;
-         background-size: contain;
+         background-size: cover;
          background-position: center;
          position: absolute;
-         width: 105%;
-         height: 240px;
+        height: 160px;
+        width: 100%;
+        overflow:hidden;;
          text-align: center;
          color: white;
          font-family: 'Droid Sans', sans-serif;
          margin: 0 0 0 0;
         
+        
     } 
         
-    .footercontent2 {  
-        position: absolute;
-        left:50%;
-        padding-top: 4%;
-        height: 200px;
-        width: 400px;
-        margin-left: -200px;
+    .atfootlogo {
+        padding-top: 1.5%;
+        float: left;
+        padding-left: 4%;
+        padding-bottom: 1%;
+        
     }
     
-    .fa {
+    .ydfootlogo {
+        padding-top: 1.5%;
+        padding-right: 2%;
+        padding-bottom: 1%;
+        float: right;
+        
+    }
+    
+    .footercontent { 
+        position: absolute;
+        left:50%;
+        padding-top: 1%;
+        height: 220px;
+        width: 400px;
+        margin-left: -200px;
+        font-size: 12;
+    }
+    
+    .smlinks {
     padding: 1%;
-    font-size: 30px;
-    width: 30px;
+    font-size: 22px;
     text-align: center;
     text-decoration: none;
   }
-            
     .fa-facebook:hover {
-    opacity: 0.5;
+    opacity: 0.7;
     }
-                    
-    .fa-twitter:hover {
-    opacity: 0.5;
+    
+    .fa-twitter:hover{
+        opacity: 0.7;
     }
-                    
-     .fa-instagram:hover {
-    opacity: 0.5;
+    
+    .fa-instagram:hover{
+        opacity: 0.7;
     }
-                    
-     .fa-youtube:hover {
-    opacity: 0.5;
+    
+    .fa-youtube:hover{
+        opacity: 0.7;
     }
+    
     .fa-facebook {
   background-color: #4d4d4d;
   color: white;
+        text-decoration: none;
     }
     .fa-twitter {
   background-color: #4d4d4d;
   color: white;
+        text-decoration: none;
     }
     
     .fa-instagram {
   background-color: #4d4d4d;
   color: white;
+        text-decoration: none;
         
     }
     
     .fa-youtube {
     background-color: #4d4d4d;
     color: white;
+    text-decoration: none;
         
     }
-            
-            .ydfootlogo2{
-                display: none;
-            }
         
-            .atfootlogo2{
-                display:none;
-            }
-
-            
-            .h78head{
-                font-size: 19;
-            }
-            
-        .prevhead1{
-        font-size: 10;
-        font-weight: bold;
-        font-family: 'Montserrat', sans-serif;
     }
     
-    .prevpic2{
-        display:none;
-        padding-top: 35%;
-        width: 100%;
-    }
-    
-    .prevpic1{
-        padding-top: 15%;
-        width: 100%;
-    }
-    
-            
-            .h1{
-                padding-top: 20%;
-                padding-bottom: 5%;
-                font-size: 20;
-            }
-            
-            .h2{
-                padding-bottom: 8%;
-                font-size:15;
-                
-                
-            }
-            
-             .prevhead1{
-        display: none;
-        font-size: 20;
-        font-weight: bold;
-        font-family: 'Montserrat', sans-serif;
-    }
-    
-    .prevpic2{
-        display: block;
-        padding-top: 5%;
-        width: 100%;
-    }
-    
-    .prevpic1{
-        display: none;
-        padding-top: 15%;
-        width: 100%;
-    }
- 
-                    
-            
-    }/*END MOBILE PHONE CSS*/
-    
-            @media only screen and (max-width: 414px) {
-                    body{
-                        width: 100%;
-                        overflow-x: hidden;
-                    }
-                
-                 
-            
-            html{
-                overflow-x: hidden;
-                
-            }
-                
-                .prevheadproducts, .prevheadcompany, .prevheadsupport{
-                    font-size: 18;
-                }
-                
-                .prevheadproducts{
-                    padding-left: 15px;
-                }
-                
-                .drone2, .briefcase2, .download2{
-                    position: relative;
-                    right: 33%;
-                    
-                }
-                
-                productspagedesc{
-                    float: left;
-                }
-                
-                .productpagedesc, .companypagedesc, .supportpagedesc{
-                        font-size: 11;
-                        margin-left: 10%;
-                        margin-right: 10%;
-                    }
-                
-                   .footerhead, .footercn{
-                        position: relative;
-                        right: 15px;
-                    }
-                
-                .social{
-                    position: relative;
-                    right: 25px;
-                }
-                
-    }
-    
-                @media only screen and (max-width: 375px) {
-                    body{
-                        width: 109%;
-                        overflow-x: hidden;
-                    }
-            
-            html{
-                overflow-x: hidden;
-                
-            }
-                    
-                    .footer2 {
-         background-color: #4d4d4d;
-         background-size: contain;
-         background-position: center;
-         position: absolute;
-         width: 115%;
-         height: 240px;
-         text-align: center;
-         color: white;
-         font-family: 'Droid Sans', sans-serif;
-         margin: 0 0 0 0;
-        
-    } 
-                    
-                 
-                
-    }
-    
-    @media only screen and (max-width: 360px) {
-        
-        body{
-            overflow-x: hidden;
-            width: 110%;
-        }  
-        
- 
-    }
-    
- @media only screen and (max-width: 360px) {
-     
-     body{
+     @media only screen and (max-width: 600px) {
          
-         overflow-x: hidden;
-         width: 114%;
-     }
-     
+         .atfootlogo{
+             width: 25%;
+             height: 80%;
+             padding-top: 30px;
+         }
+         
+         .ydfootlogo{
+             width: 25%;
+             height: 80%;
+             padding-top: 30px;
+         }
+         
+         
+         
+         
+         
     }
     
+    @media only screen and (max-width: 400px) {
+        
+        .atfootlogo{
+             width: 27%;
+             height: 75%;
+             padding-top: 30px;
+         }
+        
+        .ydfootlogo{
+            width: 27%;
+            height: 75%;
+            padding-top: 30px;
+        }
+        
+        .supportpagedesc, .productpagedesc, .companypagedesc{
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        font-size: 1.4vw;
+        margin: auto;
+        padding-top: 10px;
+        width: 80%;
+        text-align: center;
 
     }
+        
+        .h78content, .h78content2{
+        width: 100%;
+        font-size: 20;
+        color: #525252;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        padding-bottom: 5%;
+    }
+        
+        .h78head{
+            font-size: 22;
+        }
+        
+    }
+        
+        @media only screen and (max-width: 300px) {
+        
+            .atfootlogo{
+             width: 20%;
+             height: 60%;
+             padding-top: 50px;
+         }
+        
+        .ydfootlogo{
+            width: 15%;
+            height: 75%;
+            padding-top: 30px;
+        }
+            
+        .supportpagedesc, .productpagedesc, .companypagedesc{
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        font-size: 1.25vw;
+        margin: auto;
+        padding-top: 0px;
+        width: 80%;
+        text-align: center;
+        
+        
+    }
+            
+                .h78content, .h78content2{
+        width: 100%;
+        font-size: 15;
+        color: #525252;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        padding-bottom: 5%;
+    }
+            
+        }
     
-</style>
-
-    
+    </style>
     
 <body>
     
@@ -1875,6 +1340,45 @@ $(document).ready(function(){
         
     </div><!--navwrapper1-->
     
+    <div id = "topscreen"></div>
+    
+    <div class = "navigation2">
+    <section></section>
+    </div>
+    
+    <div class = "navigation2" id = "nav2">
+        
+    <div class = "navigation2" id = "nav2">
+        
+    <div id = "nav2">
+    
+<div class = "navwrapper2">
+<ul class = "nav2">
+    <center>
+        <li class = "nbhead2"><a href="#company"><img class = "icon2" src = "https://res.cloudinary.com/yielddefender/image/upload/q_100/v1495727268/YD_logo_bxbcsu.png" height = "60px" width = "80px"></a><div class = "emailandphone">info@yielddefender.com<br>870-270-4255</div>
+  <li id = "active2"><a href="https://htmlpreview.github.io/?https://github.com/willcoleman/yielddefendertestingsite/blob/master/YieldDefenderHome.html">HOME</a></li>
+  <li class = "navbar2"><a href="https://htmlpreview.github.io/?https://github.com/willcoleman/yielddefendertestingsite/blob/master/YieldDefenderCompany.html">ABOUT</a></li>
+  <li class = "navbar2"><a href="https://htmlpreview.github.io/?https://github.com/willcoleman/yielddefendertestingsite/blob/master/YieldDefenderProducts.html">PRODUCTS</a></li>
+  <li class = "navbar2"><a href="https://htmlpreview.github.io/?https://github.com/willcoleman/yielddefendertestingsite/blob/master/YieldDefenderSupport.html">SUPPORT</a></li> 
+    </center>
+</ul>
+    
+    
+<div id = "scrolltotopbtnwrap">
+        
+        <div class = "scrolltop"><a class = "targettop" href = "#topscreen"><i class="fa fa-caret-up" style="font-size:36px"></i></a></div>
+        
+    </div><!--scrolltotopbtnwrap-->
+    
+</div><!--navwrapper2-->
+        
+        </div>
+        
+    </div><!--navigation-->
+        
+    
+
+    
 <div class = "row" id = "h78">
     
 <div class = "col-12 h78wrap">
@@ -1886,9 +1390,9 @@ $(document).ready(function(){
 </div>
 
     <center>
-   
+  
 <div class = "demovideo">
-<iframe width="800" height="400" src="https://www.youtube.com/embed/goGMZvLJxN0" frameborder="0" allowfullscreen></iframe>
+<iframe width="200" height="100" src="https://www.youtube.com/embed/goGMZvLJxN0" frameborder="0" allowfullscreen></iframe>
 </div>
         
     </center>
@@ -2030,241 +1534,7 @@ Find training videos, support documents, contact information, and other helpful 
     
 </div><!--end desktopwrap-->
     
-<div id = "topscreen"></div>
     
-<!--tablet and phone begin--><div class = "mobilewrap">
+    </body>
     
-<div class = "row" id = "header">
-    
-<div class = "col-12 head">
-    
-<div class = "h1">The Complete Unmanned Aerial System Solution</div> 
-    
-<div class = "h2">From the Leader in Agricultural Aviation</div> 
-    
-<div class = "headpic"><img class = "headimg" src = "https://res.cloudinary.com/yielddefender/image/upload/q_100/v1495727268/YD_logo_bxbcsu.png"></div>
-    
-<a class = "target2" href = "#nav2">    
-
-<div class ="scrolldowndesk"><img class = "scrollbtn" src = "https://res.cloudinary.com/yielddefender/image/upload/q_100/v1495727114/scrollbtnwhite_bqylww.png" height = "8%"></div> 
-    
-</a>
-    
-</div><!--col-12 head-->
-    
- <div class = "navigation2">
-    <section></section>
-    </div>
-    
-</div><!--row id header-->
-    
-<div class = "navigation2">
-    <section></section>
-    </div>
-    
-    <div class = "navigation2" id = "nav2">
-        
-    <div id = "nav2">
-    
-<div class = "navwrapper2">
-<ul class = "nav2">
-    <center>
-        <li class = "nbhead2"><a href="#company"><img class = "icon2" src = "https://res.cloudinary.com/yielddefender/image/upload/q_100/v1495727268/YD_logo_bxbcsu.png" height = "60px" width = "80px"></a><div class = "emailandphone">info@yielddefender.com<br>870-270-4255</div>
-  <li id = "active2"><a href="https://htmlpreview.github.io/?https://github.com/willcoleman/yielddefendertestingsite/blob/master/YieldDefenderHome.html">HOME</a></li>
-  <li class = "navbar2"><a href="https://htmlpreview.github.io/?https://github.com/willcoleman/yielddefendertestingsite/blob/master/YieldDefenderCompany.html">ABOUT</a></li>
-  <li class = "navbar2"><a href="https://htmlpreview.github.io/?https://github.com/willcoleman/yielddefendertestingsite/blob/master/YieldDefenderProducts.html">PRODUCTS</a></li>
-  <li class = "navbar2"><a href="https://htmlpreview.github.io/?https://github.com/willcoleman/yielddefendertestingsite/blob/master/YieldDefenderSupport.html">SUPPORT</a></li> 
-    </center>
-</ul>
-    
-    
-<div id = "scrolltotopbtnwrap">
-        
-        <div class = "scrolltop"><a class = "targettop" href = "#topscreen"><i class="fa fa-caret-up" style="font-size:36px"></i></a></div>
-        
-    </div><!--scrolltotopbtnwrap-->
-    
-</div><!--navwrapper2-->
-        
-        </div>
-        
-    </div><!--navigation-->
-    
-<div class = "row" id = "h78">
-    
-<div class = "col-12 h78wrap">
-    
-<div class = "h78head">Get The <span class = "most">Most</span> From Every Acre</div>
-
-<br>
-<div class = "h78content">Every farm is different.  Each field is unique.  As an ag producer you expect the tools you use to increase yields and maximize your return on every acre.  Yield Defender is a complete Unmanned Aerial System (UAS) designed and produced in the USA by Air Tractor, the world's leading agricultural aircraft manufacturer.  Yield Defender allows you to make smart, data-driven decisions in order to optimize your inputs for the unique conditions in every field.    
-</div>
-<br>
-    
-<center>
-<video width="320" height="240" controls>
-  <source src="Yddemo2.mp4" type="video/mp4">
-
-  Your browser does not support the video tag.
-</video>
-    
-    
-</center>
-  <br>  
-<div class = "headline2">
-Real <b>Time</b>, Real <b>Data</b>, Real <b>Results</b>
-</div><!--headline2-->
-<br>
-<div class = "h78content">
-Yield Defender performs field scouting, crop health analysis, drought assessment, crop yield estimates, monitors location, status, and movement of livestock, and more.  
-<br>
-It is a seamless solution which includes a High Endurance quad-rotor ag drone, mission planner app, professional grade onboard sensors, and CropVue image processing software.  The system is ready to go to work out of the box.
-  
-</div>
-    
-<br><br>
-    
-    <div id = "yd6container">
-<img class = "yd6img" src = "https://res.cloudinary.com/yielddefender/image/upload/v1501618606/yd6rv_u5n6c6.jpg">
-    </div>
-    
-    
-</div><!--col-12 h78wrap-->   
-    
-    
-    
-    
-</div><!--row id h78-->
-    
-<div class = "hyperlinkswrapper">
-    
-<div id = "productspage">
-    
-<div class = "products">
-    
-<div class = "prevheadproducts">View Our Products</div>
-
-<div class = "prevpic1"><img class = "drone1" src = "https://res.cloudinary.com/yielddefender/image/upload/c_scale,w_250/v1501251209/products2_mwysuv.png"></div>
-    
-<div class = "prevpic2"><img class = "drone2" src = "https://res.cloudinary.com/yielddefender/image/upload/c_scale,w_100/v1501251209/products1_ushiqs.png"></div>
-    
-
-    
-<div class = "productpagedesc">
-View our High Endurance Quad, NIR Sensor Technology, and CropVue Imaging Software products and learn more about how Yield Defender can work for you. 
-    
-</div>
-    
-    </div><!--products-->
-    
-</div><!--products page-->
-    
-    <br>
-    
-<div id = "companypage">
-    
-    <div class = "company">
-    
-   <div class = "prevheadcompany">More About Yield Defender</div>
-    
-<div class = "prevpic1"><img class = "briefcase1" src = "https://res.cloudinary.com/yielddefender/image/upload/c_scale,w_250/v1501251222/company1_jsuyzs.png"></div>
-    
-<div class = "prevpic2"><img class = "briefcase2" src = "https://res.cloudinary.com/yielddefender/image/upload/c_scale,w_100/v1501251222/company2_eo7puo.png"></div>
-    
-
-    
-<div class = "companypagedesc">
-Learn more about the benefits and capabilities of Yield Defender and our parent company, Air Tractor, Inc.  
-    
-</div> 
-    
-    </div><!--company-->
-    
-</div><!--companypage-->
-    
-    <br>
-    
-    
-<div id = "supportpage">
-    
-    <div class = "support">
-    
-    <div class = "prevheadsupport">Support Documents</div>
-    
-<div class = "prevpic1"><img class = "download1" src = "https://res.cloudinary.com/yielddefender/image/upload/c_scale,w_250/v1501253483/support1.1_odeyka.png"></div>
-    
-<div class = "prevpic2"><img class = "download2" src = "https://res.cloudinary.com/yielddefender/image/upload/c_scale,w_100/v1501253483/support2.1_mltzu6.png"></div>
-
-    
-<div class = "supportpagedesc">
-  Find training videos, support documents, contact information, and other helpful information here.
-    
-</div>
-    
-    </div><!--support-->
-    
-</div><!--supportpage-->
-    
-    
-    </div>
-    
-    <br><br><br>
-
-<!--mobilefooterbegin-->
-<div class = "footer2">
-                
-    
-        
-                
-                <div class = "footercontent2">
-                    
-                    
-                    
-                   
-                    
-   
-    
-<span class = "footerhead">Yield Defender Drones</span>
-        <br><br>
-    <span class = "footercn">PO Box 485, Olney, Tx 76374</span>
-        <br><br>
-    <span class = "footercn">info@yielddefender.com</span>
-        <br><br>
-    <span class = "footercn">870-270-4255</span>
-        <br><br>
-
-                    
-                    <div class = "social">
-<a href="https://www.facebook.com/Hangar78UAV/" class="fa fa-facebook"></a>
-<a href="https://twitter.com/yielddefender" class="fa fa-twitter"></a>
-<a href="https://www.youtube.com/channel/UCISKEh-bwGRFuDNT2zEY76A" class="fa fa-youtube"></a>
-<a href="https://www.instagram.com/yielddefender/" class="fa fa-instagram"></a>
-    
-    </div>
-                    </div>
-                
-                <div class = "footlogo2wrap">
-                
-                <div class = "atfootlogo2"><img src = "https://res.cloudinary.com/yielddefender/image/upload/v1495727268/YD_logo_bxbcsu.png" height = "100%" width = "130%"></div> 
-                
-                <a href = "https://airtractor.com/"><div class = "ydfootlogo2"><img src = "https://airtractor.com/wp-content/themes/AirTractorChild/images/AT-Logo.svg" height = "100%" width = "100%"></div></a>
-    
-                    </div>
-    
-    
-    
-    </div><!--endmobilefooter-->
-    
-    
-    
-    
-</div><!--end mobilewrap-->
-    
-    
-    
-    
-</body>
-
-
-
 </html>
