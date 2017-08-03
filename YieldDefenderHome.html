@@ -83,6 +83,27 @@ $(document).ready(function(){
 });
 </script>
     
+<script>
+$(document).ready(function(){
+  $(".targettopdesk").on('click', function(event) {
+  
+    if (this.hash !== "1") {
+ 
+      event.preventDefault();
+  
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1500, function(){
+   
+        
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
+    
     
     
 </head> 
@@ -145,6 +166,7 @@ $(document).ready(function(){
     background: #233e6c;
     height: 100px;
     text-align: center;
+    z-index: 2;
 }
 .navigation a {
     float: left;
@@ -182,6 +204,27 @@ $(document).ready(function(){
         padding-top: 1%;
         text-decoration: none;
     }
+    
+        .emailandphone a{
+        padding-top: 1%;
+    }
+    
+    .emailandphone a:hover{
+    background-color: #233e6c;
+    }
+    
+ 
+    .email a{
+        padding-bottom: 3%;
+        font-size: 17;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .phone{
+        font-size: 17;
+        padding-right: 3px;
+    }
         
                 #active {
             background-color: #233e6c;
@@ -204,21 +247,24 @@ $(document).ready(function(){
         
     } 
         
-    .atfootlogo {
-        padding-top: 1.5%;
+ .atfootlogo {
+        margin-top: 2.5%;
         float: left;
         padding-left: 4%;
         padding-bottom: 1%;
+        width: 13%;
         
     }
     
     .ydfootlogo {
-        padding-top: 1.5%;
-        padding-right: 2%;
+        margin-top: 2.5%;
+        padding-right: 4%;
         padding-bottom: 1%;
         float: right;
+        width: 12%;
         
     }
+
     
     .footercontent { 
         position: absolute;
@@ -409,7 +455,7 @@ $(document).ready(function(){
         height: 100%;
         margin: 0;
         padding: 0;
-        z-index: -1;
+        z-index: 2;
         background-image: url(https://res.cloudinary.com/yielddefender/image/upload/v1501617962/homelogo_uv2gv3.jpg)
         
         
@@ -642,8 +688,9 @@ $(document).ready(function(){
         font-size: 1.5vw;
         margin: auto;
         padding-top: 30px;
-        width: 80%;
-        text-align: center;
+        width: 86%;
+        margin-left: 7%;
+        margin-right: 7%;
 
     }
     
@@ -713,6 +760,11 @@ $(document).ready(function(){
         text-decoration: none;
     }
     
+    .footercn a{
+        text-decoration: none;
+        color: white;
+    }
+    
     #hequadwrapper{
         padding-top: 10px;
     }
@@ -722,17 +774,54 @@ $(document).ready(function(){
      display: none;   
     }
     
+                .scrolltopdesk{ 
+            float: right;
+            position: fixed;
+            top: 85%;
+            right: 1%;
+            z-index: 100;
+            color: gray;
+            opacity: 0.75;
+            z-index: 0;
+            }
+            
+            .targettopdesk{
+                color: gray;
+                text-decoration: none;
+            }
+    
+    .fa-caret-up{
+        position: relative;
+        
+    }
+    
+    .scrolltopdesk:hover{
+        opacity: 0.5;
+    }
+    
+    .return{
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+    }
+    
+    .headerwrap{
+        z-index: 1;
+    }
+    
 
     
     }/*END DESKTOP CSS*/
     
-    @media only screen and (max-width: 775px) {
+    @media only screen and (max-width: 774px) {
         
         body{
             overflow-x: hidden;
             margin: 0;
             padding: 0;
         }
+        
+             #scrolltotopdesk{
+                 display: none;
+             }
         
         .headerwrap{
             display: none;
@@ -797,13 +886,24 @@ $(document).ready(function(){
         font-size: 10;
     }
         
-        .scrolltop{ 
+         .email a{
+        padding-bottom: 0%;
+        font-size: 10;
+        text-decoration: none;
+        color: #949494;
+    }
+        
+  
+        
+       .scrolltop{ 
             position: fixed;
+            float: right;
             top: 90%;
-            left: 0.5%;
+            right: 1.5%;
             z-index: 100;
             color: gray;
             opacity: 0.75;
+            z-index: 0;
             }
             
             .targettop{
@@ -811,7 +911,9 @@ $(document).ready(function(){
                 text-decoration: none;
             }
     
-    .fa-caret-up:hover{
+
+    
+    .scrolltop:hover{
         opacity: 0.5;
     }
        
@@ -824,14 +926,6 @@ $(document).ready(function(){
         padding-bottom: 1%;
     }
        
-            .h78head{
-        text-align: center;
-        width: 100%;
-        font-size: 30;
-        font-weight: 400;
-        font-family: "Trebuchet MS", Helvetica, sans-serif;
-        padding-bottom: 1%;
-    }
     
     .secondwrap{
         padding-top: 5%;
@@ -1031,8 +1125,9 @@ $(document).ready(function(){
         font-size: 1.5vw;
         margin: auto;
         padding-top: 30px;
-        width: 80%;
-        text-align: center;
+        width: 86%;
+        margin-left: 7%;
+        margin-right: 7%;
 
     }
     
@@ -1101,6 +1196,11 @@ $(document).ready(function(){
         color: white;
         text-decoration: none;
     }
+        
+            .footercn a{
+        text-decoration: none;
+        color: white;
+    }
     
     #hequadwrapper{
         padding-top: 10px;
@@ -1122,21 +1222,25 @@ $(document).ready(function(){
         
     } 
         
-    .atfootlogo {
-        padding-top: 1.5%;
+  .atfootlogo {
+        padding-top: 4.5%;
         float: left;
         padding-left: 4%;
-        padding-bottom: 1%;
+        padding-bottom: 0%;
+       width: 16%;
+     
         
     }
     
     .ydfootlogo {
-        padding-top: 1.5%;
-        padding-right: 2%;
-        padding-bottom: 1%;
+        padding-top: 4.5%;
+        padding-right: 4%;
+        padding-bottom: 0%;
         float: right;
+   
         
     }
+
     
     .footercontent { 
         position: absolute;
@@ -1236,8 +1340,9 @@ $(document).ready(function(){
         font-size: 1.4vw;
         margin: auto;
         padding-top: 10px;
-        width: 80%;
-        text-align: center;
+         width: 86%;
+        margin-left: 7%;
+        margin-right: 7%;
 
     }
         
@@ -1274,8 +1379,9 @@ $(document).ready(function(){
         font-size: 1.25vw;
         margin: auto;
         padding-top: 0px;
-        width: 80%;
-        text-align: center;
+                width: 86%;
+        margin-left: 7%;
+        margin-right: 7%;
         
         
     }
@@ -1320,6 +1426,12 @@ $(document).ready(function(){
 
     
 </div><!--row id header-->
+    
+        <div id = "topscreendesk"></div>
+    
+    <div class = "navigation1">
+    <section></section>
+    </div>
    
 <div class = "navwrapper" id = "nav">
         
@@ -1330,9 +1442,9 @@ $(document).ready(function(){
   <a class = "navbar" href="https://htmlpreview.github.io/?https://github.com/willcoleman/yielddefendertestingsite/blob/master/YieldDefenderSupport.html">SUPPORT</a>
     <div class = "iconwrap"><img class = "icon" src = "https://res.cloudinary.com/yielddefender/image/upload/q_100/v1495727268/YD_logo_bxbcsu.png" height = "80px" width = "130px"></div>
     <div class = "emailandphone">
-    info@yielddefender.com
+    <div class = "email"><a class = "emaillink" href = "mailto:info@yielddefender.com">info@yielddefender.com</a></div>
     <br>
-    870-270-4255
+    <div class = "phone">870-270-4255</div>
     </div>
 
     
@@ -1340,13 +1452,23 @@ $(document).ready(function(){
         
     </div><!--navwrapper1-->
     
+    
+            <div id = "scrolltotopdesk">
+        
+            <div class = "scrolltopdesk"><a class = "targettopdesk" href = "#topscreendesk"><i class="fa fa-caret-up" style="font-size:55px"></i>
+                </a>
+           
+            </div>
+        
+    </div><!--scrolltotopbtnwrap-->
+    
     <div id = "topscreen"></div>
     
     <div class = "navigation2">
     <section></section>
     </div>
     
-    <div class = "navigation2" id = "nav2">
+    
         
     <div class = "navigation2" id = "nav2">
         
@@ -1355,7 +1477,12 @@ $(document).ready(function(){
 <div class = "navwrapper2">
 <ul class = "nav2">
     <center>
-        <li class = "nbhead2"><a href="#company"><img class = "icon2" src = "https://res.cloudinary.com/yielddefender/image/upload/q_100/v1495727268/YD_logo_bxbcsu.png" height = "60px" width = "80px"></a><div class = "emailandphone">info@yielddefender.com<br>870-270-4255</div>
+        <li class = "nbhead2"><a href="#company"><img class = "icon2" src = "https://res.cloudinary.com/yielddefender/image/upload/q_100/v1495727268/YD_logo_bxbcsu.png" height = "60px" width = "80px"></a>
+    <div class = "emailandphone">
+    <div class = "email"><a class = "emaillink" href = "mailto:info@yielddefender.com">info@yielddefender.com</a></div>
+    
+    <div class = "phone">870-270-4255</div>
+    </div>
   <li id = "active2"><a href="https://htmlpreview.github.io/?https://github.com/willcoleman/yielddefendertestingsite/blob/master/YieldDefenderHome.html">HOME</a></li>
   <li class = "navbar2"><a href="https://htmlpreview.github.io/?https://github.com/willcoleman/yielddefendertestingsite/blob/master/YieldDefenderCompany.html">ABOUT</a></li>
   <li class = "navbar2"><a href="https://htmlpreview.github.io/?https://github.com/willcoleman/yielddefendertestingsite/blob/master/YieldDefenderProducts.html">PRODUCTS</a></li>
@@ -1366,7 +1493,9 @@ $(document).ready(function(){
     
 <div id = "scrolltotopbtnwrap">
         
-        <div class = "scrolltop"><a class = "targettop" href = "#topscreen"><i class="fa fa-caret-up" style="font-size:36px"></i></a></div>
+        <div class = "scrolltop"><a class = "targettop" href = "#topscreen"><i class="fa fa-caret-up" style="font-size:36px"></i>
+      
+            </a></div>
         
     </div><!--scrolltotopbtnwrap-->
     
@@ -1403,7 +1532,7 @@ $(document).ready(function(){
 <br>
 <div class = "h78content2">
 Yield Defender performs field scouting, crop health analysis, drought assessment, crop yield estimates, monitors location, status, and movement of livestock, and more.  
-<br>
+<br><br>
 It is a seamless solution which includes a High Endurance quad-rotor ag drone, mission planner app, professional grade onboard sensors, and CropVue image processing software.  The system is ready to go to work out of the box.
   
 </div>
@@ -1496,9 +1625,10 @@ Find training videos, support documents, contact information, and other helpful 
     
 <div class = "footer">
                 
-    <a href = "https://airtractor.com/"><img class = "ydfootlogo" src = "https://airtractor.com/wp-content/themes/AirTractorChild/images/AT-Logo.svg" height = "150px" width = "172px"></a>      
+    <a href = "https://airtractor.com/"><img class = "ydfootlogo" src = "https://airtractor.com/wp-content/themes/AirTractorChild/images/AT-Logo.svg" height = "100px" width = "114px"></a>      
     
-        <img class = "atfootlogo" src = "https://res.cloudinary.com/yielddefender/image/upload/v1495727268/YD_logo_bxbcsu.png" height = "150px" width = "208px">
+        <img class = "atfootlogo" src = "https://res.cloudinary.com/yielddefender/image/upload/v1495727268/YD_logo_bxbcsu.png" height = "100px" width = "185px">
+
 
             
                         
@@ -1511,7 +1641,7 @@ Find training videos, support documents, contact information, and other helpful 
         <br><br>
     <span class = "footercn">PO Box 485, Olney, Tx 76374</span>
         <br><br>
-    <span class = "footercn">info@yielddefender.com</span>
+    <span class = "footercn"><a class = "emaillink" href = "mailto:info@yielddefender.com">info@yielddefender.com</a></span>
         <br><br>
     <span class = "footercn">870-270-4255</span>
         <br><br>
