@@ -7,22 +7,19 @@
     
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-    
-    <link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet">
-    
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
   $(".targettop").on('click', function(event) {
@@ -44,20 +41,14 @@ $(document).ready(function(){
 });
 </script>
     
-
+    </head>
     
-    
-    
-</head>    
-
-
-    
-<style>
+    <style>
     
  /*!!!!!!!!!!BEGIN DESKTOP CSS!!!!!!!!!!*/
     
             
-       * {
+ * {
     box-sizing: border-box;
 }
 .row::after {
@@ -70,7 +61,7 @@ $(document).ready(function(){
     padding: 15px;
 }
         
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 775px) {
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
     .col-3 {width: 25%;}
@@ -85,19 +76,23 @@ $(document).ready(function(){
     .col-12 {width: 100%;}
     
     body {
-        margin: 0;
+        margin: 0 0 160px;
         overflow-x: hidden;
+        height: 100%;
+        min-height: 100%;
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .navwrapper2{
+        display: none;
     }
     
-    .navwrapper2 {
+    .mobilewrap{
         display:none;
     }
     
-    .navwrapper2 {
-        display:none;
-    }
-    
-  .navigation {
+    .navigation {
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -121,7 +116,8 @@ $(document).ready(function(){
     height: 100%;
 }
     
-         .icon{
+    
+     .icon{
         padding-top: 0.5%;
         padding-right: 2%;
         float: right;
@@ -140,22 +136,20 @@ $(document).ready(function(){
         padding-top: 1%;
         text-decoration: none;
     }
-    
-    .navwrapper{
-        padding-bottom: 8%;
-    }
         
-        #active {
+                #active {
             background-color: #233e6c;
             height: 100%;
         }
     
-                        .footer {
+        .footer {
          background-color: #4d4d4d;
          background-size: cover;
          background-position: center;
          position: absolute;
-         width: 100%;
+        height: 160px;
+        width: 100%;
+        overflow:hidden;;
          text-align: center;
          color: white;
          font-family: 'Droid Sans', sans-serif;
@@ -169,6 +163,7 @@ $(document).ready(function(){
         float: left;
         padding-left: 4%;
         padding-bottom: 1%;
+        
     }
     
     .ydfootlogo {
@@ -176,20 +171,22 @@ $(document).ready(function(){
         padding-right: 2%;
         padding-bottom: 1%;
         float: right;
+        
     }
     
     .footercontent { 
         position: absolute;
         left:50%;
-        padding-top: 2%;
-        height: 200px;
+        padding-top: 1%;
+        height: 220px;
         width: 400px;
         margin-left: -200px;
+        font-size: 12;
     }
     
     .smlinks {
     padding: 1%;
-    font-size: 30px;
+    font-size: 22px;
     text-align: center;
     text-decoration: none;
   }
@@ -234,42 +231,27 @@ $(document).ready(function(){
         
     }
     
-    .mobilewrap{
-        display:none;
-    }
-    
-
-    
-    .links{
+    #support{
         text-align: center;
-        
+        padding-top: 5%;
     }
     
-    .btnhead{
+        .supporthead{
         width: 100%;
         font-weight: bolder;
         font-family: "Trebuchet MS", Helvetica, sans-serif;
-        font-size: 30;
-        text-align: center;
-        padding-bottom: 3%;
-    }
-    
-    .supporthead{
-        width: 100%;
-        font-weight: bolder;
-        font-family: "Trebuchet MS", Helvetica, sans-serif;
-        font-size: 40;
+        font-size: 3vw;
     }
     
     .supportcn{
         width: 100%;
-        font-size: 18;
+        font-size: 1.5vw;
         color: #494949;
         font-family: 'PT Sans', sans-serif;
         padding-bottom: 8%;
     }
     
-    #btnwrapper{
+     #btnwrapper{
        margin-left: 15%;
         padding-bottom: 10%;    
        text-align: center;    
@@ -298,10 +280,11 @@ $(document).ready(function(){
     .button1{
         margin: auto;
         border: 3px solid #233e6c;
-        border-radius: 60px 60px 60px 60px;
+        border-radius: 70px 70px 70px 70px;
         padding: 30px;
-        font-size: 15;
-        width: 80%;
+        font-size: 1.1vw;
+        width: 70%;
+        height: 30%;
         text-align: center;
         font-weight: bold;
         font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -336,203 +319,97 @@ $(document).ready(function(){
         color:white;
     }
     
-    
-    .form{
-        margin-left: 5%;
-        margin-right: 5%;
-        width: 40%;
+        .btnhead{
+        width: 100%;
+        font-weight: bolder;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        font-size: 2.5vw;
+        text-align: center;
+        padding-bottom: 3%;
     }
     
-
-        .qanda{
+    .qanda{
         margin-left: 10%;
         margin-right: 10%;
         width: 80%;
-        text-align: center;
+        
     }
     
     #faq{
         padding-bottom: 10%;
     }
     
-        .faqhead{
-        font-size: 40;
+        .faqhead, .AOThead{
+        font-size: 3vw;
         font-weight: bolder;
         font-family: "Trebuchet MS", Helvetica, sans-serif;
+            text-align: center;
+            padding-bottom: 4%;
         
     }
     
     .question{
         font-family: "Trebuchet MS", Helvetica, sans-serif;
         font-weight: bold;
+        font-size: 1.2vw;
     }
     
-    .answer{
+    .answer, .AOTcn{
         font-family: "Trebuchet MS", Helvetica, sans-serif;
         color: #494949;
+        font-size: 1.2vw;
         
     }
     
-    .tips{
+    .questionspace{
+        padding-bottom: 1%;
+    }
+    
+    .answerspace{
+        padding-bottom: 5%;
+    }
+    
+    .tipsspace{
+        padding-bottom: 2.5%;
+    }
+    
+        .tips{
         margin-left: 10%;
         margin-right: 10%;
         width: 80%;
-        text-align: center;
-    }
-    
-        
-.AOThead {
-        font-size: 30;
-        font-weight: bolder;
-        font-family: 'Montserrat', sans-serif;
         
     }
-    
-    .AOTcn{
-        font-family: 'Merriweather', serif;
-        color: #494949}
     
     
        #aot{
         padding-bottom: 10%;
     }
     
+    
+    
+        }
+        
+         @media only screen and (max-width: 774px) {
+        
+        body{
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .headerwrap{
+            display: none;
+        }
+        
         #nav{
-        position: fixed;
-        width: 100%;
+            display: none;
+        }
         
-    }
-    
-    .links{
-        position: relative;
-        padding-top: 15%;
-    }
-    
-input, label {
-    display:block;
-}
-    
-    label{
-        font-weight: bold;
-        font-size: 18;
-        font-family: 'Montserrat', sans-serif;
-    }
-    
-    input{
-        width: 100%;
-    }
-    
-
-    
-    
-   
-    
-    .button1 a{
-        color: white;
-        text-decoration: none;
-    }
-    
-    .footerhead{
-            font-family: 'Ubuntu', sans-serif;
-        font-weight: bolder;
-    }
-    
-    .footercn{
-        font-family: 'Ubuntu', sans-serif;
-        font-weight: 400;
-        color: gainsboro;
-        color: white;
-        text-decoration: none;
-    }
-    
-    
-    
-    #topscreen{
-     display: none;   
-    }
-    
-    .dealerapp {
-        color: black;
-    }
-    
-    .dealerapp a{
-        color: black;
-    }
-    
-    .dealerapp a:visited {
-        color: black;
-        text-decoration: none;
-}
-    
-        
-    }/*END DESKTOP CSS*/
-    
-    
-    /*!!!!!!!!!!BEGIN LARGE TABLET CSS!!!!!!!!!!*/
-        
-         * {
-    box-sizing: border-box;
-}
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-[class*="col-"] {
-    float: left;
-    padding: 15px;
-}
-        
-@media only screen and (max-width: 900px) {
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-    
-    body {
-        margin: 0;
-        overflow-x: none;
-        
-        
-    }
-    
-    .dealerapp {
-        color: black;
-    }
-    
-    .dealerapp a{
-        color: black;
-    }
-    
-    .dealerapp a:visited {
-        color: black;
-        text-decoration: none;
-}
-    
-    .navwrapper{
-        display: none;
-    }
-    
-            .desktopwrap {
-                display: none;
-            }
-    
-    .navwrapper {
-                display: none;
-            }
-            
-.nav2 {
+        .nav2 {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    background-color: #233e6c;
     background-color: #233e6c;
     width: 100%;
 }
@@ -575,41 +452,97 @@ input, label {
         text-decoration: none;
         color: white;
     }
+        
+                .emailandphone{
+        color: #949494;
+        font-family: 'Oswald', sans-serif;
+        text-decoration: none;
+        font-size: 10;
+    }
+        
+        .scrolltop{ 
+            position: fixed;
+            top: 90%;
+            left: 0.5%;
+            z-index: 100;
+            color: gray;
+            opacity: 0.75;
+            }
+            
+            .targettop{
+                color: gray;
+                text-decoration: none;
+            }
     
-      .footer2 {
+    .fa-caret-up:hover{
+        opacity: 0.5;
+    }
+             
+               .footer {
          background-color: #4d4d4d;
-         background-size: contain;
+         background-size: cover;
          background-position: center;
          position: absolute;
-         width: 100%;
-         height: 240px;
+        height: 160px;
+        width: 100%;
+        overflow:hidden;;
          text-align: center;
          color: white;
          font-family: 'Droid Sans', sans-serif;
          margin: 0 0 0 0;
         
+        
     } 
         
-    .footercontent2 {  
-        position: absolute;
-        left:50%;
-        padding-top: 4%;
-        height: 200px;
-        width: 400px;
-        margin-left: -200px;
+    .atfootlogo {
+        padding-top: 1.5%;
+        float: left;
+        padding-left: 4%;
+        padding-bottom: 1%;
+        
     }
     
-    .fa {
+    .ydfootlogo {
+        padding-top: 1.5%;
+        padding-right: 2%;
+        padding-bottom: 1%;
+        float: right;
+        
+    }
+    
+    .footercontent { 
+        position: absolute;
+        left:50%;
+        padding-top: 1%;
+        height: 220px;
+        width: 400px;
+        margin-left: -200px;
+        font-size: 12;
+    }
+    
+    .smlinks {
     padding: 1%;
-    font-size: 30px;
-    width: 30px;
+    font-size: 22px;
     text-align: center;
     text-decoration: none;
   }
-    .fa:hover {
-    opacity: 0.5;
+    .fa-facebook:hover {
+    opacity: 0.7;
     }
-        .fa-facebook {
+    
+    .fa-twitter:hover{
+        opacity: 0.7;
+    }
+    
+    .fa-instagram:hover{
+        opacity: 0.7;
+    }
+    
+    .fa-youtube:hover{
+        opacity: 0.7;
+    }
+    
+    .fa-facebook {
   background-color: #4d4d4d;
   color: white;
         text-decoration: none;
@@ -633,90 +566,73 @@ input, label {
     text-decoration: none;
         
     }
-            
-              .atfootlogo2{
-                        float: left;
-                        height: 100px;
-                        width: 100px;
-                        margin-top: 50px;
-                        margin-left: 8%;
-                    }
-            
-            .ydfootlogo2{
-                        float: right;
-                        height: 100px;
-                        width: 100px;
-                        margin-top: 50px;
-                        margin-right: 8%;
-                        
-                    }
-    
-    
-    .support{
-        margin-left: 15%;
-        margin-right: 15%;
-        width: 70%;
-        text-align: center;
-    }
-    
-    #links{
+             
+            #support{
         padding-top: 5%;
     }
+             
+   
     
-    .btnhead{
+        .supporthead{
+        padding-left: 42%;
         width: 100%;
         font-weight: bolder;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 25;
-        text-align: center;
-        
-    }
-    
-    .supporthead{
-        width: 100%;
-        font-weight: bolder;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 30;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        font-size: 3vw;
     }
     
     .supportcn{
-        width: 100%;
-        font-size: 18;
-        color: gray;
+        width: 110%;
+        font-size: 1.5vw;
+        color: #494949;
         font-family: 'PT Sans', sans-serif;
         padding-bottom: 8%;
+        padding-left: 7%;
+    }
+             
+                  #btnwrapper{
+       margin-left: 15%;
+        padding-bottom: 10%;    
+       text-align: center;    
     }
     
-    .dealerapp {
-        color: black;
+    .leftone{
+        float: left;
+        width: 20%;
     }
     
-    .dealerapp a{
-        color: black;
+    .lefttwo{
+        float: left;
+        width: 20%;
     }
     
-    .dealerapp a:visited {
-        color: black;
-        text-decoration: none;
-}
+    .rightone{
+        float: left;
+        width: 20%;
+    }
     
-        .button1{
+    .righttwo{
+        float: left;
+        width: 20%;
+    }
+    
+    .button1{
         margin: auto;
-        display: block;
-        width: 60%;
         border: 3px solid #233e6c;
-        color: white;
         border-radius: 60px 60px 60px 60px;
         padding: 30px;
+        font-size: 1.25vw;
+        width: 100%;
+        height: 25%;
         text-align: center;
         font-weight: bold;
         font-family: "Trebuchet MS", Helvetica, sans-serif;
+        margin: auto;
         transition: background-color 0.25s ease-out;
         -moz-transition: background-color 0.25s ease-out;
         -webkit-transition: background-color 0.25s ease-out;
         -ms-transition: background-color 0.25s ease-out;
-        font-size: 12;
-        background-color: #233e6c
+        color: #233e6c
     }
     
     .button1:hover{
@@ -734,586 +650,324 @@ input, label {
 }
     
     .button1 a:visited {
-        color: white;
+        color: #233e6c;
         text-decoration: none;
 }
     
-
+    .button1 a:hover{
+        color:white;
+    }
     
-    .qanda{
+        .btnhead{
+        width: 100%;
+        font-weight: bolder;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        font-size: 2.5vw;
         text-align: center;
-        margin-left: 15%;
-        margin-right: 15%;
-        width: 70%;
+        padding-bottom: 3%;
+    }
+             
+                 .qanda{
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+        
     }
     
     #faq{
-        padding-top: 10%;
-        padding-bottom: 8%;
+        padding-bottom: 7%;
     }
     
-    .button1 a{
-        color: white;
-        text-decoration: none;
-    }
- 
-    
-    .formmob{
-        padding-left: 6%;
-    }
-    
-     .faqhead{
-        font-size: 40;
-         padding-top: 5%;
+        .faqhead, .AOThead{
+        font-size: 3vw;
         font-weight: bolder;
-        font-family: 'Montserrat', sans-serif;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+            text-align: center;
+            padding-bottom: 4%;
         
     }
     
     .question{
-        font-family: 'Merriweather', serif;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
         font-weight: bold;
+        font-size: 1.25vw;
     }
     
-    .answer{
-        font-family: 'Merriweather', serif;
-        color: #4e4c4c
+    .answer, .AOTcn{
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        color: #494949;
+        font-size: 1.25vw;
         
     }
-    
-    .AOThead {
-        font-size: 30;
-        font-weight: bolder;
-        font-family: 'Montserrat', sans-serif;
-        
+             
+            .questionspace{
+        padding-bottom: 1%;
     }
     
-    .AOTcn{
-        font-family: 'Merriweather', serif;
-        color: #4e4c4c}
-    
-    .tips{
-        margin-left: 15%;
-        margin-right: 15%;
-        width: 70%;
-        text-align: center;
-    }
-    
-    
-    #mobilefooterwrapper{
-        padding-top: 50%;
-    }
-    
-    .footerhead{
-            font-family: 'Ubuntu', sans-serif;
-        font-weight: bolder;
-    }
-    
-    .footercn{
-        font-family: 'Ubuntu', sans-serif;
-        font-weight: 400;
-        color: gainsboro;
-        color: white;
-        text-decoration: none;
-    }
-    
-    .scrolltop{ 
-            position: fixed;
-            top: 90%;
-            left: 1%;
-            z-index: 100;
-            color: gray;
-            opacity: 0.75;
-            }
-            
-            .targettop{
-                color: gray;
-                text-decoration: none;
-            }
-    
-    .emailandphone{
-        color: #949494;
-        font-family: 'Oswald', sans-serif;
-        text-decoration: none;
-        font-size: 10;
-    }
-    
-    #aot{
+    .answerspace{
         padding-bottom: 5%;
     }
-    
-
-    
-    } /*!!!!!!!!!!END LARGE TABLET CSS!!!!!!!!!!*/
-    
-    /*!!!!!!!!!!BEGIN MED TABLET CSS!!!!!!!!!!*/
+             
+             .tipsspace{
+                 padding-bottom: 2.5%;
+             }
+             
+             #aot{
+                 padding-bottom: 8%;
+             }
+             
+              .tips{
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
         
-                @media only screen and (max-width: 768px) {
-                    body{
-                        margin: 0;
-                        padding: 0;
-                        overflow-x: hidden;
-                    }
-                    
-            .navwrapper {
-                display: none;
-            }
-                    
-                     .navwrapper {
-                display: none;
-            }
-            
-.nav2 {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #233e6c;
-    width: 101%;
-}
-.navbar2 a {
-    font-family: 'Oswald', sans-serif;
-    display: block;
-    color: white;
-    padding: 8px 16px;
-    text-decoration: none;
-    text-align: center;
-}
-.navbar2 a:hover {
-        background-color: #4d4d4d;
-}
-    
-    .ydd {
-        color: white;
-        float: right;
-        padding-top: 4%;
-        padding-right: 2%;
     }
-    
-    .icon2 {
-        padding-top: 1%;
-        padding-bottom: 1%;
-        padding-left: 1%;
-    }
-    
-            #active2 {
-            font-family: 'Oswald', sans-serif;
-            background-color: #333333;
-            display: block;
-            padding: 8px 16px;
-            text-decoration: none;
-            text-align: center;
-            
+       
+             
         }
-    
-    #active2 a {
-        text-decoration: none;
-        color: white;
-    }
-                    
-        .footer2 {
-         background-color: #4d4d4d;
-         background-size: contain;
-         background-position: center;
-         position: absolute;
-         width: 100%;
-         height: 240px;
-         text-align: center;
-         color: white;
-         font-family: 'Droid Sans', sans-serif;
-         margin: 0 0 0 0;
         
-    } 
-        
-    .footercontent2 {  
-        position: absolute;
-        left:50%;
-        padding-top: 4%;
-        height: 200px;
-        width: 400px;
-        margin-left: -200px;
-    }
-    
-    .fa {
-    padding: 1%;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-  }
-    .fa:hover {
-    opacity: 0.5;
-    }
-        .fa-facebook {
-  background-color: #4d4d4d;
-  color: white;
-        text-decoration: none;
-    }
-    .fa-twitter {
-  background-color: #4d4d4d;
-  color: white;
-        text-decoration: none;
-    }
-    
-    .fa-instagram {
-  background-color: #4d4d4d;
-  color: white;
-        text-decoration: none;
-        
-    }
-    
-    .fa-youtube {
-    background-color: #4d4d4d;
-    color: white;
-    text-decoration: none;
-        
-    }
-                    
-                     .desktopwrap{
-                display: none;
-            }
-                    
-        #mobilefooterwrapper{
-        padding-top: 100%;
-    }
-                    
-        .dealerapp {
-        color: black;
-    }
-    
-    .dealerapp a{
-        color: black;
-    }
-    
-    .dealerapp a:visited {
-        color: black;
-        text-decoration: none;
-}
-                    
-                    #btnleft{
-                        float: left;
-                        padding-left: 6%;
-                        padding-top: 3%;
-                        
-                    }
-                    
-                    #btnright{
-                         
-                        float: right;
-                        padding-right: 6%;
-                    }
-                    
-        button1{
+         @media only screen and (max-width: 600px) {
+         
+         .atfootlogo{
+             width: 25%;
+             height: 80%;
+             padding-top: 30px;
+         }
+         
+         .ydfootlogo{
+             width: 25%;
+             height: 80%;
+             padding-top: 30px;
+         }
+         
+         .button1{
         margin: auto;
-        width: 100%;
         border: 3px solid #233e6c;
-        color: white;
         border-radius: 60px 60px 60px 60px;
         padding: 30px;
+        font-size: 1.25vw;
+        width: 130%;
+        height: 25%;
         text-align: center;
         font-weight: bold;
         font-family: "Trebuchet MS", Helvetica, sans-serif;
+        margin: auto;
         transition: background-color 0.25s ease-out;
         -moz-transition: background-color 0.25s ease-out;
         -webkit-transition: background-color 0.25s ease-out;
         -ms-transition: background-color 0.25s ease-out;
-        font-size: 10;
-        background-color: #233e6c
+        color: #233e6c
     }
-                    
-                    
-            
-                    
-    }/*END MED TABLET CSS*/
-    
-    /*!!!!!!!!!!BEGIN MOBILE PHONES!!!!!!!!!*/
-        
-        @media only screen and (max-width: 479px) {
-                    body{
-                        padding: 0;
-                        margin: 0;
-                        overflow-x: hidden;
-                    }
-                    
-            .navwrapper {
-                display: none;
-                
-            }
-            
-            .desktopwrap{
-                display: none;
-            }
-             .navwrapper {
-                display: none;
-            }
-            
-    .nav2 {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #233e6c;
-    width: 102%;
-}
-.navbar2 a {
-    font-family: 'Oswald', sans-serif;
-    display: block;
-    color: white;
-    padding: 8px 16px;
-    text-decoration: none;
-    text-align: center;
-}
-.navbar2 a:hover {
-        background-color: #4d4d4d;
-}
-    
-    .ydd {
-        color: white;
-        float: right;
-        padding-top: 4%;
-        padding-right: 2%;
+         
+    #faq{
+        padding-bottom: 7%;
     }
     
-    .icon2 {
-        padding-top: 1%;
-        padding-bottom: 1%;
-        padding-left: 1%;
-    }
-    
-            #active2 {
-            font-family: 'Oswald', sans-serif;
-            background-color: #333333;
-            display: block;
-            padding: 8px 16px;
-            text-decoration: none;
+        .faqhead, .AOThead{
+        font-size: 3vw;
+        font-weight: bolder;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
             text-align: center;
-            
-        }
-    
-    #active2 a {
-        text-decoration: none;
-        color: white;
-    }
-            
-        .footer2 {
-         background-color: #4d4d4d;
-         background-size: contain;
-         background-position: center;
-         position: absolute;
-         width: 100%;
-         height: 240px;
-         text-align: center;
-         color: white;
-         font-family: 'Droid Sans', sans-serif;
-         margin: 0 0 0 0;
-        
-    } 
-        
-    .footercontent2 {  
-        position: absolute;
-        left:50%;
-        padding-top: 4%;
-        height: 200px;
-        width: 400px;
-        margin-left: -200px;
-    }
-    
-    .fa {
-    padding: 1%;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-  }
-    .fa:hover {
-    opacity: 0.5;
-    }
-        .fa-facebook {
-  background-color: #4d4d4d;
-  color: white;
-        text-decoration: none;
-    }
-    .fa-twitter {
-  background-color: #4d4d4d;
-  color: white;
-        text-decoration: none;
-    }
-    
-    .fa-instagram {
-  background-color: #4d4d4d;
-  color: white;
-        text-decoration: none;
+            padding-bottom: 4%;
         
     }
     
-    .fa-youtube {
-    background-color: #4d4d4d;
-    color: white;
-    text-decoration: none;
-        
-    }
-            
-            .ydfootlogo2{
-                display: none;
-            }
-        
-            .atfootlogo2{
-                display:none;
-            }
-            
-          
-        #mobilefooterwrapper{
-        padding-top: 200%;
-    }   
-            
-            .dealerapp {
-        color: black;
+    .question{
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 1.3vw;
     }
     
-    .dealerapp a{
-        color: black;
+    .answer, .AOTcn{
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        color: #494949;
+        font-size: 1.3vw;
+        
+    }
+             
+            .questionspace{
+        padding-bottom: 1%;
     }
     
-    .dealerapp a:visited {
-        color: black;
-        text-decoration: none;
-}
-            
-            
-    }/*END MOBILE PHONE CSS*/
+    .answerspace{
+        padding-bottom: 5%;
+    }
+             
+             .tipsspace{
+                 padding-bottom: 2.5%;
+             }
+             
+             #aot{
+                 padding-bottom: 8%;
+             }
+             
+              .tips{
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+        
+    }
+         
+         
+    }
     
-    @media only screen and (max-width: 414px) {
+    @media only screen and (max-width: 400px) {
         
-        #btnleft{
-            width: 40%;
-            float: left;
-            padding-left: 0%;
-            padding-top: 8%;
-        }
+        .atfootlogo{
+             width: 27%;
+             height: 75%;
+             padding-top: 30px;
+         }
         
-        #btnright{
-            width: 40%;
-            float: right;
-            padding-right: 0%;
-            
-        }
-        
-        body{
-            width: 104%;
+        .ydfootlogo{
+            width: 27%;
+            height: 75%;
+            padding-top: 30px;
         }
         
         .button1{
         margin: auto;
-        display: block;
-        width: 100%;
         border: 3px solid #233e6c;
-        color: white;
         border-radius: 60px 60px 60px 60px;
         padding: 30px;
+        font-size: 1.75vw;
+        width: 125%;
+        height: 20%;
         text-align: center;
         font-weight: bold;
         font-family: "Trebuchet MS", Helvetica, sans-serif;
+        margin: auto;
         transition: background-color 0.25s ease-out;
         -moz-transition: background-color 0.25s ease-out;
         -webkit-transition: background-color 0.25s ease-out;
         -ms-transition: background-color 0.25s ease-out;
-        font-size: 7;
-        background-color: #233e6c
+        color: #233e6c
     }
         
-   
-        
-    }
-    
-    @media only screen and (max-width: 412px) {
-        
-        #btnright{
-            padding-top: 3%;
-        }
-        
-        .nav2{
-            width: 104%;
-        }
-        
-        body{
-            width: 104%;
-        }
-        
-  
-        
+        .leftone{
+        float: left;
+        width: 24%;
     }
     
-    @media only screen and (max-width: 375px) {
-        
-        .footer2{
-            width: 106%;  
-        }
-        
-        body{
-            width: 102%;
-            left: 2px;
-        }
-        
-        .nav2{
-            width: 106%;
-        }
-        
-        .button1{
-            font-size: 6;
-            margin: auto;
-          
-          
-        }
-        
-        #btnright{
-            padding-top: 3%;
-        }
-        
-        
+    .lefttwo{
+        float: left;
+        width: 24%;
     }
     
-    @media only screen and (max-width: 360px) {
-        
-        .footer2{
-            width: 102%;
-            left: 1px;
-        }
-        
-        #btnright{
-            padding-top: 4%;
-        }
+    .rightone{
+        float: left;
+        width: 24%;
     }
     
-    @media only screen and (max-width: 360px) {
-        
-        .footer2{
-            width: 104%;
-        }
-        
-        .aotwrapper{
-            margin-bottom: 35%;
-        }
-        
-        .button1{
-            font-size: 7;
-            text-align: center;
-            margin: auto;
-            width: 105%;
-            
-        }
+    .righttwo{
+        float: left;
+        width: 24%;
     }
-    
+        
+             #btnwrapper{
+       margin-left: 0%;
+        padding-bottom: 10%;    
+       text-align: center;    
+    }
+        
+        .question, .answer, .AOTcn{
+            font-size: 2vw;
+        }
 
-   
+        
+        }
+        
+         @media only screen and (max-width: 300px) {
+        
+            .atfootlogo{
+             width: 20%;
+             height: 60%;
+             padding-top: 50px;
+         }
+        
+        .ydfootlogo{
+            width: 15%;
+            height: 75%;
+            padding-top: 30px;
+        }
+             
+                     .button1{
+        margin: auto;
+        border: 3px solid #233e6c;
+        border-radius: 60px 60px 60px 60px;
+        padding: 30px;
+        font-size: 1.75vw;
+        width: 125%;
+        height: 20%;
+        text-align: center;
+        font-weight: bold;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        margin: auto;
+        transition: background-color 0.25s ease-out;
+        -moz-transition: background-color 0.25s ease-out;
+        -webkit-transition: background-color 0.25s ease-out;
+        -ms-transition: background-color 0.25s ease-out;
+        color: #233e6c
+    }
+        
+        .leftone{
+        float: left;
+        width: 24%;
+    }
     
+    .lefttwo{
+        float: left;
+        width: 24%;
+    }
     
+    .rightone{
+        float: left;
+        width: 24%;
+    }
     
-</style>
+    .righttwo{
+        float: left;
+        width: 24%;
+    }
+        
+             #btnwrapper{
+       margin-left: 0%;
+        padding-bottom: 10%;    
+       text-align: center;    
+    }
+             
+             .btntext{
+                 position: relative;
+                 right: 7px;
+             }
+             
+                 .question{
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 2vw;
+    }
     
+    .answer, .AOTcn{
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        color: #494949;
+        font-size: 2vw;
+        
+    }
+             
+             .faqhead{
+                 font-size: 4vw;
+             }
+
+             
+        }
+        
+        
+    </style>
     
 <body>
     
-<!--DESKTOP BEGIN--> <div class = "desktopwrap">
-   
-<div class = "navwrapper">
+    
+    <div class = "navwrapper" id = "nav">
         
 <div class="navigation">
   <a class = "navbar" href="https://htmlpreview.github.io/?https://github.com/willcoleman/yielddefendertestingsite/blob/master/YieldDefenderHome.html">HOME</a>
@@ -1332,11 +986,47 @@ input, label {
         
     </div><!--navwrapper1-->
     
-<div class = "row" id = "support">
+    <div id = "topscreen"></div>
+    
+    <div class = "navigation2">
+    <section></section>
+    </div>
+    
+    
+        
+    <div class = "navigation2" id = "nav2">
+        
+    <div id = "nav2">
+    
+<div class = "navwrapper2">
+<ul class = "nav2">
+    <center>
+        <li class = "nbhead2"><a href="#company"><img class = "icon2" src = "https://res.cloudinary.com/yielddefender/image/upload/q_100/v1495727268/YD_logo_bxbcsu.png" height = "60px" width = "80px"></a><div class = "emailandphone">info@yielddefender.com<br>870-270-4255</div>
+  <li class = "navbar2"><a href="https://htmlpreview.github.io/?https://github.com/willcoleman/yielddefendertestingsite/blob/master/YieldDefenderHome.html">HOME</a></li>
+  <li class = "navbar2"><a href="https://htmlpreview.github.io/?https://github.com/willcoleman/yielddefendertestingsite/blob/master/YieldDefenderCompany.html">ABOUT</a></li>
+  <li class = "navbar2"><a href="https://htmlpreview.github.io/?https://github.com/willcoleman/yielddefendertestingsite/blob/master/YieldDefenderProducts.html">PRODUCTS</a></li>
+  <li id = "active2"><a href="https://htmlpreview.github.io/?https://github.com/willcoleman/yielddefendertestingsite/blob/master/YieldDefenderSupport.html">SUPPORT</a></li> 
+    </center>
+</ul>
+    
+    
+<div id = "scrolltotopbtnwrap">
+        
+        <div class = "scrolltop"><a class = "targettop" href = "#topscreen"><i class="fa fa-caret-up" style="font-size:36px"></i></a></div>
+        
+    </div><!--scrolltotopbtnwrap-->
+    
+</div><!--navwrapper2-->
+        
+        </div>
+        
+    </div><!--navigation-->
+    
+    <div class = "row" id = "support">
     
 <div class = "col-12 links">
     
-<div class = "supporthead">We are accepting Dealer Applications.</div>
+<div class = "supporthead">To Become A Dealer</div>
     
 <br>
     
@@ -1349,6 +1039,7 @@ input, label {
     
 </div><!--row id support-->
     
+    
 <div class = "wholebtnwrap">
     
 <div class = "btnhead">Support Document and Downloads</div>
@@ -1358,29 +1049,29 @@ input, label {
      
 
     <div class = "col-3 leftone">
-        <a href = "https://www.meetup.com/North-Texas-Drone-User-Group/"><button class = "button1">North Texas Drone User Group</button></a>
+        <a href = "https://www.meetup.com/North-Texas-Drone-User-Group/"><button class = "button1"><span class = "btntext">North Texas Drone User Group</span></button></a>
         <br><br>
-        <a href = "https://nebula.wsimg.com/8ec98280efdd8a535a126808da97636e?AccessKeyId=B32FB2B1A7DDAC4E960A&disposition=0&alloworigin=1"><button class = "button1">NTDUG Standard Operations</button></a>    
+        <a href = "https://nebula.wsimg.com/8ec98280efdd8a535a126808da97636e?AccessKeyId=B32FB2B1A7DDAC4E960A&disposition=0&alloworigin=1"><button class = "button1"><span class = "btntext">NTDUG Standard Operations</span></button></a>    
     </div>
     
     <div class = "col-3 lefttwo">
-        <a href = "https://www.dropbox.com/s/i07slx1hrhuo89h/Drone%20ROI%20Calculator.xlsx?dl=0"><button class = "button1">Drone Return on Investment</button></a>
+        <a href = "https://www.dropbox.com/s/i07slx1hrhuo89h/Drone%20ROI%20Calculator.xlsx?dl=0"><button class = "button1"><span class = "btntext">Drone Return on Investment</span></button></a>
         <br><br>
-        <a href = "https://www.dropbox.com/s/lotd1sslqm2zawd/YDD%20Self-Guided%20Training.docx?dl=0"><button class = "button1">Self-Guided Training Tutorial</button></a>
+        <a href = "https://www.dropbox.com/s/lotd1sslqm2zawd/YDD%20Self-Guided%20Training.docx?dl=0"><button class = "button1"><span class = "btntext">Self-Guided Training Tutorial</span></button></a>
     
     </div>
     
         <div class = "col-3 rightone">
-            <a href = "https://www.dropbox.com/s/eirhnrj4xydeb7m/appDeploy_V1_0_1.zip?dl=0"><button class = "button1">Cropvue Imaging Download</button></a>
+            <a href = "https://www.dropbox.com/s/eirhnrj4xydeb7m/appDeploy_V1_0_1.zip?dl=0"><button class = "button1"><span class = "btntext">Cropvue Imaging Download</span></button></a>
         <br><br>
-            <a href = "https://www.dropbox.com/s/nmul59s74k0fgo9/CropVue%20manual%202.pdf?dl=0"><button class = "button1">CropVue Imaging Manual</button></a>
+            <a href = "https://www.dropbox.com/s/nmul59s74k0fgo9/CropVue%20manual%202.pdf?dl=0"><button class = "button1"><span class = "btntext">CropVue Imaging Manual</span>S</button></a>
     
     </div>
     
             <div class = "col-3 righttwo">
-                <a href = "https://www.dropbox.com/s/rsdywy71zz85xl1/MissionPlanner-1.3.38.msi?dl=0"><button class = "button1">Mission Planner Download</button></a>
+                <a href = "https://www.dropbox.com/s/rsdywy71zz85xl1/MissionPlanner-1.3.38.msi?dl=0"><button class = "button1"><span class = "btntext">Mission Planner Download</span></button></a>
         <br><br>
-    <a href = "https://www.dropbox.com/s/sy27qkohmoxd77k/YDD%20DOM%20V2.1.pptx?dl=0"><button class = "button1">Drone Operator Manual</button></a>
+    <a href = "https://www.dropbox.com/s/sy27qkohmoxd77k/YDD%20DOM%20V2.1.pptx?dl=0"><button class = "button1"><span class = "btntext">Drone Operator Manual</span></button></a>
     
     </div>
      
@@ -1395,69 +1086,48 @@ input, label {
         
     </div>
     
-
-    
-    
-    
-
-    
-    
-
-    
-
-    
-    
-    
-
-    
-    
-<div class = "row" id = "faq">
+    <div class = "row" id = "faq">
     
     
 <div class = "col-12 qanda">
         
-        <span class = "faqhead">FAQ:</span>
+        <div class = "faqhead">FAQ:</div>
         
-        <br>
-    
-    <hr width = "15%">
-        
-        <br>
      
     
  <span class = "question"><b>Q:</b> How is Air Tractor able to sell this product for thousands of dollars less than the </span>
     
-      <br><br>
+     <div class = "questionspace"> </div>
     
 <span class = "answer"><b>A:</b> We design and manufacture the entire system in our Texas facility which allows for flexibility and efficiency. Most of our competition rely on separate companies to make the aircraft and sensors, and they put the system together. </span>
     
-     <br><br><br><br>
+     <div class = "answerspace"> </div>
     
     <span class = "question"><b>Q:</b> How long will the aircraft fly?</span>
     
-      <br><br>
+       <div class = "questionspace"> </div>
     
 <span class = "answer"><b>A:</b> It is important to remember that environmental conditions (payload, wind conditions, elevation, temperature, humidity) can affect the performance of Yield Defender during any given flight.  The HE Quad is designed for a 40 minute flight, and an Operator can typically cover 100 acres on each battery using our system.  An operator should never break the FAA 400’ ceiling regulation, but flying at higher elevation will cover more acres.</span>
     
-    <br><br><br><br>
+    <div class = "answerspace"> </div>
     
     <span class = "question"><b>Q:</b> What happens if the battery runs low during a mission?</span>
-      <br><br>
+       <div class = "questionspace"> </div>
     
 <span class = "answer"><b>A:</b> The UAV is programmed to Return to Launch (RTL) when the battery reaches low voltage alarm. Thoughtful mission planning allows for enough time for the UAV to come home safely.</span> 
     
-    <br><br><br><br>
+    <div class = "answerspace"> </div>
     
     <span class = "question"><b>Q:</b> What should I do if I am in manual mode and am losing control?</span>
-      <br><br>
+       <div class = "questionspace"> </div>
     
     <span class = "answer"><b>A:</b> Switch to Auto mode and the aircraft will try to run the last stored mission. If it is in a different area an invisible fence (geofence) will force the aircraft to land.</span>
     
-        <br><br><br><br>
+         <div class = "answerspace"> </div>
     
     <span class = "question"><b>Q:</b> What overlap and side lap is recommended?</span>
     
-      <br><br>
+       <div class = "questionspace"> </div>
     
     <span class = "answer"><b>A:</b>  We recommend 15%.</span>
     
@@ -1466,33 +1136,36 @@ input, label {
     </div><!--row id faq-->
     
     
-<div class = "row" id = "aot">
+    <div class = "row" id = "aot">
     
 <div class = "col-12 tips">
     
 <div class = "AOThead">Additional Operation Tips:</div>
-    <br>
-    <hr width = "40%">
-    <br>
+    
+   
+  
     
     <span class = "AOTcn">
     Fly entire mission with yaw (orientation) in the same direction, default is North. Cropvue does allow manual manipulation if the images are not all in the same orientation, but this is not the most efficient method for processing.
-    <br><br>
+    <div class = "tipsspace"> </div>
     Better GPS accuracy provides more accurate results.
     </span>
     
     </div><!--col-12 tips-->
     
-</div><!--row id aot--> 
+</div><!--row id aot-->
     
     
-<!--desktopfooter-->
     
-<div class = "footer">
+    
+    
+    
+    
+    <div class = "footer">
                 
-        <img class = "ydfootlogo" src = "https://airtractor.com/wp-content/themes/AirTractorChild/images/AT-Logo.svg" height = "230px" width = "250px">        
+    <a href = "https://airtractor.com/"><img class = "ydfootlogo" src = "https://airtractor.com/wp-content/themes/AirTractorChild/images/AT-Logo.svg" height = "150px" width = "172px"></a>      
     
-        <img class = "atfootlogo" src = "https://res.cloudinary.com/yielddefender/image/upload/v1495727268/YD_logo_bxbcsu.png" height = "230px" width = "320px">
+        <img class = "atfootlogo" src = "https://res.cloudinary.com/yielddefender/image/upload/v1495727268/YD_logo_bxbcsu.png" height = "150px" width = "208px">
 
             
                         
@@ -1519,270 +1192,13 @@ input, label {
     </div>
             
             </div><!--desktopfooter-->
-            
+    
+    
+    
+    
+    </body>
+    
+    
+    
+    </html>
         
-    
-    
-    
-    
-</div><!--end desktopwrap-->
-    
-<div id = "topscreen"></div>
-    
-    
-<!--tablet and phone begin--><div class = "mobilewrap">
-    
-    
-<div class = "navwrapper2">
-<ul class = "nav2">
-    <center>
-        <li class = "nbhead2"><a href="#company"><img class = "icon2" src = "https://res.cloudinary.com/yielddefender/image/upload/q_100/v1495727268/YD_logo_bxbcsu.png" height = "60px" width = "80px"></a><div class = "emailandphone">info@yielddefender.com<br>870-270-4255</div>
-  <li class = "navbar2"><a href="https://htmlpreview.github.io/?https://github.com/willcoleman/yielddefendertestingsite/blob/master/YieldDefenderHome.html">HOME</a></li>
-  <li class = "navbar2"><a href="https://htmlpreview.github.io/?https://github.com/willcoleman/yielddefendertestingsite/blob/master/YieldDefenderCompany.html">ABOUT</a></li>
-  <li class = "navbar2"><a href="https://htmlpreview.github.io/?https://github.com/willcoleman/yielddefendertestingsite/blob/master/YieldDefenderProducts.html">PRODUCTS</a></li>
-  <li id = "active2"><a href="https://htmlpreview.github.io/?https://github.com/willcoleman/yielddefendertestingsite/blob/master/YieldDefenderSupport.html">SUPPORT</a></li> 
-    </center>
-</ul>
-    
-    
-</div><!--navwrapper2-->
-    
-<div id = "scrolltotopbtnwrap">
-        
-        <div class = "scrolltop"><a class = "targettop" href = "#topscreen"><i class="fa fa-caret-up" style="font-size:36px"></i></a></div>
-        
-    </div><!--scrolltotopbtnwrap-->
-    
-    
-<div class = "row" id = "links">
-    
-<div class = "col-12 support">
-    
-    
-    
-   <div class = "supporthead">We are accepting Dealer Applications.</div>
-    
-<br>
-    
-<div class = "supportcn">If your Company is interested in sales, support, training and service of Yield Defender Drones, please fill out the <a class = "dealerapp" href = "https://www.dropbox.com/s/7vf4xq2e5tjw0b8/YD%20-%20Dealer%20Application.pdf?dl=0">dealer application.</a></div>
-<br>    
-    
-<div class = "btnhead">Support Document and Downloads</div>
-<hr width = "80%">
-<br>
-    
-<div class = "btnswrap">
-    
-    <div id = "btnleft">
- 
-<a href = "https://www.meetup.com/North-Texas-Drone-User-Group/"><button class = "button1">N. Texas Drone User Group</button></a>
-        
-        <br>
-        
-<a href = "https://nebula.wsimg.com/8ec98280efdd8a535a126808da97636e?AccessKeyId=B32FB2B1A7DDAC4E960A&disposition=0&alloworigin=1"><button class = "button1">NTDUG Standard Operations</button></a>
-        
-   
-    
-    <br>
-    
-   
-    
-
-
-    <button class="button1"><a href = "https://www.dropbox.com/s/i07slx1hrhuo89h/Drone%20ROI%20Calculator.xlsx?dl=0">Drone Return on Investment</a></button>
-        
-     <br>
-    
-    <button class="button1"><a href = "https://www.dropbox.com/s/lotd1sslqm2zawd/YDD%20Self-Guided%20Training.docx?dl=0">Self-Guided Training Tutorial</a></button>
-    
-    </div>
-    
-    <br>
-    
-    <div id = "btnright">
-        
-    <button class="button1"><a href = "https://www.dropbox.com/s/eirhnrj4xydeb7m/appDeploy_V1_0_1.zip?dl=0">CropVue Imaging Download</a></button> 
-
-     <br>
-        
-    <button class="button1"><a href = "https://www.dropbox.com/s/nmul59s74k0fgo9/CropVue%20manual%202.pdf?dl=0">CropVue Imaging Manual</a></button> 
-    
-   
-    
-    <br>
-    
-   
-        
-       
-    
-    <button class="button1"><a href = "https://www.dropbox.com/s/rsdywy71zz85xl1/MissionPlanner-1.3.38.msi?dl=0">Mission Planner Download</a></button> 
-        
-       <br>
-   
-    <button class="button1"><a href = "https://www.dropbox.com/s/sy27qkohmoxd77k/YDD%20DOM%20V2.1.pptx?dl=0">Drone Operator Manual</a></button>    
-    
-    
-    </div>
-    
-    
-</div><!--btnswrap-->
-    
-    
-    
-</div><!--col-12 support--> 
-    
-    
-    
-</div><!--row id = links"-->
-    
-    
-<div class = "row" id = "form">
-    
-<div class = "col-12 contact">
-    
-    
-
-    
-    
-<div class = "row" id = "faq">
-    
-<div class = "col-12 qanda">
-    
-<span class = "faqhead">FAQ:</span>
-        
-        <br>
-    
-    <hr width = "15%">
-        
-        <br>
-     
-    
- <span class = "question"><b>Q:</b> How is Air Tractor able to sell this product for thousands of dollars less than the competition? </span>
-    
-      <br><br>
-    
-<span class = "answer"><b>A:</b> We design and manufacture the entire system in our Texas facility which allows for flexibility and efficiency. Most of our competition rely on separate companies to make the aircraft and sensors, and they put the system together. </span>
-    
-     <br><br><br><br>
-    
-    <span class = "question"><b>Q:</b> How long will the aircraft fly?</span>
-    
-      <br><br>
-    
-<span class = "answer"><b>A:</b> It is important to remember that environmental conditions (payload, wind conditions, elevation, temperature, humidity) can affect the performance of Yield Defender during any given flight.  The HE Quad is designed for a 40 minute flight, and an Operator can typically cover 100 acres on each battery using our system.  An operator should never break the FAA 400’ ceiling regulation, but flying at higher elevation will cover more acres.</span>
-    
-    <br><br><br><br>
-    
-    <span class = "question"><b>Q:</b> What happens if the battery runs low during a mission? </span>
-      <br><br>
-    
-<span class = "answer"><b>A:</b> The UAV is programmed to Return to Launch (RTL) when the battery reaches low voltage alarm. Thoughtful mission planning allows for enough time for the UAV to come home safely.</span> 
-    
-    <br><br><br><br>
-    
-    <span class = "question"><b>Q:</b> What should I do if I am in manual mode and am losing control?</span>
-      <br><br>
-    
-    <span class = "answer"><b>A:</b> Switch to Auto mode and the aircraft will try to run the last stored mission. If it is in a different area an invisible fence (geofence) will force the aircraft to land.</span>
-    
-        <br><br><br><br>
-    
-    <span class = "question"><b>Q:</b> What overlap and side lap is recommended?</span>
-    
-      <br><br>
-    
-    <span class = "answer"><b>A:</b>  We recommend 15%.</span>
-    
-    
-    
-</div><!--col-12 qanda-->  
-    
-    
-    
-</div><!--row id faq-->
-    
-    <div class = "aotwrapper">
-    
-<div id = "row" id = "aot">
-    
-<div class = "col-12 tips">
-    
-<div class = "AOThead">Additional Operation Tips:</div>
-    <br>
-    <hr width = "40%">
-    <br>
-    
-    <span class = "AOTcn">
-    Fly entire mission with yaw (orientation) in the same direction, default is North. Cropvue does allow manual manipulation if the images are not all in the same orientation, but this is not the most efficient method for processing.
-    <br><br>
-    Better GPS accuracy provides more accurate results.
-
-    </span>    
-    
-    
-</div><!--col-12 tips-->
-    
-    
-    
-</div><!--row id aot-->
-        
-        </div>
-    
-<!--mobilefooterbegin-->
-    
-<div id = "mobilefooterwrapper">
-<div class = "footer2">
-                
-    
-        
-                
-                <div class = "footercontent2">
-                    
-                    
-                    
-                   
-                    
-   
-    
-<span class = "footerhead">Yield Defender Drones</span>
-        <br><br>
-    <span class = "footercn">PO Box 485, Olney, Tx 76374</span>
-        <br><br>
-    <span class = "footercn">info@yielddefender.com</span>
-        <br><br>
-    <span class = "footercn">870-270-4255</span>
-        <br><br>
-
-<a href="https://www.facebook.com/Hangar78UAV/" class="fa fa-facebook"></a>
-<a href="https://twitter.com/yielddefender" class="fa fa-twitter"></a>
-<a href="https://www.youtube.com/channel/UCISKEh-bwGRFuDNT2zEY76A" class="fa fa-youtube"></a>
-<a href="https://www.instagram.com/yielddefender/" class="fa fa-instagram"></a>
-    
-    </div>
-                
-                <div class = "footlogo2wrap">
-                
-                <div class = "atfootlogo2"><img src = "https://res.cloudinary.com/yielddefender/image/upload/v1495727268/YD_logo_bxbcsu.png" height = "100%" width = "130%"></div> 
-                
-                <div class = "ydfootlogo2"><img src = "https://airtractor.com/wp-content/themes/AirTractorChild/images/AT-Logo.svg" height = "100%" width = "100%"></div> 
-    
-                    </div>
-    
-    
-    
-    </div><!--endmobilefooter-->
-    
-</div>
-    
-    
-    
-    
-</div><!--end mobilewrap-->
-    
-    
-    </div>
-    
-    </div>
-    
-</body>
-</html>
