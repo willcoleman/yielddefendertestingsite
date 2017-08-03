@@ -41,6 +41,28 @@ $(document).ready(function(){
 });
 </script>
     
+<script>
+$(document).ready(function(){
+  $(".targettopdesk").on('click', function(event) {
+  
+    if (this.hash !== "1") {
+ 
+      event.preventDefault();
+  
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1500, function(){
+   
+        
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
+    
+    
     </head>
     
     <style>
@@ -128,13 +150,34 @@ $(document).ready(function(){
         padding-top: 0.5%;
     }
     
-    .emailandphone{
+       .emailandphone{
         float: right;
         color: white;
         font-family: 'Oswald', sans-serif;
         padding-right: 2%;
         padding-top: 1%;
         text-decoration: none;
+    }
+    
+        .emailandphone a{
+        padding-top: 1%;
+    }
+    
+    .emailandphone a:hover{
+    background-color: #233e6c;
+    }
+    
+ 
+    .email a{
+        padding-bottom: 3%;
+        font-size: 17;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .phone{
+        font-size: 17;
+        padding-right: 3px;
     }
         
                 #active {
@@ -154,25 +197,32 @@ $(document).ready(function(){
          color: white;
          font-family: 'Droid Sans', sans-serif;
          margin: 0 0 0 0;
-        
-        
+         
     } 
+    
+            .footercn a{
+        text-decoration: none;
+        color: white;
+    }
         
-    .atfootlogo {
-        padding-top: 1.5%;
+.atfootlogo {
+        margin-top: 2.5%;
         float: left;
         padding-left: 4%;
         padding-bottom: 1%;
+        width: 13%;
         
     }
     
     .ydfootlogo {
-        padding-top: 1.5%;
-        padding-right: 2%;
+        margin-top: 2.5%;
+        padding-right: 4%;
         padding-bottom: 1%;
         float: right;
+        width: 12%;
         
     }
+
     
     .footercontent { 
         position: absolute;
@@ -182,6 +232,11 @@ $(document).ready(function(){
         width: 400px;
         margin-left: -200px;
         font-size: 12;
+    }
+    
+            .footercn a{
+        text-decoration: none;
+        color: white;
     }
     
     .smlinks {
@@ -233,19 +288,22 @@ $(document).ready(function(){
     
     #support{
         text-align: center;
-        padding-top: 5%;
+        padding-top: 3%;
     }
     
         .supporthead{
         width: 100%;
         font-weight: bolder;
         font-family: "Trebuchet MS", Helvetica, sans-serif;
-        font-size: 3vw;
+        font-size: 30;
+        padding-top: 1%;
     }
     
     .supportcn{
-        width: 100%;
-        font-size: 1.5vw;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 20;
         color: #494949;
         font-family: 'PT Sans', sans-serif;
         padding-bottom: 8%;
@@ -284,7 +342,7 @@ $(document).ready(function(){
         padding: 30px;
         font-size: 1.1vw;
         width: 70%;
-        height: 30%;
+        height: 22%;
         text-align: center;
         font-weight: bold;
         font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -323,7 +381,7 @@ $(document).ready(function(){
         width: 100%;
         font-weight: bolder;
         font-family: "Trebuchet MS", Helvetica, sans-serif;
-        font-size: 2.5vw;
+        font-size: 30;
         text-align: center;
         padding-bottom: 3%;
     }
@@ -340,7 +398,7 @@ $(document).ready(function(){
     }
     
         .faqhead, .AOThead{
-        font-size: 3vw;
+        font-size: 30;
         font-weight: bolder;
         font-family: "Trebuchet MS", Helvetica, sans-serif;
             text-align: center;
@@ -351,13 +409,13 @@ $(document).ready(function(){
     .question{
         font-family: "Trebuchet MS", Helvetica, sans-serif;
         font-weight: bold;
-        font-size: 1.2vw;
+        font-size: 17;
     }
     
     .answer, .AOTcn{
         font-family: "Trebuchet MS", Helvetica, sans-serif;
         color: #494949;
-        font-size: 1.2vw;
+        font-size: 17;
         
     }
     
@@ -385,6 +443,37 @@ $(document).ready(function(){
         padding-bottom: 10%;
     }
     
+
+  .scrolltopdesk{ 
+            float: right;
+            position: fixed;
+            top: 85%;
+            right: 1%;
+            z-index: 100;
+            color: gray;
+            opacity: 0.75;
+            z-index: 0;
+            }
+            
+            .targettopdesk{
+                color: gray;
+                text-decoration: none;
+            }
+    
+    .fa-caret-up{
+        position: relative;
+        
+    }
+    
+    .scrolltopdesk:hover{
+        opacity: 0.5;
+    }
+    
+    .return{
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+    }
+    
+    
     
     
         }
@@ -396,6 +485,10 @@ $(document).ready(function(){
             margin: 0;
             padding: 0;
         }
+             
+             #scrolltotopdesk{
+                 display: none;
+             }
         
         .headerwrap{
             display: none;
@@ -453,20 +546,29 @@ $(document).ready(function(){
         color: white;
     }
         
-                .emailandphone{
+                               .emailandphone{
         color: #949494;
         font-family: 'Oswald', sans-serif;
         text-decoration: none;
         font-size: 10;
     }
         
-        .scrolltop{ 
+         .email a{
+        padding-bottom: 0%;
+        font-size: 10;
+        text-decoration: none;
+        color: #949494;
+    }
+        
+       .scrolltop{ 
             position: fixed;
+            float: right;
             top: 90%;
-            left: 0.5%;
+            right: 2%;
             z-index: 100;
             color: gray;
             opacity: 0.75;
+            z-index: 0;
             }
             
             .targettop{
@@ -474,9 +576,16 @@ $(document).ready(function(){
                 text-decoration: none;
             }
     
-    .fa-caret-up:hover{
+
+    
+    .scrolltop:hover{
         opacity: 0.5;
     }
+             
+             .return{
+                 font-family:"Trebuchet MS", Helvetica, sans-serif;
+                 font-size: 1.5vw;
+             }
              
                .footer {
          background-color: #4d4d4d;
@@ -493,20 +602,28 @@ $(document).ready(function(){
         
         
     } 
+             
+        .footercn a{
+        text-decoration: none;
+        color: white;
+    }
         
-    .atfootlogo {
-        padding-top: 1.5%;
+  .atfootlogo {
+        padding-top: 4.5%;
         float: left;
         padding-left: 4%;
-        padding-bottom: 1%;
+        padding-bottom: 0%;
+       width: 16%;
+     
         
     }
     
     .ydfootlogo {
-        padding-top: 1.5%;
-        padding-right: 2%;
-        padding-bottom: 1%;
+        padding-top: 4.5%;
+        padding-right: 4%;
+        padding-bottom: 0%;
         float: right;
+   
         
     }
     
@@ -574,16 +691,16 @@ $(document).ready(function(){
    
     
         .supporthead{
-        padding-left: 42%;
+        padding-left: 32%;
         width: 100%;
         font-weight: bolder;
         font-family: "Trebuchet MS", Helvetica, sans-serif;
-        font-size: 3vw;
+        font-size: 30;
     }
     
     .supportcn{
-        width: 110%;
-        font-size: 1.5vw;
+        width: 100%;
+        font-size: 18;
         color: #494949;
         font-family: 'PT Sans', sans-serif;
         padding-bottom: 8%;
@@ -662,7 +779,7 @@ $(document).ready(function(){
         width: 100%;
         font-weight: bolder;
         font-family: "Trebuchet MS", Helvetica, sans-serif;
-        font-size: 2.5vw;
+        font-size: 30;
         text-align: center;
         padding-bottom: 3%;
     }
@@ -679,7 +796,7 @@ $(document).ready(function(){
     }
     
         .faqhead, .AOThead{
-        font-size: 3vw;
+        font-size: 30;
         font-weight: bolder;
         font-family: "Trebuchet MS", Helvetica, sans-serif;
             text-align: center;
@@ -690,13 +807,13 @@ $(document).ready(function(){
     .question{
         font-family: "Trebuchet MS", Helvetica, sans-serif;
         font-weight: bold;
-        font-size: 1.25vw;
+        font-size: 15;
     }
     
     .answer, .AOTcn{
         font-family: "Trebuchet MS", Helvetica, sans-serif;
         color: #494949;
-        font-size: 1.25vw;
+        font-size: 15;
         
     }
              
@@ -722,6 +839,10 @@ $(document).ready(function(){
         width: 80%;
         
     }
+             
+             .faqhead, .aothead{
+                 font-size: 30;
+             }
        
              
         }
@@ -775,13 +896,13 @@ $(document).ready(function(){
     .question{
         font-family: "Trebuchet MS", Helvetica, sans-serif;
         font-weight: bold;
-        font-size: 1.3vw;
+        font-size: 12;
     }
     
     .answer, .AOTcn{
         font-family: "Trebuchet MS", Helvetica, sans-serif;
         color: #494949;
-        font-size: 1.3vw;
+        font-size: 12;
         
     }
              
@@ -807,6 +928,44 @@ $(document).ready(function(){
         width: 80%;
         
     }
+             
+    
+             .return{
+                 font-family:"Trebuchet MS", Helvetica, sans-serif;
+                 font-size: 1.4vw;
+             }
+             
+        .supporthead{
+       padding-left: 27%;
+        font-weight: bolder;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        font-size: 30;
+        padding-top: 1%;
+    }
+        
+             
+           .supportcn{
+        width: 100%;
+        font-size: 18;
+        color: #494949;
+        font-family: 'PT Sans', sans-serif;
+        padding-bottom: 8%;
+    }
+             
+                
+        .btnhead{
+        width: 100%;
+        font-weight: bolder;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        font-size: 30;
+        text-align: center;
+        padding-bottom: 3%;
+    }
+             
+             .faqhead, .aothead{
+                 font-size: 30;
+             }
+    
          
          
     }
@@ -832,7 +991,7 @@ $(document).ready(function(){
         padding: 30px;
         font-size: 1.75vw;
         width: 125%;
-        height: 20%;
+        height: 25%;
         text-align: center;
         font-weight: bold;
         font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -871,7 +1030,35 @@ $(document).ready(function(){
     }
         
         .question, .answer, .AOTcn{
-            font-size: 2vw;
+            font-size: 11;
+        }
+        
+
+             
+             .return{
+                 font-family:"Trebuchet MS", Helvetica, sans-serif;
+                 font-size: 1.7vw;
+             }
+        
+         .supporthead{
+       padding-left: 20%;
+        font-weight: bolder;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        font-size: 25;
+        padding-top: 1%;
+    }
+        
+             
+           .supportcn{
+        width: 100%;
+        font-size: 15;
+        color: #494949;
+        font-family: 'PT Sans', sans-serif;
+        padding-bottom: 8%;
+    }
+        
+        .btnhead, .faqhead, .aothead{
+            font-size:22;
         }
 
         
@@ -944,18 +1131,36 @@ $(document).ready(function(){
                  .question{
         font-family: "Trebuchet MS", Helvetica, sans-serif;
         font-weight: bold;
-        font-size: 2vw;
+        font-size: 10;
     }
     
     .answer, .AOTcn{
         font-family: "Trebuchet MS", Helvetica, sans-serif;
         color: #494949;
-        font-size: 2vw;
+        font-size: 10;
         
     }
              
              .faqhead{
                  font-size: 4vw;
+             }
+             
+   
+             .return{
+                 font-family:"Trebuchet MS", Helvetica, sans-serif;
+                 font-size: 1.9vw;
+             }
+             
+        .supporthead{
+       padding-left: 18%;
+        font-weight: bolder;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        font-size: 20;
+        padding-top: 1%;
+    }
+             
+             .btnhead, .faqhead, .aothead{
+                 font-size: 16;
              }
 
              
@@ -965,6 +1170,12 @@ $(document).ready(function(){
     </style>
     
 <body>
+    
+        <div id = "topscreendesk"></div>
+    
+    <div class = "navigation1">
+    <section></section>
+    </div>
     
     
     <div class = "navwrapper" id = "nav">
@@ -976,15 +1187,25 @@ $(document).ready(function(){
   <a class = "navbar" href="https://htmlpreview.github.io/?https://github.com/willcoleman/yielddefendertestingsite/blob/master/YieldDefenderSupport.html">SUPPORT</a>
     <div class = "iconwrap"><img class = "icon" src = "https://res.cloudinary.com/yielddefender/image/upload/q_100/v1495727268/YD_logo_bxbcsu.png" height = "80px" width = "130px"></div>
     <div class = "emailandphone">
-    info@yielddefender.com
+    <div class = "email"><a class = "emaillink" href = "mailto:info@yielddefender.com">info@yielddefender.com</a></div>
     <br>
-    870-270-4255
+    <div class = "phone">870-270-4255</div>
     </div>
-
+    
     
     </div><!--navigation-->
         
     </div><!--navwrapper1-->
+    
+        <div id = "scrolltotopdesk">
+        
+            <div class = "scrolltopdesk"><a class = "targettopdesk" href = "#topscreendesk"><i class="fa fa-caret-up" style="font-size:55px"></i>
+
+                </a>
+           
+            </div>
+        
+    </div><!--scrolltotopbtnwrap-->
     
     <div id = "topscreen"></div>
     
@@ -1001,7 +1222,12 @@ $(document).ready(function(){
 <div class = "navwrapper2">
 <ul class = "nav2">
     <center>
-        <li class = "nbhead2"><a href="#company"><img class = "icon2" src = "https://res.cloudinary.com/yielddefender/image/upload/q_100/v1495727268/YD_logo_bxbcsu.png" height = "60px" width = "80px"></a><div class = "emailandphone">info@yielddefender.com<br>870-270-4255</div>
+        <li class = "nbhead2"><a href="#company"><img class = "icon2" src = "https://res.cloudinary.com/yielddefender/image/upload/q_100/v1495727268/YD_logo_bxbcsu.png" height = "60px" width = "80px"></a>
+     <div class = "emailandphone">
+    <div class = "email"><a class = "emaillink" href = "mailto:info@yielddefender.com">info@yielddefender.com</a></div>
+  
+    <div class = "phone">870-270-4255</div>
+    </div>
   <li class = "navbar2"><a href="https://htmlpreview.github.io/?https://github.com/willcoleman/yielddefendertestingsite/blob/master/YieldDefenderHome.html">HOME</a></li>
   <li class = "navbar2"><a href="https://htmlpreview.github.io/?https://github.com/willcoleman/yielddefendertestingsite/blob/master/YieldDefenderCompany.html">ABOUT</a></li>
   <li class = "navbar2"><a href="https://htmlpreview.github.io/?https://github.com/willcoleman/yielddefendertestingsite/blob/master/YieldDefenderProducts.html">PRODUCTS</a></li>
@@ -1012,7 +1238,9 @@ $(document).ready(function(){
     
 <div id = "scrolltotopbtnwrap">
         
-        <div class = "scrolltop"><a class = "targettop" href = "#topscreen"><i class="fa fa-caret-up" style="font-size:36px"></i></a></div>
+        <div class = "scrolltop"><a class = "targettop" href = "#topscreen"><i class="fa fa-caret-up" style="font-size:36px"></i>
+
+            </a></div>
         
     </div><!--scrolltotopbtnwrap-->
     
@@ -1163,9 +1391,9 @@ $(document).ready(function(){
     
     <div class = "footer">
                 
-    <a href = "https://airtractor.com/"><img class = "ydfootlogo" src = "https://airtractor.com/wp-content/themes/AirTractorChild/images/AT-Logo.svg" height = "150px" width = "172px"></a>      
+    <a href = "https://airtractor.com/"><img class = "ydfootlogo" src = "https://airtractor.com/wp-content/themes/AirTractorChild/images/AT-Logo.svg" height = "100px" width = "114px"></a>      
     
-        <img class = "atfootlogo" src = "https://res.cloudinary.com/yielddefender/image/upload/v1495727268/YD_logo_bxbcsu.png" height = "150px" width = "208px">
+        <img class = "atfootlogo" src = "https://res.cloudinary.com/yielddefender/image/upload/v1495727268/YD_logo_bxbcsu.png" height = "100px" width = "185px">
 
             
                         
@@ -1178,7 +1406,7 @@ $(document).ready(function(){
         <br><br>
     <span class = "footercn">PO Box 485, Olney, Tx 76374</span>
         <br><br>
-    <span class = "footercn">info@yielddefender.com</span>
+ <span class = "footercn"><a class = "emaillink" href = "mailto:info@yielddefender.com">info@yielddefender.com</a></span>
         <br><br>
     <span class = "footercn">870-270-4255</span>
         <br><br>
