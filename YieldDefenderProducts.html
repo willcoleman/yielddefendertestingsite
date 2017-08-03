@@ -42,6 +42,27 @@ $(document).ready(function(){
 });
 </script>
     
+<script>
+$(document).ready(function(){
+  $(".targettopdesk").on('click', function(event) {
+  
+    if (this.hash !== "1") {
+ 
+      event.preventDefault();
+  
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1500, function(){
+   
+        
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
+    
     
     
 </head> 
@@ -88,7 +109,6 @@ $(document).ready(function(){
         width: 100%;
         min-width: 100%;
     }
-
     .navwrapper2{
         display: none;
     }
@@ -235,8 +255,6 @@ $(document).ready(function(){
     text-decoration: none;
         
     }
-
-
     
         .footerhead{
             font-family: 'Ubuntu', sans-serif;
@@ -251,13 +269,11 @@ $(document).ready(function(){
         text-decoration: none;
     }
     
-
     
     
     #topscreen{
      display: none;   
     }
-
     
      #HeQuad{
         padding-bottom: 5%;
@@ -446,7 +462,6 @@ $(document).ready(function(){
         padding-right: 6%;
     }
     
-
     .nirhead, .cvhead, .mphead{
         font-size: 3vw;
         font-weight: bolder;
@@ -510,7 +525,6 @@ $(document).ready(function(){
         opacity: 0.5;
         cursor: pointer;
     }
-
     
         .fa-facebook {
   background-color: #4d4d4d;
@@ -546,8 +560,32 @@ $(document).ready(function(){
         padding-bottom: 8%;
     }
     
+    .scrolltopdesk{ 
+            float: right;
+            position: fixed;
+            top: 85%;
+            right: 1%;
+            z-index: 100;
+            color: gray;
+            opacity: 0.75;
+            z-index: 0;
+            }
+            
+            .targettopdesk{
+                color: gray;
+                text-decoration: none;
+            }
     
-
+    .fa-caret-up{
+        position: relative;
+        
+    }
+    
+    .scrolltopdesk:hover{
+        opacity: 0.5;
+    }
+    
+    
     
     }/*END DESKTOP CSS*/
     
@@ -624,11 +662,13 @@ $(document).ready(function(){
         
         .scrolltop{ 
             position: fixed;
+            float: right;
             top: 90%;
-            left: 0.5%;
+            right: 2%;
             z-index: 100;
             color: gray;
             opacity: 0.75;
+            z-index: 0;
             }
             
             .targettop{
@@ -636,13 +676,13 @@ $(document).ready(function(){
                 text-decoration: none;
             }
     
-    .fa-caret-up:hover{
+
+    
+    .scrolltop:hover{
         opacity: 0.5;
     }
        
-
     
-
     
         .footerhead{
             font-family: 'Ubuntu', sans-serif;
@@ -746,7 +786,6 @@ $(document).ready(function(){
     text-decoration: none;
         
     }
-
         
            .atimg {
         float: left;
@@ -948,7 +987,6 @@ $(document).ready(function(){
         width: 25%;
     }
     
-
     .nirhead, .cvhead, .mphead{
         font-size: 45;
         font-weight: bolder;
@@ -985,7 +1023,6 @@ $(document).ready(function(){
         padding-right: 10%;
     }
         
-
     .cvhead{
         padding-bottom: 3%;
     }
@@ -1013,7 +1050,6 @@ $(document).ready(function(){
         opacity: 0.5;
         cursor: pointer;
     }
-
     
         .fa-facebook {
   background-color: #4d4d4d;
@@ -1249,8 +1285,13 @@ $(document).ready(function(){
     </style>
     
 <body>
+ 
+            <div id = "topscreendesk"></div>
     
-<!--DESKTOP BEGIN--> <div class = "desktopwrap">
+    <div class = "navigation1">
+    <section></section>
+    </div>
+
     
    
 <div class = "navwrapper" id = "nav">
@@ -1271,6 +1312,17 @@ $(document).ready(function(){
     </div><!--navigation-->
         
     </div><!--navwrapper1-->
+    
+    
+           <div id = "scrolltotopdesk">
+        
+            <div class = "scrolltopdesk"><a class = "targettopdesk" href = "#topscreendesk"><i class="fa fa-caret-up" style="font-size:55px"></i>
+
+                </a>
+           
+            </div>
+        
+    </div><!--scrolltotopbtnwrap-->
     
     <div id = "topscreen"></div>
     
@@ -1343,7 +1395,7 @@ $(document).ready(function(){
             </div><!--col6 quad-->
             
             <div class ="col-6 right">
-            <div class = "quaddesc">The HE Quad allows you to complete a variety of missions without any pilot experience. Its large motors powering the 16-inch carbon fiber propellers contribute to an industry-leading flight time on a single battery charge. It can cover up to 300 acres in a mission.  It is fully-autonomous and has precision flight capabilities to assure consistent, contiguous data capture. Our quad is capable of handling tasks for farmers, hunters, miners and much more. </div>
+            <div class = "quaddesc">The HE Quad allows you to complete a variety of missions without any pilot experience. Its large motors powering the 16-inch carbon fiber propellers contribute to an industry-leading flight time on a single battery charge. It can cover up to 300 acres in a mission.  It is fully autonomous and has precision flight capabilities to assure consistent, contiguous data capture. Our quad is capable of handling tasks for farmers, hunters, miners and much more. </div>
                 
             <div class = "dbwrap"><a href = "https://www.dropbox.com/s/7vf4xq2e5tjw0b8/YD%20-%20Dealer%20Application.pdf?dl=0"><button class = "dealer">Contact a Dealer</button></a></div>
 
@@ -1659,8 +1711,7 @@ $(document).ready(function(){
     
     
     
-    
-</div><!--end desktopwrap-->
+
     
     
     </body>
