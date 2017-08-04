@@ -106,11 +106,17 @@ $(document).ready(function(){
     
     
     
+    
+   
+    
+    
 </head> 
     
 
     
 <style>
+    
+    
     
  /*!!!!!!!!!!BEGIN DESKTOP CSS!!!!!!!!!!*/
     
@@ -215,7 +221,7 @@ $(document).ready(function(){
     
  
     .email a{
-        padding-bottom: 3%;
+        padding-bottom: 2%;
         font-size: 17;
         text-decoration: none;
         color: white;
@@ -342,9 +348,11 @@ $(document).ready(function(){
         -webkit-animation-duration: 4s; 
         animation-name: h1;
         animation-duration: 4s;
+        animation-delay: -0s;
         animation-fill-mode: forwards;
         
     }
+
     
 @-webkit-keyframes h1 {
     from {opacity: 0;}
@@ -367,8 +375,8 @@ $(document).ready(function(){
         -webkit-animation-name: h2; 
         -webkit-animation-duration: 4s; 
         animation-name: h2;
-        animation-duration: 4s;
-        animation-delay: 1s;
+        animation-duration: 6s;
+        animation-delay: 0a;
         animation-fill-mode: forwards;
     }
     
@@ -423,8 +431,8 @@ $(document).ready(function(){
         -webkit-animation-name: scrollbtn; 
         -webkit-animation-duration: 4s; 
         animation-name: scrollbtn;
-        animation-duration: 4s;
-        animation-delay: 1.5s;
+        animation-duration: 8s;
+        animation-delay: 0s;
         animation-fill-mode: forwards;
         padding-right: 100px;
         color: white;
@@ -576,11 +584,26 @@ $(document).ready(function(){
         border-width: thick;
         border-color: #ed1c24;
         color: #ed1c24;
-        height: 50vw;
+        height: 40vw;
         transition: background-color 0.25s ease-out;
         -moz-transition: background-color 0.25s ease-out;
         -webkit-transition: background-color 0.25s ease-out;
         -ms-transition: background-color 0.25s ease-out;
+        
+    }
+    
+     .company:hover{
+        color: white;
+        background-color: #ed1c24;
+        border-style: solid;
+        border-width: thick;
+        border-color: #ed1c24;
+        height: 40vw;
+        transition: background-color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out;
+    -webkit-transition: background-color 0.5s ease-in-out;
+    -ms-transition: background-color 0.5s ease-in-out;
+         cursor: pointer;
         
     }
     
@@ -593,13 +616,29 @@ $(document).ready(function(){
         border-width: thick;
         border-color: #233e6c;
         color: #233e6c;
-        height: 50vw;
+        height: 40vw;
         transition: background-color 0.25s ease-out;
         -moz-transition: background-color 0.25s ease-out;
         -webkit-transition: background-color 0.25s ease-out;
         -ms-transition: background-color 0.25s ease-out;
         
       
+    }
+    
+     .products:hover{
+        color: white;
+        background-color: #233e6c;
+        border-style: solid;
+        border-width: thick;
+        border-color: #233e6c;
+        height: 40vw;
+        transition: background-color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out;
+    -webkit-transition: background-color 0.5s ease-in-out;
+    -ms-transition: background-color 0.5s ease-in-out;
+        cursor: pointer;
+    
+        
     }
     
         .support{
@@ -610,53 +649,12 @@ $(document).ready(function(){
         border-width: thick;
         border-color: #7d83d9;
         color: #7d83d9;
-        height: 50vw;
+        height: 40vw;
         transition: background-color 0.25s ease-out;
         -moz-transition: background-color 0.25s ease-out;
         -webkit-transition: background-color 0.25s ease-out;
         -ms-transition: background-color 0.25s ease-out;
             
-    }
-    
-    .briefcase1, .drone1, .download1, .briefcase2, .drone2, .download2{
-        width: 45%;
-    }
-     
-    
-    
-    .products:hover{
-        color: white;
-        background-color: #233e6c;
-        border-style: solid;
-        border-width: thick;
-        border-color: #233e6c;
-        height: 50vw;
-        transition: background-color 0.5s ease-in-out;
-    -moz-transition: background-color 0.5s ease-in-out;
-    -webkit-transition: background-color 0.5s ease-in-out;
-    -ms-transition: background-color 0.5s ease-in-out;
-        cursor: pointer;
-    
-        
-    }
-    
-    .prevpic1, .prevpic2{
-        text-align: center;
-    }
-    
-     .company:hover{
-        color: white;
-        background-color: #ed1c24;
-        border-style: solid;
-        border-width: thick;
-        border-color: #ed1c24;
-        height: 50vw;
-        transition: background-color 0.5s ease-in-out;
-    -moz-transition: background-color 0.5s ease-in-out;
-    -webkit-transition: background-color 0.5s ease-in-out;
-    -ms-transition: background-color 0.5s ease-in-out;
-         cursor: pointer;
-        
     }
     
      .support:hover{
@@ -665,7 +663,7 @@ $(document).ready(function(){
         border-style: solid;
         border-width: thick;
         border-color: #7d83d9;
-        height: 50vw;
+        height: 40vw;
         transition: background-color 0.5s ease-in-out;
     -moz-transition: background-color 0.5s ease-in-out;
     -webkit-transition: background-color 0.5s ease-in-out;
@@ -674,6 +672,19 @@ $(document).ready(function(){
         
     }
     
+    .briefcase1, .drone1, .download1, .briefcase2, .drone2, .download2{
+        width: 45%;
+    }
+     
+    
+    
+   
+    
+    .prevpic1, .prevpic2{
+        text-align: center;
+    }
+    
+
     
     .prevhead1{
         text-align: center;
@@ -888,7 +899,6 @@ $(document).ready(function(){
         
          .email a{
         padding-bottom: 0%;
-        font-size: 10;
         text-decoration: none;
         color: #949494;
     }
@@ -1004,7 +1014,9 @@ $(document).ready(function(){
         color: black;
         text-decoration: none;
     }
-    
+        
+        
+
     .company{
         margin-left: 3.165%;
         margin-right: 3.165%;
@@ -1013,7 +1025,7 @@ $(document).ready(function(){
         border-width: thick;
         border-color: #ed1c24;
         color: #ed1c24;
-        height: 50vw;
+        height: 42vw;
         transition: background-color 0.25s ease-out;
         -moz-transition: background-color 0.25s ease-out;
         -webkit-transition: background-color 0.25s ease-out;
@@ -1030,7 +1042,7 @@ $(document).ready(function(){
         border-width: thick;
         border-color: #233e6c;
         color: #233e6c;
-        height: 50vw;
+        height: 42vw;
         transition: background-color 0.25s ease-out;
         -moz-transition: background-color 0.25s ease-out;
         -webkit-transition: background-color 0.25s ease-out;
@@ -1047,7 +1059,7 @@ $(document).ready(function(){
         border-width: thick;
         border-color: #7d83d9;
         color: #7d83d9;
-        height: 50vw;
+        height: 42vw;
         transition: background-color 0.25s ease-out;
         -moz-transition: background-color 0.25s ease-out;
         -webkit-transition: background-color 0.25s ease-out;
@@ -1067,7 +1079,7 @@ $(document).ready(function(){
         border-style: solid;
         border-width: thick;
         border-color: #233e6c;
-        height: 50vw;
+        height: 42vw;
         transition: background-color 0.5s ease-in-out;
     -moz-transition: background-color 0.5s ease-in-out;
     -webkit-transition: background-color 0.5s ease-in-out;
@@ -1087,7 +1099,7 @@ $(document).ready(function(){
         border-style: solid;
         border-width: thick;
         border-color: #ed1c24;
-        height: 50vw;
+        height: 42vw;
         transition: background-color 0.5s ease-in-out;
     -moz-transition: background-color 0.5s ease-in-out;
     -webkit-transition: background-color 0.5s ease-in-out;
@@ -1102,7 +1114,7 @@ $(document).ready(function(){
         border-style: solid;
         border-width: thick;
         border-color: #7d83d9;
-        height: 50vw;
+        height: 42vw;
         transition: background-color 0.5s ease-in-out;
     -moz-transition: background-color 0.5s ease-in-out;
     -webkit-transition: background-color 0.5s ease-in-out;
@@ -1315,9 +1327,36 @@ $(document).ready(function(){
              padding-top: 30px;
          }
          
+          .headline2{
+        width: 100%;
+        font-size: 25;
+        font-weight: 400;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+    }
+    
+    .h78content, .h78content2{
+        width: 100%;
+        font-size: 20;
+        color: #525252;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        padding-bottom: 5%;
+    }
+         
+         .h78head{
+             font-size: 25;
+         }
          
          
+                 .company, .products, .support{
+                height: 45vw;
+        }
+        
+        .company:hover, .products:hover, .support:hover{
+            height: 45vw;
+        }
          
+         .supportpagedesc, .productpagedesc, .companypagedesc{
+         padding-top: 5px;
          
     }
     
@@ -1335,17 +1374,18 @@ $(document).ready(function(){
             padding-top: 30px;
         }
         
-        .supportpagedesc, .productpagedesc, .companypagedesc{
-        font-family: "Trebuchet MS", Helvetica, sans-serif;
-        font-size: 1.4vw;
-        margin: auto;
-        padding-top: 10px;
-         width: 86%;
-        margin-left: 7%;
-        margin-right: 7%;
-
-    }
+         .company, .products, .support{
+                height: 50vw;
+        }
         
+        .company:hover, .products:hover, .support:hover{
+            height: 50vw;
+        }
+         
+         .supportpagedesc, .productpagedesc, .companypagedesc{
+         padding-top: 5px;
+         
+    }
         .h78content, .h78content2{
         width: 100%;
         font-size: 20;
@@ -1398,6 +1438,55 @@ $(document).ready(function(){
     
     </style>
     
+     <!--[if IE]><!-->
+  <link rel="stylesheet" type="text/css" media="screen, projection" href="REGULAR-STYLESHEET.css" />
+    <style>
+    .h1{
+        width: 100%;
+        font-size: 1.8vw;
+        padding-top: 1%;
+        padding-left: 40%;
+        padding-bottom: 2.5%;
+        font-family: 'Russo One', sans-serif;
+        text-shadow:5px 5px 10px black;
+        z-index: -1;
+        opacity: 1;
+        }
+        
+     .h2{
+        width: 100%;
+        font-size: 1.8vw;
+        padding-bottom: 38%;
+        padding-left: 41%;
+        font-family: 'Russo One', sans-serif;
+        text-shadow:5px 5px 10px black;
+        z-index: -1;
+        opacity: 1;
+        }
+        
+        .scrollbtn{
+            opacity: 1;
+        }
+        
+        .scrollbtn:hover{
+            opacity: 0.5;
+        }
+        
+        .emailandphone{
+            font-size: 20;
+        }
+        
+        
+    
+    
+    
+    </style>
+<!--<![endif]-->
+    
+    
+
+    
+    
 <body>
     
 <!--DESKTOP BEGIN--> <div class = "desktopwrap">
@@ -1410,7 +1499,7 @@ $(document).ready(function(){
     
 <div class = "h1">The Complete Unmanned Aerial System Solution</div> 
     
-<div class = "h2">From the Leader in Agricultural Aviation</div>    
+<div class = "h2">From the Leader in Agricultural Aviation</div>  
     
 <a class = "target" href = "#nav">    
 
